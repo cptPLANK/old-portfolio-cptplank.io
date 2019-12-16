@@ -168,7 +168,6 @@ html {
 
 body {
   font-family: oswald, sans-serif;
-  overflow-x: hidden;
 }
 
 .schwarz {
@@ -207,7 +206,7 @@ ul {
   list-style-type: none;
 }
 
-@media (max-width: 1199px) {
+@media (orientation: portrait) {
   header {
     position: fixed;
     top: 0;
@@ -718,7 +717,7 @@ ul {
     margin: auto 5vw;
   }
 }
-@media (min-width: 1200px) {
+@media (orientation: landscape) and (max-aspect-ratio: 19/9) {
   header {
     position: fixed;
     top: 0;
