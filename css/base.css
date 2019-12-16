@@ -746,7 +746,7 @@ ul {
     height: 5rem;
     z-index: 99;
     max-width: 100%;
-    display: none;
+    display: block;
   }
   header ul {
     display: block;
