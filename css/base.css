@@ -717,6 +717,11 @@ ul {
     margin: auto 5vw;
   }
 }
+@media (min-aspect-ratio: 581/900) and (max-aspect-ratio: 1/1) {
+  #kein-designer {
+    height: 150vw;
+  }
+}
 @media (orientation: landscape) {
   header {
     position: fixed;
