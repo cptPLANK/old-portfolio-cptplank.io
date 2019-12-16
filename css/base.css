@@ -958,6 +958,8 @@ ul {
   }
   section#ueber-mich {
     background-color: #000000;
+    min-height: 100vh;
+    height: auto;
   }
   section#ueber-mich article {
     max-width: 100%;
@@ -1028,12 +1030,12 @@ ul {
     top: 50%;
   }
   section#ueber-mich article #ueber-mich-text {
-    position: absolute;
-    left: 15vw;
-    top: 14vw;
+    margin-left: 15vw;
+    margin-top: 5.5vw;
+    padding-bottom: 7vw;
     width: 30vw;
-    font-size: 1vw;
-    line-height: 1.6vw;
+    font-size: 1.5vw;
+    line-height: 2.4vw;
     letter-spacing: 0.01vw;
   }
   section#ueber-mich article #vita {
