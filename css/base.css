@@ -717,7 +717,7 @@ ul {
     margin: auto 5vw;
   }
 }
-@media (orientation: landscape) and (max-aspect-ratio: 19/9) {
+@media (orientation: landscape) and (max-aspect-ratio: 20/9) {
   header {
     position: fixed;
     top: 0;
