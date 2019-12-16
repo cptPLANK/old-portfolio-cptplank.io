@@ -668,7 +668,23 @@ ul {
 
 @media (min-aspect-ratio: 581/900) and (max-aspect-ratio: 1/1) {
   #kein-designer {
-    height: 150vw;
+    height: 150vw !important;
+  }
+
+  #eingang > img {
+    width: 50% !important;
+  }
+
+  #eingang > div {
+    bottom: 18vw !important;
+  }
+
+  #eingang > div > span {
+    font-size: 3vw !important;
+
+    &:before {
+      left: -30vw !important;
+    }
   }
 }
 
