@@ -168,6 +168,7 @@ html {
 
 body {
   font-family: oswald, sans-serif;
+  overflow-x: hidden;
 }
 
 .schwarz {
@@ -206,505 +207,1018 @@ ul {
   list-style-type: none;
 }
 
-header {
-  position: fixed;
-  top: 0;
-  left: 0;
-  right: 0;
-  height: 5rem;
-  z-index: 99;
-  max-width: 100%;
-  display: none;
-}
-header ul {
-  display: block;
-  width: 100%;
-  padding: 2% 7.22%;
-  height: 100%;
-  position: relative;
-}
-header ul li {
-  display: inline-block;
-  position: absolute;
-  top: 50%;
-  transform: translateY(-50%);
-}
-header ul li:first-of-type {
-  left: 7.22%;
-  font-size: 2rem;
-  letter-spacing: 0.07vw;
-}
-header ul li:first-of-type span {
-  font-weight: bold;
-}
-header ul li:last-of-type {
-  right: 7.22%;
-}
-header ul li:last-of-type .burger-btn {
-  cursor: pointer;
-}
-header ul li:last-of-type .burger-btn:hover .bar-mitte {
-  margin: 10px;
-}
-header ul li:last-of-type .bar-oben, header ul li:last-of-type .bar-mitte, header ul li:last-of-type .bar-unten {
-  width: 1.6rem;
-  height: 3px;
-  background-color: #000000;
-  margin: 6px;
-  transition: margin 200ms ease-in-out;
-}
-header ul li:last-of-type .bar-mitte {
-  width: 2.2rem;
-}
-header nav {
-  z-index: 100;
-  display: none;
-}
+@media (max-width: 1199px) {
+  header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 5rem;
+    z-index: 99;
+    max-width: 100%;
+    display: none;
+  }
+  header ul {
+    display: block;
+    width: 100%;
+    padding: 2% 7.22%;
+    height: 100%;
+    position: relative;
+  }
+  header ul li {
+    display: inline-block;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+  }
+  header ul li:first-of-type {
+    left: 7.22%;
+    font-size: 2rem;
+    letter-spacing: 0.07vw;
+  }
+  header ul li:first-of-type span {
+    font-weight: bold;
+  }
+  header ul li:last-of-type {
+    right: 7.22%;
+  }
+  header ul li:last-of-type .burger-btn {
+    cursor: pointer;
+  }
+  header ul li:last-of-type .burger-btn:hover .bar-mitte {
+    margin: 10px;
+  }
+  header ul li:last-of-type .bar-oben, header ul li:last-of-type .bar-mitte, header ul li:last-of-type .bar-unten {
+    width: 1.6rem;
+    height: 3px;
+    background-color: #000000;
+    margin: 6px;
+    transition: margin 200ms ease-in-out;
+  }
+  header ul li:last-of-type .bar-mitte {
+    width: 2.2rem;
+  }
+  header nav {
+    z-index: 100;
+    display: none;
+  }
 
-section {
-  width: 100vw;
-  height: 100vh;
-  position: relative;
-  max-width: 100%;
-}
-section#eingang {
-  background-color: #FFD24A;
-}
-section#eingang img {
-  display: block;
-  position: absolute;
-  width: 30%;
-  left: 50%;
-  top: 50%;
-  transform: translateY(-50%) translateX(-50%);
-}
-section#eingang .scroll {
-  display: block;
-  position: absolute;
-  left: 5%;
-  bottom: 13vw;
-  transform: rotate(-90deg);
-  z-index: 1;
-}
-section#eingang .scroll span {
-  position: relative;
-  font-size: 1vw;
-}
-section#eingang .scroll span:before {
-  content: " ";
-  position: absolute;
-  width: 15vw;
-  border-top: 2px solid #000000;
-  top: 50%;
-  transform: translateY(50%);
-  left: -17vw;
-}
-section#kein-designer {
-  background-color: #FF9CD4;
-}
-section#kein-designer .kein-designer-container {
-  display: block;
-  position: absolute;
-  left: 7.22%;
-  top: 25%;
-  color: #FFFFFF;
-  width: 50%;
-}
-section#kein-designer .kein-designer-container h1 {
-  margin: 0 0 0 7.22%;
-  font-size: 6vw;
-  line-height: 6.5vw;
-}
-section#kein-designer .kein-designer-container hr {
-  display: block;
-  width: 10vw;
-  height: 1.2vw;
-  border: none;
-  margin: 6% 0;
-  background-color: #000000;
-}
-section#kein-designer .kein-designer-container #untertitel {
-  margin-left: 7.22%;
-  font-size: 2.5vw;
-  letter-spacing: 0.07vw;
-}
-section#kein-designer .cptplank-typographie-container {
-  display: block;
-  position: absolute;
-  right: 0;
-  height: 100vh;
-  max-height: 100%;
-}
-section#kein-designer .cptplank-typographie-container .cptplank-typographie-container-inner {
-  height: 100vh;
-  max-height: 100%;
-  position: relative;
-}
-section#kein-designer .cptplank-typographie-container .cptplank-typographie-container-inner * {
-  margin: 0;
-  color: #FFFFFF;
-  line-height: 0;
-}
-section#kein-designer .cptplank-typographie-container .cptplank-typographie-container-inner .typo-p {
-  position: absolute;
-  font-size: 25vw;
-  right: 4vw;
-  bottom: 5vw;
-  transform: rotate(-90deg);
-}
-section#kein-designer .cptplank-typographie-container .cptplank-typographie-container-inner .typo-l {
-  position: absolute;
-  font-size: 20vw;
-  right: -0.8vw;
-  bottom: 12vw;
-}
-section#kein-designer .cptplank-typographie-container .cptplank-typographie-container-inner .typo-n {
-  position: absolute;
-  font-size: 20vw;
-  right: -1.5vw;
-  bottom: 28vw;
-}
-section#kein-designer .cptplank-typographie-container .cptplank-typographie-container-inner .typo-a {
-  position: absolute;
-  font-size: 20vw;
-  right: 9.5vw;
-  bottom: 21vw;
-}
-section#kein-designer .cptplank-typographie-container .cptplank-typographie-container-inner .typo-cpt {
-  color: #000000;
-  position: absolute;
-  font-size: 12.5vw;
-  right: -1.5vw;
-  bottom: 42.3vw;
-  transform: rotate(-90deg);
-}
-section#kein-designer .cptplank-typographie-container .cptplank-typographie-container-inner .typo-k {
-  position: absolute;
-  font-size: 22vw;
-  right: 8vw;
-  bottom: 38vw;
-}
-section#arbeit {
-  background-color: #FFFFFF;
-}
-section#arbeit img {
-  position: absolute;
-  left: 7.22%;
-  bottom: 0;
-  width: 28vw;
-}
-section#arbeit article {
-  position: absolute;
-  left: 43vw;
-  top: 5vw;
-  max-width: 30vw;
-  z-index: 1;
-}
-section#arbeit article #arbeit-text {
-  font-size: 11vw;
-  color: #FFD24A;
-  letter-spacing: 1vw;
-  transform: translateX(-7.8vw);
-  margin: 3vw 0;
-}
-section#arbeit article h2 {
-  font-size: 1vw;
-}
-section#arbeit article #was-ich-mache-eins {
-  font-size: 1.3vw;
-  letter-spacing: 0.01vw;
-  line-height: 1.8vw;
-}
-section#arbeit article #was-ich-mache-zwei {
-  margin: 1.5vw 0;
-  font-size: 1.1vw;
-  letter-spacing: 0.01vw;
-  line-height: 1.5vw;
-}
-section#arbeit article #btn-portfolio {
-  display: inline-block;
-  background-color: #000000;
-  color: #FFFFFF;
-  font-size: 1.3vw;
-  padding: 0.4vw 2.4vw 0.4vw 0.8vw;
-  position: relative;
-}
-section#arbeit article #btn-portfolio:after {
-  content: " ";
-  width: 0;
-  height: 0;
-  border-left: 0.55vw solid transparent;
-  border-right: 0.55vw solid transparent;
-  border-bottom: 1vw solid #FFFFFF;
-  position: absolute;
-  transform: rotate(90deg) translateX(-40%);
-  right: 0.7vw;
-  top: 50%;
-}
-section#arbeit article #btn-portfolio span {
-  margin: 0;
-}
-section#ueber-mich {
-  background-color: #000000;
-}
-section#ueber-mich article {
-  max-width: 100%;
-  margin: 0 7.22%;
-  padding-top: 7vw;
-  color: #FFFFFF;
-  position: relative;
-}
-section#ueber-mich article h2 {
-  font-size: 1vw;
-  display: inline-block;
-  line-height: 1vw;
-}
-section#ueber-mich article h3 {
-  display: inline-block;
-  font-size: 3vw;
-  position: absolute;
-  left: 15vw;
-  line-height: 2.15vw;
-  letter-spacing: 0.1vw;
-}
-section#ueber-mich article h3 span {
-  position: relative;
-}
-section#ueber-mich article h3 span:after {
-  content: " ";
-  position: absolute;
-  width: 50vw;
-  height: 32.5vw;
-  border-right: #FFD24A 3px solid;
-  border-bottom: #FFD24A 3px solid;
-  bottom: 2.1vw;
-  left: 18.5vw;
-}
-section#ueber-mich article #jahreszahl {
-  position: absolute;
-  margin-top: 5vw;
-  text-align: center;
-  background-color: #FFD24A;
-  padding: 0.75vw 1.5vw;
-  font-size: 2.5vw;
-  color: #000000;
-  line-height: 4vw;
-}
-section#ueber-mich article #jahreszahl span {
-  position: relative;
-}
-section#ueber-mich article #jahreszahl span:before {
-  position: absolute;
-  content: " ";
-  width: 8vw;
-  background-color: #FF9CD4;
-  height: 2px;
-  left: -1.7vw;
-  top: 50%;
-  transform: translateY(0.1vw);
-}
-section#ueber-mich article #jahreszahl span:after {
-  content: " ";
-  width: 0;
-  height: 0;
-  border-left: 0.55vw solid transparent;
-  border-right: 0.55vw solid transparent;
-  border-bottom: 1vw solid #FF9CD4;
-  position: absolute;
-  transform: rotate(90deg) translateX(-0.31vw);
-  right: -4.5vw;
-  top: 50%;
-}
-section#ueber-mich article #ueber-mich-text {
-  position: absolute;
-  left: 15vw;
-  top: 14vw;
-  width: 30vw;
-  font-size: 1vw;
-  line-height: 1.6vw;
-  letter-spacing: 0.01vw;
-}
-section#ueber-mich article #vita {
-  position: absolute;
-  top: 14vw;
-  left: 56vw;
-}
-section#ueber-mich article #vita > li > span {
-  font-size: 1vw;
-}
-section#ueber-mich article #vita h4 {
-  font-size: 1.5vw;
-  letter-spacing: 0.01vw;
-  line-height: 3vw;
-}
-section#ueber-mich article #vita p span:first-child {
-  font-size: 1vw;
-  letter-spacing: 0.1vw;
-}
-section#ueber-mich article #vita p span:last-child {
-  font-size: 1vw;
-  line-height: 2vw;
-  letter-spacing: 0.01vw;
-}
-section#ueber-mich article #vita .abstand-oben {
-  margin-top: 2.5vw;
-}
-section#portfolio {
-  background-color: #FFFFFF;
-  min-height: 100vh;
-  height: auto;
-}
-section#portfolio h2 {
-  position: absolute;
-  transform: rotate(90deg);
-  font-size: 20vw;
-  top: 32vw;
-  right: -38.5vw;
-}
-section#portfolio ul {
-  display: block;
-  padding: 7vw 0 0 7.22%;
-}
-section#portfolio ul li {
-  margin-bottom: 5vw;
-  position: relative;
-}
-section#portfolio ul .portfolio-bild {
-  width: 15vw;
-  height: 15vw;
-  background-color: #FF9CD4;
-  box-shadow: 0.5vw 0.5vw 0 #FFD24A;
-  display: inline-block;
-}
-section#portfolio ul li:nth-of-type(even) .portfolio-bild {
-  background-color: #FFD24A;
-  box-shadow: 0.5vw 0.5vw 0 #FF9CD4;
-}
-section#portfolio ul .portfolio-text-wrapper {
-  display: inline-block;
-  position: absolute;
-  top: 50%;
-  transform: translateY(-50%);
-  margin-left: 5vw;
-  max-width: 40vw;
-}
-section#portfolio ul .portfolio-text-wrapper h3 {
-  font-size: 2.5vw;
-  letter-spacing: 0.05vw;
-  line-height: 3vw;
-}
-section#portfolio ul .portfolio-text-wrapper p {
-  font-size: 1.25vw;
-  letter-spacing: 0.08vw;
-  line-height: 1.8vw;
-}
-section#portfolio ul .portfolio-text-wrapper .btn-case-study {
-  margin-top: 1.5vw;
-  font-size: 1vw;
-  text-decoration: underline;
-}
-section#portfolio #btn-alle-projekte {
-  margin: 0 0 5vw 7.22%;
-  font-size: 1vw;
-  position: relative;
-  display: inline-block;
-}
-section#portfolio #btn-alle-projekte:before {
-  position: absolute;
-  content: " ";
-  width: 2vw;
-  background-color: #000000;
-  height: 2px;
-  left: 7vw;
-  top: 50%;
-  transform: translateY(-50%);
-}
-section#portfolio #btn-alle-projekte:after {
-  content: " ";
-  width: 0;
-  height: 0;
-  border-left: 0.4vw solid transparent;
-  border-right: 0.4vw solid transparent;
-  border-bottom: 0.8vw solid #000000;
-  position: absolute;
-  transform: rotate(90deg) translateX(-50%);
-  right: -3.5vw;
-  top: 50%;
-}
+  section {
+    min-width: 100vw;
+    min-height: 100vh;
+    position: relative;
+    max-width: 100%;
+  }
+  section#eingang {
+    background-color: #FFD24A;
+  }
+  section#eingang img {
+    display: block;
+    position: absolute;
+    width: 80%;
+    left: 50%;
+    top: 50%;
+    transform: translateY(-50%) translateX(-50%);
+  }
+  section#eingang .scroll {
+    display: block;
+    position: absolute;
+    left: 50%;
+    bottom: 22vw;
+    transform: rotate(-90deg) translateY(-130%);
+    z-index: 1;
+  }
+  section#eingang .scroll span {
+    position: relative;
+    font-size: 4vw;
+  }
+  section#eingang .scroll span:before {
+    content: " ";
+    position: absolute;
+    width: 25vw;
+    border-top: 2px solid #000000;
+    top: 50%;
+    transform: translateY(-50%);
+    left: -32.5vw;
+  }
+  section#kein-designer {
+    background-color: #FF9CD4;
+  }
+  section#kein-designer .kein-designer-container {
+    display: block;
+    position: absolute;
+    left: 50%;
+    top: 5%;
+    color: #FFFFFF;
+    width: 80vw;
+    transform: translateX(-50%);
+  }
+  section#kein-designer .kein-designer-container h1 {
+    margin: 15vw auto 0 auto;
+    font-size: 16vw;
+    line-height: 18vw;
+    text-align: center;
+  }
+  section#kein-designer .kein-designer-container hr {
+    display: block;
+    width: 35vw;
+    height: 4vw;
+    border: none;
+    margin: 13vw auto;
+    background-color: #000000;
+  }
+  section#kein-designer .kein-designer-container #untertitel {
+    display: block;
+    text-align: center;
+    font-size: 8vw;
+    letter-spacing: 0.07vw;
+  }
+  section#kein-designer .cptplank-typographie-container {
+    display: block;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 1px;
+    height: 1px;
+    transform: rotate(90deg) scale(2);
+    z-index: 1;
+  }
+  section#kein-designer .cptplank-typographie-container .cptplank-typographie-container-inner {
+    height: 100vh;
+    max-height: 100%;
+    position: relative;
+  }
+  section#kein-designer .cptplank-typographie-container .cptplank-typographie-container-inner * {
+    margin: 0;
+    color: #FFFFFF;
+    line-height: 0;
+  }
+  section#kein-designer .cptplank-typographie-container .cptplank-typographie-container-inner .typo-p {
+    position: absolute;
+    font-size: 25vw;
+    right: 4vw;
+    bottom: 5vw;
+    transform: rotate(-90deg);
+  }
+  section#kein-designer .cptplank-typographie-container .cptplank-typographie-container-inner .typo-l {
+    position: absolute;
+    font-size: 20vw;
+    right: -0.8vw;
+    bottom: 12vw;
+  }
+  section#kein-designer .cptplank-typographie-container .cptplank-typographie-container-inner .typo-n {
+    position: absolute;
+    font-size: 20vw;
+    right: -1.5vw;
+    bottom: 28vw;
+  }
+  section#kein-designer .cptplank-typographie-container .cptplank-typographie-container-inner .typo-a {
+    position: absolute;
+    font-size: 20vw;
+    right: 9.5vw;
+    bottom: 21vw;
+  }
+  section#kein-designer .cptplank-typographie-container .cptplank-typographie-container-inner .typo-cpt {
+    color: #000000;
+    position: absolute;
+    font-size: 12.5vw;
+    right: -1.5vw;
+    bottom: 42.3vw;
+    transform: rotate(-90deg);
+  }
+  section#kein-designer .cptplank-typographie-container .cptplank-typographie-container-inner .typo-k {
+    position: absolute;
+    font-size: 22vw;
+    right: 8vw;
+    bottom: 38vw;
+  }
+  section#arbeit {
+    background-color: #FFFFFF;
+    padding-top: 15vw;
+    padding-bottom: 15vw;
+  }
+  section#arbeit img {
+    position: absolute;
+    left: -13vw;
+    top: 30vw;
+    width: 30vw;
+    transform: rotate(25deg);
+  }
+  section#arbeit article {
+    margin-left: 13vw;
+    margin-top: 14vw;
+    max-width: 70vw;
+    z-index: 1;
+  }
+  section#arbeit article #arbeit-text {
+    font-size: 22vw;
+    color: #FFD24A;
+    letter-spacing: 1vw;
+    margin: 5vw 0 5vw 5vw;
+  }
+  section#arbeit article h2 {
+    font-size: 6vw;
+    margin-left: 3vw;
+  }
+  section#arbeit article #was-ich-mache-eins {
+    margin-top: 10vw;
+    font-size: 6vw;
+    letter-spacing: 0.01vw;
+    line-height: 8.5vw;
+  }
+  section#arbeit article #was-ich-mache-zwei {
+    margin: 5vw 0;
+    font-size: 5vw;
+    letter-spacing: 0.01vw;
+    line-height: 8vw;
+  }
+  section#arbeit article #btn-portfolio {
+    display: inline-block;
+    background-color: #000000;
+    color: #FFFFFF;
+    font-size: 10vw;
+    padding: 2vw 15vw 2vw 6vw;
+    position: relative;
+    margin: 5vw auto 10vw auto;
+  }
+  section#arbeit article #btn-portfolio:after {
+    content: " ";
+    width: 0;
+    height: 0;
+    border-left: 4vw solid transparent;
+    border-right: 4vw solid transparent;
+    border-bottom: 7vw solid #FFFFFF;
+    position: absolute;
+    transform: rotate(90deg) translateX(-40%);
+    right: 3.5vw;
+    top: 50%;
+  }
+  section#arbeit article #btn-portfolio span {
+    margin: 0;
+  }
+  section#ueber-mich {
+    background-color: #000000;
+    padding-top: 15vw;
+    padding-bottom: 15vw;
+  }
+  section#ueber-mich article {
+    max-width: 100%;
+    padding-left: 8vw;
+    padding-right: 8vw;
+    padding-top: 10vw;
+    color: #FFFFFF;
+    position: relative;
+  }
+  section#ueber-mich article h2 {
+    font-size: 6vw;
+    display: block;
+    line-height: 8vw;
+  }
+  section#ueber-mich article h3 {
+    display: block;
+    font-size: 12vw;
+    line-height: 15vw;
+    letter-spacing: 0.1vw;
+    margin-bottom: 10vw;
+  }
+  section#ueber-mich article h3 span {
+    position: relative;
+  }
+  section#ueber-mich article h3 span:after {
+    content: " ";
+    position: absolute;
+    width: 13vw;
+    height: 180vw;
+    border-right: #FFD24A 3px solid;
+    border-bottom: #FFD24A 3px solid;
+    bottom: 8vw;
+    left: 70vw;
+  }
+  section#ueber-mich article #jahreszahl {
+    display: none;
+  }
+  section#ueber-mich article #jahreszahl span {
+    position: relative;
+  }
+  section#ueber-mich article #jahreszahl span:before {
+    position: absolute;
+    content: " ";
+    width: 8vw;
+    background-color: #FF9CD4;
+    height: 2px;
+    left: -1.7vw;
+    top: 50%;
+    transform: translateY(0.1vw);
+  }
+  section#ueber-mich article #jahreszahl span:after {
+    content: " ";
+    width: 0;
+    height: 0;
+    border-left: 0.55vw solid transparent;
+    border-right: 0.55vw solid transparent;
+    border-bottom: 1vw solid #FF9CD4;
+    position: absolute;
+    transform: rotate(90deg) translateX(-0.31vw);
+    right: -4.5vw;
+    top: 50%;
+  }
+  section#ueber-mich article #ueber-mich-text {
+    width: 80vw;
+    font-size: 5vw;
+    line-height: 8vw;
+    letter-spacing: 0.01vw;
+    margin-bottom: 25vw;
+  }
+  section#ueber-mich article #vita {
+    padding-bottom: 5vw;
+  }
+  section#ueber-mich article #vita > li > span {
+    font-size: 5vw;
+  }
+  section#ueber-mich article #vita li {
+    margin-bottom: 15vw;
+  }
+  section#ueber-mich article #vita h4 {
+    font-size: 9.5vw;
+    letter-spacing: 0.01vw;
+    line-height: 15vw;
+  }
+  section#ueber-mich article #vita p span:first-child {
+    font-size: 5vw;
+    letter-spacing: 0.6vw;
+    line-height: 10vw;
+  }
+  section#ueber-mich article #vita p span:last-child {
+    font-size: 4.5vw;
+    line-height: 6vw;
+    letter-spacing: 0.3vw;
+  }
+  section#ueber-mich article #vita .abstand-oben {
+    margin-top: auto;
+  }
+  section#portfolio {
+    background-color: #FFFFFF;
+    min-height: 100vh;
+    height: auto;
+  }
+  section#portfolio h2 {
+    position: absolute;
+    font-size: 22.55vw;
+    top: -5vw;
+    left: -1.3vw;
+  }
+  section#portfolio ul {
+    display: block;
+    padding: 40vw 0 0 7.22%;
+  }
+  section#portfolio ul li {
+    margin-bottom: 5vw;
+    position: relative;
+  }
+  section#portfolio ul .portfolio-bild {
+    width: 80vw;
+    height: 80vw;
+    background-color: #FF9CD4;
+    box-shadow: 4vw 4vw 0 #FFD24A;
+    display: block;
+  }
+  section#portfolio ul li:nth-of-type(even) .portfolio-bild {
+    background-color: #FFD24A;
+    box-shadow: 4vw 4vw 0 #FF9CD4;
+  }
+  section#portfolio ul .portfolio-text-wrapper {
+    display: block;
+    max-width: 80vw;
+    margin: 15vw 0 30vw 0;
+  }
+  section#portfolio ul .portfolio-text-wrapper h3 {
+    font-size: 15vw;
+    letter-spacing: 0.5vw;
+    line-height: 30vw;
+  }
+  section#portfolio ul .portfolio-text-wrapper p {
+    font-size: 7vw;
+    letter-spacing: 0.3vw;
+    line-height: 10vw;
+  }
+  section#portfolio ul .portfolio-text-wrapper .btn-case-study {
+    margin-top: 8vw;
+    font-size: 7vw;
+    text-decoration: underline;
+  }
+  section#portfolio #btn-alle-projekte {
+    margin-left: 7.22%;
+    margin-top: -10vw;
+    margin-bottom: 20vw;
+    font-size: 7vw;
+    position: relative;
+    display: block;
+    color: #FF9CD4;
+  }
+  section#portfolio #btn-alle-projekte:before {
+    position: absolute;
+    content: " ";
+    width: 15vw;
+    background-color: #000000;
+    height: 4px;
+    left: 48vw;
+    top: 50%;
+    transform: translateY(-50%);
+  }
+  section#portfolio #btn-alle-projekte:after {
+    content: " ";
+    width: 0;
+    height: 0;
+    border-left: 2.5vw solid transparent;
+    border-right: 2.5vw solid transparent;
+    border-bottom: 5vw solid #000000;
+    position: absolute;
+    transform: rotate(90deg) translateX(-50%);
+    left: 60vw;
+    top: 50%;
+  }
 
-footer {
-  background-color: #000000;
-  width: 100vw;
-  max-width: 100%;
-  color: #FFFFFF;
+  footer {
+    background-color: #000000;
+    width: 100vw;
+    max-width: 100%;
+    color: #FFFFFF;
+  }
+  footer #link-listen {
+    padding: 10vw 0 4vw 7.22%;
+    font-size: 8vw;
+    letter-spacing: 0.06vw;
+  }
+  footer #link-listen > li {
+    display: block;
+    margin-bottom: 20vw;
+  }
+  footer #link-listen > li:nth-of-type(1), footer #link-listen > li:nth-of-type(2) {
+    margin-right: 7vw;
+  }
+  footer #link-listen > li > ul li {
+    line-height: 16vw;
+  }
+  footer #link-listen > li:nth-of-type(1) ul li:first-child, footer #link-listen > li:nth-of-type(2) ul li:first-child {
+    line-height: 30vw;
+  }
+  footer #link-listen #newsletter {
+    height: 100%;
+    width: 80vw;
+    display: inline-block;
+  }
+  footer #link-listen #newsletter ul li:first-child {
+    line-height: 30vw;
+  }
+  footer #link-listen #newsletter p {
+    width: 80vw;
+    margin-bottom: 1.45vw;
+    line-height: 12vw;
+  }
+  footer #link-listen #newsletter input[type=email], footer #link-listen #newsletter input[type=submit] {
+    display: inline-block;
+  }
+  footer #link-listen #newsletter input[type=email] {
+    width: 57vw;
+    height: 20vw;
+    background-color: #000000;
+    border: 3px solid #FFFFFF;
+    color: #FFFFFF;
+    font-weight: 300;
+    padding-left: 5vw;
+    margin-top: 12vw;
+  }
+  footer #link-listen #newsletter input[type=email]::placeholder {
+    color: #FFFFFF;
+    font-weight: 300;
+  }
+  footer #link-listen #newsletter input[type=submit] {
+    width: 20vw;
+    height: 20vw;
+    border: none;
+    background-color: #FFFFFF;
+    margin-left: -1.95vw;
+  }
+  footer .copyright {
+    width: 100%;
+    text-align: center;
+    font-weight: 200;
+    font-size: 4vw;
+    letter-spacing: 0.05vw;
+  }
+  footer .copyright p {
+    display: block;
+    margin-bottom: 20vw;
+  }
+  footer .copyright ul li {
+    display: inline-block;
+    padding-bottom: 20vw;
+  }
+  footer .copyright ul li:nth-child(2) {
+    margin: auto 5vw;
+  }
 }
-footer #link-listen {
-  padding: 4vw 0 4vw 22.2vw;
-  font-size: 0.9vw;
-  letter-spacing: 0.06vw;
-}
-footer #link-listen > li {
-  display: inline-block;
-}
-footer #link-listen > li:nth-of-type(1), footer #link-listen > li:nth-of-type(2) {
-  margin-right: 7vw;
-}
-footer #link-listen > li > ul li {
-  line-height: 2vw;
-}
-footer #link-listen > li:nth-of-type(1) ul li:first-child, footer #link-listen > li:nth-of-type(2) ul li:first-child {
-  line-height: 3vw;
-}
-footer #link-listen #newsletter {
-  height: 100%;
-  width: 35vw;
-  display: inline-block;
-}
-footer #link-listen #newsletter ul li:first-child {
-  line-height: 3vw;
-}
-footer #link-listen #newsletter p {
-  max-width: 13vw;
-  margin-bottom: 1.45vw;
-}
-footer #link-listen #newsletter input[type=email], footer #link-listen #newsletter input[type=submit] {
-  display: inline-block;
-}
-footer #link-listen #newsletter input[type=email] {
-  width: 25vw;
-  height: 3.1vw;
-  background-color: #000000;
-  border: 2px solid #FFFFFF;
-  color: #FFFFFF;
-  font-weight: 300;
-  padding-left: 1vw;
-}
-footer #link-listen #newsletter input[type=email]::placeholder {
-  color: #FFFFFF;
-  font-weight: 300;
-}
-footer #link-listen #newsletter input[type=submit] {
-  width: 3.2vw;
-  height: 3.14vw;
-  margin-left: -0.3vw;
-  border: none;
-}
-footer .copyright {
-  padding: 0 0 1.75vw 22.2vw;
-  font-weight: 200;
-  font-size: 0.6vw;
-  letter-spacing: 0.05vw;
-}
-footer .copyright p {
-  display: inline-block;
-  margin-right: 8.8vw;
-}
-footer .copyright ul {
-  display: inline-block;
-}
-footer .copyright ul li {
-  display: inline-block;
-  margin-right: 1.5vw;
+@media (min-width: 1200px) {
+  header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 5rem;
+    z-index: 99;
+    max-width: 100%;
+    display: none;
+  }
+  header ul {
+    display: block;
+    width: 100%;
+    padding: 2% 7.22%;
+    height: 100%;
+    position: relative;
+  }
+  header ul li {
+    display: inline-block;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+  }
+  header ul li:first-of-type {
+    left: 7.22%;
+    font-size: 2rem;
+    letter-spacing: 0.07vw;
+  }
+  header ul li:first-of-type span {
+    font-weight: bold;
+  }
+  header ul li:last-of-type {
+    right: 7.22%;
+  }
+  header ul li:last-of-type .burger-btn {
+    cursor: pointer;
+  }
+  header ul li:last-of-type .burger-btn:hover .bar-mitte {
+    margin: 10px;
+  }
+  header ul li:last-of-type .bar-oben, header ul li:last-of-type .bar-mitte, header ul li:last-of-type .bar-unten {
+    width: 1.6rem;
+    height: 3px;
+    background-color: #000000;
+    margin: 6px;
+    transition: margin 200ms ease-in-out;
+  }
+  header ul li:last-of-type .bar-mitte {
+    width: 2.2rem;
+  }
+  header nav {
+    z-index: 100;
+    display: none;
+  }
+
+  section {
+    width: 100vw;
+    height: 100vh;
+    position: relative;
+    max-width: 100%;
+  }
+  section#eingang {
+    background-color: #FFD24A;
+  }
+  section#eingang img {
+    display: block;
+    position: absolute;
+    width: 30%;
+    left: 50%;
+    top: 50%;
+    transform: translateY(-50%) translateX(-50%);
+  }
+  section#eingang .scroll {
+    display: block;
+    position: absolute;
+    left: 5%;
+    bottom: 13vw;
+    transform: rotate(-90deg);
+    z-index: 1;
+  }
+  section#eingang .scroll span {
+    position: relative;
+    font-size: 1vw;
+  }
+  section#eingang .scroll span:before {
+    content: " ";
+    position: absolute;
+    width: 15vw;
+    border-top: 2px solid #000000;
+    top: 50%;
+    transform: translateY(50%);
+    left: -17vw;
+  }
+  section#kein-designer {
+    background-color: #FF9CD4;
+  }
+  section#kein-designer .kein-designer-container {
+    display: block;
+    position: absolute;
+    left: 7.22%;
+    top: 25%;
+    color: #FFFFFF;
+    width: 50%;
+  }
+  section#kein-designer .kein-designer-container h1 {
+    margin: 0 0 0 7.22%;
+    font-size: 6vw;
+    line-height: 6.5vw;
+  }
+  section#kein-designer .kein-designer-container hr {
+    display: block;
+    width: 10vw;
+    height: 1.2vw;
+    border: none;
+    margin: 6% 0;
+    background-color: #000000;
+  }
+  section#kein-designer .kein-designer-container #untertitel {
+    margin-left: 7.22%;
+    font-size: 2.5vw;
+    letter-spacing: 0.07vw;
+  }
+  section#kein-designer .cptplank-typographie-container {
+    display: block;
+    position: absolute;
+    right: 0;
+    height: 100vh;
+    max-height: 100%;
+  }
+  section#kein-designer .cptplank-typographie-container .cptplank-typographie-container-inner {
+    height: 100vh;
+    max-height: 100%;
+    position: relative;
+  }
+  section#kein-designer .cptplank-typographie-container .cptplank-typographie-container-inner * {
+    margin: 0;
+    color: #FFFFFF;
+    line-height: 0;
+  }
+  section#kein-designer .cptplank-typographie-container .cptplank-typographie-container-inner .typo-p {
+    position: absolute;
+    font-size: 25vw;
+    right: 4vw;
+    bottom: 5vw;
+    transform: rotate(-90deg);
+  }
+  section#kein-designer .cptplank-typographie-container .cptplank-typographie-container-inner .typo-l {
+    position: absolute;
+    font-size: 20vw;
+    right: -0.8vw;
+    bottom: 12vw;
+  }
+  section#kein-designer .cptplank-typographie-container .cptplank-typographie-container-inner .typo-n {
+    position: absolute;
+    font-size: 20vw;
+    right: -1.5vw;
+    bottom: 28vw;
+  }
+  section#kein-designer .cptplank-typographie-container .cptplank-typographie-container-inner .typo-a {
+    position: absolute;
+    font-size: 20vw;
+    right: 9.5vw;
+    bottom: 21vw;
+  }
+  section#kein-designer .cptplank-typographie-container .cptplank-typographie-container-inner .typo-cpt {
+    color: #000000;
+    position: absolute;
+    font-size: 12.5vw;
+    right: -1.5vw;
+    bottom: 42.3vw;
+    transform: rotate(-90deg);
+  }
+  section#kein-designer .cptplank-typographie-container .cptplank-typographie-container-inner .typo-k {
+    position: absolute;
+    font-size: 22vw;
+    right: 8vw;
+    bottom: 38vw;
+  }
+  section#arbeit {
+    background-color: #FFFFFF;
+  }
+  section#arbeit img {
+    position: absolute;
+    left: 7.22%;
+    bottom: 0;
+    width: 28vw;
+  }
+  section#arbeit article {
+    position: absolute;
+    left: 43vw;
+    top: 5vw;
+    max-width: 30vw;
+    z-index: 1;
+  }
+  section#arbeit article #arbeit-text {
+    font-size: 11vw;
+    color: #FFD24A;
+    letter-spacing: 1vw;
+    transform: translateX(-7.8vw);
+    margin: 3vw 0;
+  }
+  section#arbeit article h2 {
+    font-size: 1vw;
+  }
+  section#arbeit article #was-ich-mache-eins {
+    font-size: 1.3vw;
+    letter-spacing: 0.01vw;
+    line-height: 1.8vw;
+  }
+  section#arbeit article #was-ich-mache-zwei {
+    margin: 1.5vw 0;
+    font-size: 1.1vw;
+    letter-spacing: 0.01vw;
+    line-height: 1.5vw;
+  }
+  section#arbeit article #btn-portfolio {
+    display: inline-block;
+    background-color: #000000;
+    color: #FFFFFF;
+    font-size: 1.3vw;
+    padding: 0.4vw 2.4vw 0.4vw 0.8vw;
+    position: relative;
+  }
+  section#arbeit article #btn-portfolio:after {
+    content: " ";
+    width: 0;
+    height: 0;
+    border-left: 0.55vw solid transparent;
+    border-right: 0.55vw solid transparent;
+    border-bottom: 1vw solid #FFFFFF;
+    position: absolute;
+    transform: rotate(90deg) translateX(-40%);
+    right: 0.7vw;
+    top: 50%;
+  }
+  section#arbeit article #btn-portfolio span {
+    margin: 0;
+  }
+  section#ueber-mich {
+    background-color: #000000;
+  }
+  section#ueber-mich article {
+    max-width: 100%;
+    margin: 0 7.22%;
+    padding-top: 7vw;
+    color: #FFFFFF;
+    position: relative;
+  }
+  section#ueber-mich article h2 {
+    font-size: 1vw;
+    display: inline-block;
+    line-height: 1vw;
+  }
+  section#ueber-mich article h3 {
+    display: inline-block;
+    font-size: 3vw;
+    position: absolute;
+    left: 15vw;
+    line-height: 2.15vw;
+    letter-spacing: 0.1vw;
+  }
+  section#ueber-mich article h3 span {
+    position: relative;
+  }
+  section#ueber-mich article h3 span:after {
+    content: " ";
+    position: absolute;
+    width: 50vw;
+    height: 32.5vw;
+    border-right: #FFD24A 3px solid;
+    border-bottom: #FFD24A 3px solid;
+    bottom: 2.1vw;
+    left: 18.5vw;
+  }
+  section#ueber-mich article #jahreszahl {
+    position: absolute;
+    margin-top: 5vw;
+    text-align: center;
+    background-color: #FFD24A;
+    padding: 0.75vw 1.5vw;
+    font-size: 2.5vw;
+    color: #000000;
+    line-height: 4vw;
+  }
+  section#ueber-mich article #jahreszahl span {
+    position: relative;
+  }
+  section#ueber-mich article #jahreszahl span:before {
+    position: absolute;
+    content: " ";
+    width: 8vw;
+    background-color: #FF9CD4;
+    height: 2px;
+    left: -1.7vw;
+    top: 50%;
+    transform: translateY(0.1vw);
+  }
+  section#ueber-mich article #jahreszahl span:after {
+    content: " ";
+    width: 0;
+    height: 0;
+    border-left: 0.55vw solid transparent;
+    border-right: 0.55vw solid transparent;
+    border-bottom: 1vw solid #FF9CD4;
+    position: absolute;
+    transform: rotate(90deg) translateX(-0.31vw);
+    right: -4.5vw;
+    top: 50%;
+  }
+  section#ueber-mich article #ueber-mich-text {
+    position: absolute;
+    left: 15vw;
+    top: 14vw;
+    width: 30vw;
+    font-size: 1vw;
+    line-height: 1.6vw;
+    letter-spacing: 0.01vw;
+  }
+  section#ueber-mich article #vita {
+    position: absolute;
+    top: 14vw;
+    left: 56vw;
+  }
+  section#ueber-mich article #vita > li > span {
+    font-size: 1vw;
+  }
+  section#ueber-mich article #vita h4 {
+    font-size: 1.5vw;
+    letter-spacing: 0.01vw;
+    line-height: 3vw;
+  }
+  section#ueber-mich article #vita p span:first-child {
+    font-size: 1vw;
+    letter-spacing: 0.1vw;
+  }
+  section#ueber-mich article #vita p span:last-child {
+    font-size: 1vw;
+    line-height: 2vw;
+    letter-spacing: 0.01vw;
+  }
+  section#ueber-mich article #vita .abstand-oben {
+    margin-top: 2.5vw;
+  }
+  section#portfolio {
+    background-color: #FFFFFF;
+    min-height: 100vh;
+    height: auto;
+  }
+  section#portfolio h2 {
+    position: absolute;
+    transform: rotate(90deg);
+    font-size: 20vw;
+    top: 32vw;
+    right: -38.5vw;
+  }
+  section#portfolio ul {
+    display: block;
+    padding: 7vw 0 0 7.22%;
+  }
+  section#portfolio ul li {
+    margin-bottom: 5vw;
+    position: relative;
+  }
+  section#portfolio ul .portfolio-bild {
+    width: 15vw;
+    height: 15vw;
+    background-color: #FF9CD4;
+    box-shadow: 0.5vw 0.5vw 0 #FFD24A;
+    display: inline-block;
+  }
+  section#portfolio ul li:nth-of-type(even) .portfolio-bild {
+    background-color: #FFD24A;
+    box-shadow: 0.5vw 0.5vw 0 #FF9CD4;
+  }
+  section#portfolio ul .portfolio-text-wrapper {
+    display: inline-block;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    margin-left: 5vw;
+    max-width: 40vw;
+  }
+  section#portfolio ul .portfolio-text-wrapper h3 {
+    font-size: 2.5vw;
+    letter-spacing: 0.05vw;
+    line-height: 3vw;
+  }
+  section#portfolio ul .portfolio-text-wrapper p {
+    font-size: 1.25vw;
+    letter-spacing: 0.08vw;
+    line-height: 1.8vw;
+  }
+  section#portfolio ul .portfolio-text-wrapper .btn-case-study {
+    margin-top: 1.5vw;
+    font-size: 1vw;
+    text-decoration: underline;
+  }
+  section#portfolio #btn-alle-projekte {
+    margin: 0 0 5vw 7.22%;
+    font-size: 1vw;
+    position: relative;
+    display: inline-block;
+  }
+  section#portfolio #btn-alle-projekte:before {
+    position: absolute;
+    content: " ";
+    width: 2vw;
+    background-color: #000000;
+    height: 2px;
+    left: 7vw;
+    top: 50%;
+    transform: translateY(-50%);
+  }
+  section#portfolio #btn-alle-projekte:after {
+    content: " ";
+    width: 0;
+    height: 0;
+    border-left: 0.4vw solid transparent;
+    border-right: 0.4vw solid transparent;
+    border-bottom: 0.8vw solid #000000;
+    position: absolute;
+    transform: rotate(90deg) translateX(-50%);
+    right: -3.5vw;
+    top: 50%;
+  }
+
+  footer {
+    background-color: #000000;
+    width: 100vw;
+    max-width: 100%;
+    color: #FFFFFF;
+  }
+  footer #link-listen {
+    padding: 4vw 0 4vw 22.2vw;
+    font-size: 0.9vw;
+    letter-spacing: 0.06vw;
+  }
+  footer #link-listen > li {
+    display: inline-block;
+  }
+  footer #link-listen > li:nth-of-type(1), footer #link-listen > li:nth-of-type(2) {
+    margin-right: 7vw;
+  }
+  footer #link-listen > li > ul li {
+    line-height: 2vw;
+  }
+  footer #link-listen > li:nth-of-type(1) ul li:first-child, footer #link-listen > li:nth-of-type(2) ul li:first-child {
+    line-height: 3vw;
+  }
+  footer #link-listen #newsletter {
+    height: 100%;
+    width: 35vw;
+    display: inline-block;
+  }
+  footer #link-listen #newsletter ul li:first-child {
+    line-height: 3vw;
+  }
+  footer #link-listen #newsletter p {
+    max-width: 13vw;
+    margin-bottom: 1.45vw;
+  }
+  footer #link-listen #newsletter input[type=email], footer #link-listen #newsletter input[type=submit] {
+    display: inline-block;
+  }
+  footer #link-listen #newsletter input[type=email] {
+    width: 25vw;
+    height: 3.1vw;
+    background-color: #000000;
+    border: 2px solid #FFFFFF;
+    color: #FFFFFF;
+    font-weight: 300;
+    padding-left: 1vw;
+  }
+  footer #link-listen #newsletter input[type=email]::placeholder {
+    color: #FFFFFF;
+    font-weight: 300;
+  }
+  footer #link-listen #newsletter input[type=submit] {
+    width: 3.2vw;
+    height: 3.14vw;
+    margin-left: -0.3vw;
+    border: none;
+  }
+  footer .copyright {
+    padding: 0 0 1.75vw 22.2vw;
+    font-weight: 200;
+    font-size: 0.6vw;
+    letter-spacing: 0.05vw;
+  }
+  footer .copyright p {
+    display: inline-block;
+    margin-right: 8.8vw;
+  }
+  footer .copyright ul {
+    display: inline-block;
+  }
+  footer .copyright ul li {
+    display: inline-block;
+    margin-right: 1.5vw;
+  }
 }
 
 /*# sourceMappingURL=base.css.map */
