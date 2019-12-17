@@ -268,6 +268,7 @@ ul {
     cursor: pointer;
     z-index: 101;
     transition: opacity 500ms ease-in-out;
+    position: relative;
   }
   header > ul li:last-of-type .burger-btn:hover .bar-mitte {
     margin: 10px;
@@ -296,23 +297,62 @@ ul {
     color: #FFFFFF;
     transform: translateY(-100vh);
   }
+  header nav #mobile-close-btn {
+    position: absolute;
+    top: 8vw;
+    right: 9vw;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 3.2rem;
+    height: 3.2rem;
+  }
+  header nav #mobile-close-btn > div {
+    position: relative;
+  }
+  header nav #mobile-close-btn #mobile-close-btn-eins {
+    position: absolute;
+    height: 5px;
+    width: 3.2rem;
+    transform: rotate(45deg) translateY(0.8rem);
+    background-color: #FFFFFF;
+  }
+  header nav #mobile-close-btn #mobile-close-btn-zwei {
+    position: absolute;
+    height: 5px;
+    width: 3.2rem;
+    transform: rotate(-45deg) translateY(-0.8rem);
+    background-color: #FFFFFF;
+  }
+  header nav #swipe-to-close {
+    display: none;
+  }
+  header nav a:link, header nav a:visited, header nav a:active {
+    color: #FFFFFF;
+    transition: color 500ms ease-in-out;
+  }
+  header nav a:hover {
+    color: #FF9CD4;
+  }
   header nav ul {
-    width: 40%;
+    width: 75%;
   }
   header nav ul li:first-of-type {
     padding-bottom: 1vw;
-    font-size: 2.5vw;
+    font-size: 5vw;
     letter-spacing: 0;
   }
   header nav ul li {
-    font-size: 4vw;
-    line-height: 10vh;
+    font-size: 8vw;
+    line-height: 11vh;
     letter-spacing: 0.2vw;
   }
   header nav ul li .menu-socials img {
-    width: 2vw;
+    width: 6vw;
     height: auto;
     margin-top: 5vw;
+    margin-right: 2vw;
     transition: filter 500ms ease-in-out;
   }
   header nav ul li .menu-socials .social-icon:hover {
@@ -860,6 +900,46 @@ ul {
     background-color: #000000;
     color: #FFFFFF;
     transform: translateY(-100vh);
+  }
+  header nav #mobile-close-btn {
+    display: none;
+  }
+  header nav #swipe-to-close {
+    width: 7vw;
+    position: absolute;
+    right: 10vw;
+    bottom: 7vw;
+    line-height: 1.75vw;
+    text-align: center;
+  }
+  header nav #swipe-to-close:before {
+    position: absolute;
+    content: " ";
+    height: 8vw;
+    background-color: #FFFFFF;
+    width: 2px;
+    left: 50%;
+    bottom: 5vw;
+    transform: translateX(-50%);
+  }
+  header nav #swipe-to-close:after {
+    content: " ";
+    width: 0;
+    height: 0;
+    border-left: 0.55vw solid transparent;
+    border-right: 0.55vw solid transparent;
+    border-bottom: 1vw solid #FFFFFF;
+    position: absolute;
+    transform: translateX(-50%);
+    left: 50%;
+    bottom: 13vw;
+  }
+  header nav a:link, header nav a:visited, header nav a:active {
+    color: #FFFFFF;
+    transition: color 500ms ease-in-out;
+  }
+  header nav a:hover {
+    color: #FF9CD4;
   }
   header nav ul {
     width: 40%;

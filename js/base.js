@@ -12,6 +12,73 @@ let isIE = () => {
     return isIE;
 };
 
+// FUNCTIONS
+
+let closeMenu = () => {
+    gsap.to(
+        "nav",
+        {
+            duration: 1,
+            y: '-100vh',
+            ease: "ease"
+        });
+};
+
+let openMenu = () => {
+    gsap.to(
+        "nav",
+        {
+            duration: 2,
+            y: 0,
+            ease: "bounce"
+        });
+};
+
+let checkOrientation = () => {
+    if(window.innerHeight > window.innerWidth){
+        return 'portrait';
+    }
+    else {
+        return 'landscape';
+    }
+};
+
+let howMuchScrolled;
+let mouseMove = (event) => {
+    let newMousePositionInPercY = (100 / windowHeight) * event.pageY;
+    howMuchScrolled = mousePositionInPercY - newMousePositionInPercY;
+
+    let navTranslate = 0 - parseFloat(howMuchScrolled);
+
+    if (navTranslate <= 0) {
+        gsap.to(
+            "nav",
+            {
+                duration: 0,
+                y: navTranslate,
+                ease: "ease"
+            });
+    }
+};
+
+let menuCloseSliderLastSteps = () => {
+    document.removeEventListener('mousemove', mouseMove);
+    (howMuchScrolled >= 20) ? closeMenu() : openMenu();
+};
+
+let nav = document.querySelector('nav');
+let mousePositionInPercY, mousePositionY, windowHeight;
+let menuCloseSlider = (event) => {
+        mousePositionY = event.pageY;
+        windowHeight = window.innerHeight;
+        mousePositionInPercY = (100 / windowHeight) * mousePositionY;
+
+        document.addEventListener('mousemove', mouseMove);
+        document.addEventListener('mouseup', menuCloseSliderLastSteps);
+
+};
+
+
 // Show and Hide Menu/Header
 let innerHeight = window.innerHeight;
 let hideAt40Perc = (innerHeight / 100) * 40;
@@ -37,74 +104,38 @@ document.addEventListener('scroll', () => {
     toggleMenu();
 });
 
-// open menu
+// Responsive Menü öffnen und schließen
 let burgerBtn = document.querySelector('.burger-btn');
-
 burgerBtn.addEventListener('click', () => {
-    gsap.to(
-        "nav",
-        {
-            duration: 2,
-            y: 0,
-            ease: "bounce"
-        });
+    openMenu();
 });
 
-// close menu
-
-let nav = document.querySelector('nav');
-
-nav.onmousedown = (event) => {
-    nav.classList.add('no-select');
-    let mousePositionY = event.pageY;
-    let windowHeight = window.innerHeight;
-    let mousePositionInPercY = (100 / windowHeight) * mousePositionY;
-
-    console.log(mousePositionInPercY);
-    let howMuchScrolled;
-    let mouseMove = (event) => {
-        let newMousePositionInPercY = (100 / windowHeight) * event.pageY;
-        howMuchScrolled = mousePositionInPercY - newMousePositionInPercY;
-
-
-        let navTranslate = 0 - parseFloat(howMuchScrolled);
-
-        if (navTranslate <= 0) {
-            //nav.style.transform = 'translate(0, ' + navTranslate + 'vh)';
-            gsap.to(
-                "nav",
-                {
-                    duration: 0,
-                    y: navTranslate,
-                    ease: "ease"
-                });
+let mobileHasFired = false;
+let desktopHasFired = false;
+let responsiveMenuHandler = () => {
+    let mobileCloseBtn = document.querySelector('#mobile-close-btn');
+    if (checkOrientation() === 'portrait') {
+        // PORTRAIT
+        mobileCloseBtn.addEventListener('click', closeMenu);
+        if (!mobileHasFired) {
+            nav.removeEventListener('mousedown', menuCloseSlider);
+            document.removeEventListener('mouseup', menuCloseSliderLastSteps);
+            mobileHasFired = true;
+            desktopHasFired = false;
         }
-    };
-
-    document.addEventListener('mousemove', mouseMove);
-
-    document.onmouseup = () => {
-        document.removeEventListener('mousemove', mouseMove);
-            nav.classList.remove('no-select');
-            if (howMuchScrolled >= 20) {
-                //nav.removeAttribute('style');
-                gsap.to(
-                    "nav",
-                    {
-                        duration: 1,
-                        y: '-100vh',
-                        ease: "ease"
-                    });
-            }
-            else {
-                //nav.style.transform = 'translateY(0)';
-                gsap.to(
-                    "nav",
-                    {
-                        duration: 1,
-                        y: 0,
-                        ease: "bounce"
-                    });
-            }
-    };
+    }
+    else {
+        //LANDSCAPE
+        nav.addEventListener('mousedown', menuCloseSlider);
+        if (!desktopHasFired) {
+            mobileCloseBtn.removeEventListener('click', closeMenu);
+            mobileHasFired = false;
+            desktopHasFired = true;
+        }
+    }
 };
+responsiveMenuHandler();
+
+window.addEventListener('resize', responsiveMenuHandler);
+
+
