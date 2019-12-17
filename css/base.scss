@@ -23,6 +23,14 @@ body {
   font-family: oswald, sans-serif;
 }
 
+a:link {
+  text-decoration: none;
+}
+
+.blend {
+  mix-blend-mode: exclusion !important;
+}
+
 .schwarz {
   color: $cSchwarz;
 }
@@ -59,6 +67,17 @@ ul {
   list-style-type: none;
 }
 
+.header-logo {
+  color: $cSchwarz;
+  transition: opacity 500ms ease-in-out;
+}
+
+.hidden {
+    pointer-events: none;
+    cursor: default;
+    opacity: 0;
+}
+
 @media (orientation: portrait) {
   header {
     position: fixed;
@@ -68,9 +87,9 @@ ul {
     height: 5rem;
     z-index: 99;
     max-width:100%;
-    display: none;
+    display: block;
 
-    ul {
+    & > ul {
       display: block;
       width: 100%;
       padding: 2% $frame-padding;
@@ -99,6 +118,8 @@ ul {
 
         .burger-btn {
           cursor: pointer;
+          z-index: 101;
+          transition: opacity 500ms ease-in-out;
 
           &:hover .bar-mitte {
             margin: 10px;
@@ -123,6 +144,46 @@ ul {
     nav {
       z-index: 100;
       display: none;
+      justify-content: center;
+      align-items: center;
+      position: fixed;
+      width: 100vw;
+      height: 100vh;
+      top: 0;
+      left: 0;
+      background-color: $cSchwarz;
+      color: $cWeiss;
+      transform: translateY(-100vh);
+
+      ul {
+        width: 40%;
+
+        li:first-of-type {
+          padding-bottom: 1vw;
+          font-size: 2.5vw;
+          letter-spacing: 0;
+        }
+
+        li {
+          font-size: 4vw;
+          line-height: 10vh;
+          letter-spacing: .2vw;
+
+          .menu-socials {
+
+            img {
+              width: 2vw;
+              height: auto;
+              margin-top: 5vw;
+              transition: filter 500ms ease-in-out;
+            }
+
+            .social-icon:hover {
+              filter: hue-rotate(281deg);
+            }
+          }
+        }
+      }
     }
   }
 
@@ -148,7 +209,7 @@ ul {
         display: block;
         position: absolute;
         left: 50%;
-        bottom: 22vw;
+        bottom: 28vw;
         transform: rotate(-90deg) translateY(-130%);
         z-index: 1;
       }
@@ -701,7 +762,7 @@ ul {
     max-width:100%;
     display: block;
 
-    ul {
+    & > ul {
       display: block;
       width: 100%;
       padding: 2% $frame-padding;
@@ -730,6 +791,8 @@ ul {
 
         .burger-btn {
           cursor: pointer;
+          z-index: 101;
+          transition: opacity 500ms ease-in-out;
 
           &:hover .bar-mitte {
             margin: 10px;
@@ -754,6 +817,46 @@ ul {
     nav {
       z-index: 100;
       display: none;
+      justify-content: center;
+      align-items: center;
+      position: fixed;
+      width: 100vw;
+      height: 100vh;
+      top: 0;
+      left: 0;
+      background-color: $cSchwarz;
+      color: $cWeiss;
+      transform: translateY(-100vh);
+
+      ul {
+        width: 40%;
+
+        li:first-of-type {
+          padding-bottom: 1vw;
+          font-size: 2.5vw;
+          letter-spacing: 0;
+        }
+
+        li {
+          font-size: 4vw;
+          line-height: 10vh;
+          letter-spacing: .2vw;
+
+          .menu-socials {
+
+            img {
+              width: 2vw;
+              height: auto;
+              margin-top: 5vw;
+              transition: filter 500ms ease-in-out;
+            }
+
+            .social-icon:hover {
+              filter: hue-rotate(281deg);
+            }
+          }
+        }
+      }
     }
   }
 

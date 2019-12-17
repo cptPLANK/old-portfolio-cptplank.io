@@ -170,6 +170,14 @@ body {
   font-family: oswald, sans-serif;
 }
 
+a:link {
+  text-decoration: none;
+}
+
+.blend {
+  mix-blend-mode: exclusion !important;
+}
+
 .schwarz {
   color: #000000;
 }
@@ -206,6 +214,17 @@ ul {
   list-style-type: none;
 }
 
+.header-logo {
+  color: #000000;
+  transition: opacity 500ms ease-in-out;
+}
+
+.hidden {
+  pointer-events: none;
+  cursor: default;
+  opacity: 0;
+}
+
 @media (orientation: portrait) {
   header {
     position: fixed;
@@ -215,51 +234,85 @@ ul {
     height: 5rem;
     z-index: 99;
     max-width: 100%;
-    display: none;
+    display: block;
   }
-  header ul {
+  header > ul {
     display: block;
     width: 100%;
     padding: 2% 7.22%;
     height: 100%;
     position: relative;
   }
-  header ul li {
+  header > ul li {
     display: inline-block;
     position: absolute;
     top: 50%;
     transform: translateY(-50%);
   }
-  header ul li:first-of-type {
+  header > ul li:first-of-type {
     left: 7.22%;
     font-size: 2rem;
     letter-spacing: 0.07vw;
   }
-  header ul li:first-of-type span {
+  header > ul li:first-of-type span {
     font-weight: bold;
   }
-  header ul li:last-of-type {
+  header > ul li:last-of-type {
     right: 7.22%;
   }
-  header ul li:last-of-type .burger-btn {
+  header > ul li:last-of-type .burger-btn {
     cursor: pointer;
+    z-index: 101;
+    transition: opacity 500ms ease-in-out;
   }
-  header ul li:last-of-type .burger-btn:hover .bar-mitte {
+  header > ul li:last-of-type .burger-btn:hover .bar-mitte {
     margin: 10px;
   }
-  header ul li:last-of-type .bar-oben, header ul li:last-of-type .bar-mitte, header ul li:last-of-type .bar-unten {
+  header > ul li:last-of-type .bar-oben, header > ul li:last-of-type .bar-mitte, header > ul li:last-of-type .bar-unten {
     width: 1.6rem;
     height: 3px;
     background-color: #000000;
     margin: 6px;
     transition: margin 200ms ease-in-out;
   }
-  header ul li:last-of-type .bar-mitte {
+  header > ul li:last-of-type .bar-mitte {
     width: 2.2rem;
   }
   header nav {
     z-index: 100;
     display: none;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    width: 100vw;
+    height: 100vh;
+    top: 0;
+    left: 0;
+    background-color: #000000;
+    color: #FFFFFF;
+    transform: translateY(-100vh);
+  }
+  header nav ul {
+    width: 40%;
+  }
+  header nav ul li:first-of-type {
+    padding-bottom: 1vw;
+    font-size: 2.5vw;
+    letter-spacing: 0;
+  }
+  header nav ul li {
+    font-size: 4vw;
+    line-height: 10vh;
+    letter-spacing: 0.2vw;
+  }
+  header nav ul li .menu-socials img {
+    width: 2vw;
+    height: auto;
+    margin-top: 5vw;
+    transition: filter 500ms ease-in-out;
+  }
+  header nav ul li .menu-socials .social-icon:hover {
+    filter: hue-rotate(281deg);
   }
 
   section {
@@ -283,7 +336,7 @@ ul {
     display: block;
     position: absolute;
     left: 50%;
-    bottom: 22vw;
+    bottom: 28vw;
     transform: rotate(-90deg) translateY(-130%);
     z-index: 1;
   }
@@ -748,49 +801,83 @@ ul {
     max-width: 100%;
     display: block;
   }
-  header ul {
+  header > ul {
     display: block;
     width: 100%;
     padding: 2% 7.22%;
     height: 100%;
     position: relative;
   }
-  header ul li {
+  header > ul li {
     display: inline-block;
     position: absolute;
     top: 50%;
     transform: translateY(-50%);
   }
-  header ul li:first-of-type {
+  header > ul li:first-of-type {
     left: 7.22%;
     font-size: 2rem;
     letter-spacing: 0.07vw;
   }
-  header ul li:first-of-type span {
+  header > ul li:first-of-type span {
     font-weight: bold;
   }
-  header ul li:last-of-type {
+  header > ul li:last-of-type {
     right: 7.22%;
   }
-  header ul li:last-of-type .burger-btn {
+  header > ul li:last-of-type .burger-btn {
     cursor: pointer;
+    z-index: 101;
+    transition: opacity 500ms ease-in-out;
   }
-  header ul li:last-of-type .burger-btn:hover .bar-mitte {
+  header > ul li:last-of-type .burger-btn:hover .bar-mitte {
     margin: 10px;
   }
-  header ul li:last-of-type .bar-oben, header ul li:last-of-type .bar-mitte, header ul li:last-of-type .bar-unten {
+  header > ul li:last-of-type .bar-oben, header > ul li:last-of-type .bar-mitte, header > ul li:last-of-type .bar-unten {
     width: 1.6rem;
     height: 3px;
     background-color: #000000;
     margin: 6px;
     transition: margin 200ms ease-in-out;
   }
-  header ul li:last-of-type .bar-mitte {
+  header > ul li:last-of-type .bar-mitte {
     width: 2.2rem;
   }
   header nav {
     z-index: 100;
     display: none;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    width: 100vw;
+    height: 100vh;
+    top: 0;
+    left: 0;
+    background-color: #000000;
+    color: #FFFFFF;
+    transform: translateY(-100vh);
+  }
+  header nav ul {
+    width: 40%;
+  }
+  header nav ul li:first-of-type {
+    padding-bottom: 1vw;
+    font-size: 2.5vw;
+    letter-spacing: 0;
+  }
+  header nav ul li {
+    font-size: 4vw;
+    line-height: 10vh;
+    letter-spacing: 0.2vw;
+  }
+  header nav ul li .menu-socials img {
+    width: 2vw;
+    height: auto;
+    margin-top: 5vw;
+    transition: filter 500ms ease-in-out;
+  }
+  header nav ul li .menu-socials .social-icon:hover {
+    filter: hue-rotate(281deg);
   }
 
   section {
