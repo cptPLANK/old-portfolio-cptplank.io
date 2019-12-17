@@ -49,3 +49,62 @@ burgerBtn.addEventListener('click', () => {
             ease: "bounce"
         });
 });
+
+// close menu
+
+let nav = document.querySelector('nav');
+
+nav.onmousedown = (event) => {
+    nav.classList.add('no-select');
+    let mousePositionY = event.pageY;
+    let windowHeight = window.innerHeight;
+    let mousePositionInPercY = (100 / windowHeight) * mousePositionY;
+
+    console.log(mousePositionInPercY);
+    let howMuchScrolled;
+    let mouseMove = (event) => {
+        let newMousePositionInPercY = (100 / windowHeight) * event.pageY;
+        howMuchScrolled = mousePositionInPercY - newMousePositionInPercY;
+
+
+        let navTranslate = 0 - parseFloat(howMuchScrolled);
+
+        if (navTranslate <= 0) {
+            //nav.style.transform = 'translate(0, ' + navTranslate + 'vh)';
+            gsap.to(
+                "nav",
+                {
+                    duration: 0,
+                    y: navTranslate,
+                    ease: "ease"
+                });
+        }
+    };
+
+    document.addEventListener('mousemove', mouseMove);
+
+    document.onmouseup = () => {
+        document.removeEventListener('mousemove', mouseMove);
+            nav.classList.remove('no-select');
+            if (howMuchScrolled >= 20) {
+                //nav.removeAttribute('style');
+                gsap.to(
+                    "nav",
+                    {
+                        duration: 1,
+                        y: '-100vh',
+                        ease: "ease"
+                    });
+            }
+            else {
+                //nav.style.transform = 'translateY(0)';
+                gsap.to(
+                    "nav",
+                    {
+                        duration: 1,
+                        y: 0,
+                        ease: "bounce"
+                    });
+            }
+    };
+};

@@ -27,6 +27,10 @@ a:link {
   text-decoration: none;
 }
 
+.no-select {
+  user-select: none;
+}
+
 .blend {
   mix-blend-mode: exclusion !important;
 }
