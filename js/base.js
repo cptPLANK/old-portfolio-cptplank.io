@@ -20,17 +20,7 @@ let logo = document.querySelector('.header-logo');
 let menu = document.querySelector('.burger-btn');
 
 let toggleMenu = () => {
-    if (isIE()) {
-        if (scrollPosition > hideAt40Perc) {
-            logo.style.display = 'none';
-            menu.style.display = 'none';
-        }
-        else {
-            logo.style.display = 'block';
-            menu.style.display = 'block';
-        }
-    }
-    else {
+
         if (scrollPosition > hideAt40Perc) {
             logo.classList.add('hidden');
             menu.classList.add('hidden');
@@ -39,7 +29,6 @@ let toggleMenu = () => {
             logo.classList.remove('hidden');
             menu.classList.remove('hidden');
         }
-    }
 };
 toggleMenu();
 
@@ -57,7 +46,6 @@ burgerBtn.addEventListener('click', () => {
         {
             duration: 2,
             y: 0,
-            opacity: 1,
             ease: "bounce"
         });
 });
