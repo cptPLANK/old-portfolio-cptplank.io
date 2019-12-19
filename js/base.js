@@ -1,3 +1,29 @@
+// Page Animations
+
+gsap.from(
+    '#eingang > img',
+    {
+        opacity: 0,
+        duration: 1,
+        delay: 1,
+        y: '-2vh',
+        ease: 'ease'
+    }
+);
+
+gsap.from(
+    '.scroll',
+    {
+        opacity: 0,
+        duration: 1,
+        delay: 1,
+        x: '-2vh',
+        ease: 'ease'
+    }
+);
+
+
+// Header / Menu
 let howMuchScrolled,
     mousePositionInPercY,
     mousePositionY,
@@ -52,6 +78,7 @@ const Menu = {
     finalizeCloseSlider: () => {
         document.removeEventListener('mousemove', Menu.mouseMove);
         (howMuchScrolled >= 20) ? Menu.closeMenu() : Menu.openMenu();
+        document.removeEventListener('mouseup', Menu.finalizeCloseSlider);
     },
     closeToTop: (event) => {
         mousePositionY = event.pageY;
@@ -118,11 +145,12 @@ let toggleHeader = () => {
 
     if (scrollPosition > hideAt40Perc) {
         logo.classList.add('hidden');
-        menu.classList.add('hidden');
+        menu.classList.add('scrolled-menu');
     }
     else {
         logo.classList.remove('hidden');
-        menu.classList.remove('hidden');
+        menu.classList.remove('scrolled-menu');
+
     }
 };
 toggleHeader();
@@ -134,9 +162,6 @@ document.addEventListener('scroll', () => {
 
 
 // Responsive Menü öffnen und schließen
-
 burgerBtn.addEventListener('click', Menu.openMenu);
 Menu.responsiveHandler();
 window.addEventListener('resize', Menu.responsiveHandler);
-
-

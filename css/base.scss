@@ -27,6 +27,12 @@ a:link {
   text-decoration: none;
 }
 
+.scrolled-menu {
+  background-color: #FFD24A;
+  padding: 10px;
+  box-shadow: 5px 5px 0 $cPink;
+}
+
 .no-select {
   user-select: none;
 }
@@ -73,7 +79,7 @@ ul {
 
 .header-logo {
   color: $cSchwarz;
-  transition: opacity 500ms ease-in-out;
+  transition: opacity 500ms ease-in-out, box-shadow 500ms ease-in-out, padding 500ms ease-in-out;
 }
 
 .hidden {
@@ -85,7 +91,7 @@ ul {
 @media (orientation: portrait) {
   header {
     position: fixed;
-    top: 0;
+    top: 1vw;
     left: 0;
     right: 0;
     height: 5rem;
@@ -123,7 +129,7 @@ ul {
         .burger-btn {
           cursor: pointer;
           z-index: 101;
-          transition: opacity 500ms ease-in-out;
+          transition: opacity 500ms ease-in-out, box-shadow 500ms ease-in-out, padding 500ms ease-in-out;
           position: relative;
 
           &:hover .bar-mitte {
@@ -805,7 +811,7 @@ ul {
 
   header {
     position: fixed;
-    top: 0;
+    top: 1vw;
     left: 0;
     right: 0;
     height: 5rem;
@@ -843,7 +849,7 @@ ul {
         .burger-btn {
           cursor: pointer;
           z-index: 101;
-          transition: opacity 500ms ease-in-out;
+          transition: opacity 500ms ease-in-out, box-shadow 500ms ease-in-out, padding 500ms ease-in-out;
 
           &:hover .bar-mitte {
             margin: 10px;
@@ -1481,7 +1487,14 @@ ul {
       }
     }
   }
+}
 
+@media (min-aspect-ratio: 1920/947) {
+  section {
+    min-height: 49.322917vw;
+  }
 
-
+  .cptplank-typographie-container {
+    bottom: -2vh;
+  }
 }
