@@ -60,6 +60,8 @@ const Menu = {
             });
     },
     mouseMove: (event) => {
+        event = event || window.event;
+
         let newMousePositionInPercY = (100 / windowHeight) * event.pageY;
         howMuchScrolled = mousePositionInPercY - newMousePositionInPercY;
 
@@ -81,6 +83,7 @@ const Menu = {
         document.removeEventListener('mouseup', Menu.finalizeCloseSlider);
     },
     closeToTop: (event) => {
+        event = event || window.event;
         mousePositionY = event.pageY;
         windowHeight = window.innerHeight;
         mousePositionInPercY = (100 / windowHeight) * mousePositionY;
@@ -120,8 +123,8 @@ const Checks = {
             return 'landscape';
         }
     },
-    isInternetExplorer: () => {
-        ua = navigator.userAgent;
+    isInternetExplorer: function() {
+        let ua = navigator.userAgent;
         return ua.indexOf("MSIE ") > -1 || ua.indexOf("Trident/") > -1;
     },
     isMobile: () => {

@@ -10,6 +10,16 @@
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <title>cptPLANK.io</title>
     <script src="https://cdn.jsdelivr.net/npm/gsap@3.0.4/dist/gsap.min.js"></script>
+    <script>
+        function isIE() {
+            var ua = navigator.userAgent;
+            return ua.indexOf("MSIE ") > -1 || ua.indexOf("Trident/") > -1;
+        }
+
+        if (isIE()) {
+            alert('mew');
+        }
+    </script>
 </head>
 <body>
 
