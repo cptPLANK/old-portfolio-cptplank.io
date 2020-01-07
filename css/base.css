@@ -1072,6 +1072,7 @@ ul {
     font-size: 20vw;
     right: -1.5vw;
     bottom: 28vw;
+    opacity: 1;
   }
   section#kein-designer .cptplank-typographie-container .cptplank-typographie-container-inner .typo-a {
     position: absolute;

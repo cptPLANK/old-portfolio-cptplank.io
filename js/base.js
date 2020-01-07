@@ -1,28 +1,3 @@
-// Page Animations
-
-gsap.from(
-    '#eingang > img',
-    {
-        opacity: 0,
-        duration: 1,
-        delay: 1,
-        y: '-2vh',
-        ease: 'ease'
-    }
-);
-
-gsap.from(
-    '.scroll',
-    {
-        opacity: 0,
-        duration: 1,
-        delay: 1,
-        x: '-2vh',
-        ease: 'ease'
-    }
-);
-
-
 // Header / Menu
 let howMuchScrolled,
     mousePositionInPercY,
@@ -100,6 +75,7 @@ const Menu = {
                 document.removeEventListener('mouseup', Menu.finalizeCloseSlider);
                 mobileHasFired = true;
                 desktopHasFired = false;
+                Animations.cleanPlankAnimation();
             }
         }
         else {
@@ -109,8 +85,136 @@ const Menu = {
                 mobileCloseBtn.removeEventListener('click', Menu.closeMenu);
                 mobileHasFired = false;
                 desktopHasFired = true;
+                Animations.animatePlank();
             }
         }
+    }
+};
+
+const Animations = {
+    animatePlank: () => {
+        ScrollReveal().reveal('.typo-cpt', {
+            distance: '50%',
+            duration: 1500,
+            mobile: false,
+            reset: true
+        });
+
+        ScrollReveal().reveal('.typo-k', {
+            rotate: {
+                x: 40,
+                z: 40
+            },
+            duration: 1500,
+            mobile: false,
+            reset: true
+        });
+
+        ScrollReveal().reveal('.typo-n', {
+            opacity: 0,
+            duration: 1500,
+            mobile: false,
+            reset: true
+        });
+
+        ScrollReveal().reveal('.typo-a', {
+            distance: '1em',
+            duration: 1500,
+            mobile: false,
+            reset: true
+        });
+
+        ScrollReveal().reveal('.typo-l', {
+            rotate: {
+                x: -40,
+                y: -40,
+                z: -40
+            },
+            duration: 1500,
+            mobile: false,
+            reset: true
+        });
+
+        ScrollReveal().reveal('.typo-p', {
+            distance: '-1em',
+            duration: 1500,
+            mobile: false,
+            reset: true
+        });
+    },
+    cleanPlankAnimation: () => {
+        ScrollReveal().clean('.typo-cpt, .typo-k, .typo-n, .typo-a, .typo-l, .typo-p');
+    },
+    basicAnimations: () => {
+        ScrollReveal().reveal('.kein-designer-container h1, #untertitel, #was-ich-mache-eins, #was-ich-mache-zwei,' +
+            '#ueber-mich > article > h2, #ueber-mich-text', {
+            distance: '-10%',
+            duration: 1500,
+            delay: 250
+        });
+
+        ScrollReveal().reveal('.kein-designer-container hr, #jahreszahl', {
+            origin: 'left',
+            distance: '50%',
+            duration: 1500,
+            delay: 250,
+            reset: true
+        });
+
+        ScrollReveal().reveal('#arbeit h2', {
+            origin: 'top',
+            distance: '30%',
+            duration: 1500,
+            delay: 500
+        });
+
+        ScrollReveal().reveal('#arbeit-text', {
+            origin: 'right',
+            distance: '50%',
+            easing: 'ease-in-out',
+            scale: 2,
+            duration: 1500,
+            delay: 250
+        });
+
+        ScrollReveal().reveal('#btn-portfolio', {
+            origin: 'bottom',
+            distance: '50%',
+            easing: 'ease-in-out',
+            duration: 1500,
+            scale: 1.2,
+            delay: 250
+        });
+
+        ScrollReveal().reveal('#ueber-mich > h2', {
+            origin: 'top',
+            distance: '50%',
+            easing: 'ease-in-out',
+            duration: 1500
+        });
+
+        ScrollReveal().reveal('#ueber-mich-text, #vita', {
+            distance: '-5%',
+            duration: 1500,
+            delay: 250
+        });
+
+        ScrollReveal().reveal('#portfolio h2', {
+            distance: '50%',
+            origin: 'top',
+            duration: 2000,
+            viewFactor: 0
+        });
+
+        ScrollReveal().reveal('#portfolio ul li', {
+            distance: '30%',
+            origin: 'left',
+            duration: 1000,
+            viewFactor: 0,
+            useDelay: 'onload',
+            easing: 'ease-in-out',
+            reset: true
+        });
     }
 };
 
@@ -168,3 +272,7 @@ document.addEventListener('scroll', () => {
 burgerBtn.addEventListener('click', Menu.openMenu);
 Menu.responsiveHandler();
 window.addEventListener('resize', Menu.responsiveHandler);
+
+// Init weitere Page Animationen
+
+Animations.basicAnimations();
