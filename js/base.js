@@ -143,7 +143,7 @@ const Animations = {
         });
     },
     cleanPlankAnimation: () => {
-        ScrollReveal().clean('.typo-cpt, .typo-k, .typo-n, .typo-a, .typo-l, .typo-p');
+        ScrollReveal().clean('.typo-cpt, .typo-k, .typo-n, .typo-a, .typo-l, .typo-p, #portfolio h2, #arbeit-text');
     },
     basicAnimations: () => {
         ScrollReveal().reveal('.kein-designer-container h1, #untertitel, #was-ich-mache-eins, #was-ich-mache-zwei,' +
@@ -174,6 +174,7 @@ const Animations = {
             easing: 'ease-in-out',
             scale: 2,
             duration: 1500,
+            reset: true,
             delay: 250
         });
 

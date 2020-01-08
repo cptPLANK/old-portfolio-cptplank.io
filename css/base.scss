@@ -89,6 +89,7 @@ ul {
 }
 
 @media (orientation: portrait) {
+
   header {
     position: fixed;
     top: 1vw;
@@ -466,7 +467,9 @@ ul {
 
 
       }
+
     }
+
     &#ueber-mich {
       background-color: $cSchwarz;
       padding-top: 15vw;
@@ -717,6 +720,11 @@ ul {
           line-height: 30vw;
         }
 
+        & ul li:nth-of-type(3) {
+          display: flex;
+          align-items: center;
+        }
+
         p {
           width: 80vw;
           margin-bottom: 1.45vw;
@@ -725,6 +733,7 @@ ul {
 
         input[type='email'], input[type="submit"] {
           display: inline-block;
+          margin-top: 12vw;
         }
 
         input[type='email'] {
@@ -735,7 +744,6 @@ ul {
           color: $cWeiss;
           font-weight: 300;
           padding-left: 5vw;
-          margin-top: 12vw;
         }
 
         input[type='email']::placeholder {
@@ -754,7 +762,6 @@ ul {
     }
 
     .copyright {
-
       width: 100%;
       text-align: center;
       font-weight: 200;
@@ -1433,6 +1440,11 @@ ul {
           line-height: 3vw;
         }
 
+        & ul li:nth-of-type(3) {
+          display: flex;
+          align-items: center;
+        }
+
         p {
           max-width: 13vw;
           margin-bottom: 1.45vw;
@@ -1459,11 +1471,14 @@ ul {
 
         input[type='submit'] {
           width: 3.2vw;
-          height: 3.14vw;
+          height: 3.1vw;
           margin-left: -.30vw;
           border: none;
         }
       }
+
+
+
     }
 
     .copyright {
