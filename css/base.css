@@ -192,6 +192,10 @@ a:link {
   color: #000000;
 }
 
+.bg-gelb {
+  background-color: #FFD24A;
+}
+
 .weiss {
   color: #FFFFFF;
 }
@@ -233,6 +237,28 @@ ul {
   pointer-events: none;
   cursor: default;
   opacity: 0;
+}
+
+page-transition {
+  display: none;
+  grid-template-columns: repeat(10, auto);
+  position: fixed;
+  z-index: 9999;
+  top: 0;
+  left: 0;
+  width: 100%;
+}
+page-transition div {
+  background-color: #fff;
+  height: 100vh;
+  width: 0;
+}
+
+.page-transition-on {
+  display: grid;
+}
+.page-transition-on div {
+  width: 100%;
 }
 
 @media (orientation: portrait) {
@@ -979,6 +1005,80 @@ ul {
     height: 100vh;
     position: relative;
     max-width: 100%;
+  }
+  section#kontakt h1 {
+    text-transform: uppercase;
+    transform: rotate(-90deg);
+    display: inline-block;
+    position: absolute;
+    bottom: 13vw;
+    left: -14.85vw;
+    margin: 0;
+    padding: 0;
+    font-size: 10vw;
+  }
+  section#kontakt form {
+    position: absolute;
+    top: 15vw;
+    right: 10vw;
+    width: 60vw;
+  }
+  section#kontakt form .form-inner-wrapper {
+    position: relative;
+    width: 100%;
+    height: 100%;
+  }
+  section#kontakt form .ask-element {
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: none;
+    opacity: 0;
+    transform: translateY(-20vh);
+  }
+  section#kontakt form .ask-element-init {
+    display: block;
+    opacity: 1;
+    transform: translateY(0);
+  }
+  section#kontakt form span {
+    font-size: 5vw;
+    color: #000000;
+    font-weight: bold;
+  }
+  section#kontakt form input, section#kontakt form textarea {
+    background-color: transparent;
+    border: none;
+    font-size: 2vw;
+    border-bottom: 0.2vw solid #000000;
+    padding: 1vw 0;
+    width: 65%;
+    color: #FFFFFF;
+  }
+  section#kontakt form textarea {
+    resize: none;
+    overflow: hidden;
+  }
+  section#kontakt form input:focus, section#kontakt form textarea:focus {
+    outline: none !important;
+    border: none;
+    border-bottom: 0.2vw solid #000000;
+  }
+  section#kontakt form input::placeholder, section#kontakt form textarea::placeholder {
+    color: #FFFFFF;
+  }
+  section#kontakt form .ask-weiter, section#kontakt form .ask-submit {
+    display: inline-block;
+    margin-top: 3vw;
+    text-transform: uppercase;
+    color: #000000;
+    padding: 1vw;
+    font-size: 1vw;
+    border: 0.2vw solid #000000;
+    background-color: transparent;
+  }
+  section#kontakt form .ask-submit:focus {
+    outline: none !important;
   }
   section#eingang {
     background-color: #FFD24A;

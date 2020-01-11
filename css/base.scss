@@ -45,6 +45,10 @@ a:link {
   color: $cSchwarz;
 }
 
+.bg-gelb {
+  background-color: $cGelb;
+}
+
 .weiss {
   color: $cWeiss;
 }
@@ -86,6 +90,30 @@ ul {
     pointer-events: none;
     cursor: default;
     opacity: 0;
+}
+
+page-transition {
+  display: none;
+  grid-template-columns: repeat(10, auto);
+  position: fixed;
+  z-index: 9999;
+  top: 0;
+  left: 0;
+  width: 100%;
+
+  div {
+    background-color: #fff;
+    height: 100vh;
+    width: 0;
+  }
+}
+
+.page-transition-on {
+  display: grid;
+
+  div {
+    width: 100%;
+  }
 }
 
 @media (orientation: portrait) {
@@ -975,6 +1003,98 @@ ul {
     height: 100vh;
     position: relative;
     max-width:100%;
+
+    &#kontakt {
+      //display: flex;
+      //justify-content: center;
+      //align-items: center;
+
+      h1 {
+        text-transform: uppercase;
+        transform: rotate(-90deg);
+        display: inline-block;
+        position: absolute;
+        bottom: 13vw;
+        left: -14.85vw;
+        margin: 0;
+        padding: 0;
+        font-size: 10vw;
+      }
+
+      form {
+        position: absolute;
+        top: 15vw;
+        right: 10vw;
+        width: 60vw;
+
+        .form-inner-wrapper {
+          position: relative;
+          width: 100%;
+          height: 100%;
+        }
+
+        .ask-element {
+          position: absolute;
+          top: 0;
+          left: 0;
+          display: none;
+          opacity: 0;
+          transform: translateY(-20vh);
+        }
+
+        .ask-element-init {
+          display: block;
+          opacity: 1;
+          transform: translateY(0);
+        }
+
+        span {
+          font-size: 5vw;
+          color: $cSchwarz;
+          font-weight: bold;
+        }
+
+        input, textarea {
+          background-color: transparent;
+          border: none;
+          font-size: 2vw;
+          border-bottom: 0.2vw solid $cSchwarz;
+          padding: 1vw 0;
+          width: 65%;
+          color: $cWeiss;
+        }
+
+        textarea {
+          resize: none;
+          overflow: hidden;
+        }
+
+        input:focus, textarea:focus {
+          outline: none !important;
+          border: none;
+          border-bottom: 0.2vw solid $cSchwarz;
+        }
+
+        input::placeholder, textarea::placeholder {
+          color: $cWeiss;
+        }
+
+        .ask-weiter, .ask-submit {
+          display: inline-block;
+          margin-top: 3vw;
+          text-transform: uppercase;
+          color: $cSchwarz;
+          padding: 1vw;
+          font-size: 1vw;
+          border: .2vw solid $cSchwarz;
+          background-color: transparent;
+        }
+
+        .ask-submit:focus {
+          outline: none !important;
+        }
+      }
+    }
 
     &#eingang {
       background-color: $cGelb;

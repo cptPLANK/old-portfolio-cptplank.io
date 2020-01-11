@@ -1,0 +1,142 @@
+<!doctype html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="css/base.css">
+    <link rel="stylesheet" href="https://use.typekit.net/qml8muo.css">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <title>cptPLANK.io</title>
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.0.4/dist/gsap.min.js"></script>
+    <script>
+        function isIE() {
+            var ua = navigator.userAgent;
+            return ua.indexOf("MSIE ") > -1 || ua.indexOf("Trident/") > -1;
+        }
+
+        if (isIE()) {
+            alert('mew');
+        }
+    </script>
+</head>
+<body class="bg-gelb">
+<header>
+    <ul>
+        <li class="regular">
+            <a href="#" class="header-logo hidden">cpt<span class="semi-bold uppercase">PLANK</span></a>
+        </li>
+        <li>
+            <div class="burger-btn">
+                <div class="bar-oben"></div>
+                <div class="bar-mitte"></div>
+                <div class="bar-unten"></div>
+            </div>
+        </li>
+    </ul>
+
+    <nav class="no-select">
+        <ul>
+            <li>Hallöchen!</li>
+            <li class="bold"><a href="#ueber-mich" class="menuEvent">Über mich</a></li>
+            <li class="bold"><a href="#portfolio" class="menuEvent">Portfolio</a></li>
+            <li class="bold testIt">Case Studies</li>
+            <li class="bold">Shop</li>
+            <li class="bold">Kontakt</li>
+            <li class="bold">
+                <div class="menu-socials">
+                    <a href="#" target="_blank">
+                        <img src="img/social-icons/youtube.svg" alt="" class="social-icon">
+                    </a>
+                    <a href="#" target="_blank">
+                        <img src="img/social-icons/instagram.svg" alt="" class="social-icon">
+                    </a>
+                    <a href="#" target="_blank">
+                        <img src="img/social-icons/twitter.svg" alt="" class="social-icon">
+                    </a>
+                    <a href="#" target="_blank">
+                        <img src="img/social-icons/medium.svg" alt="" class="social-icon">
+                    </a>
+                    <a href="#" target="_blank">
+                        <img src="img/social-icons/dribbble.svg" alt="" class="social-icon">
+                    </a>
+                    <a href="#" target="_blank">
+                        <img src="img/social-icons/facebook.svg" alt="" class="social-icon">
+                    </a>
+                    <a href="#" target="_blank">
+                        <img src="img/social-icons/behance.svg" alt="" class="social-icon">
+                    </a>
+                </div>
+            </li>
+        </ul>
+        <div id="swipe-to-close">Ziehen zum<br>Schließen</div>
+        <div id="mobile-close-btn">
+            <div>
+                <div id="mobile-close-btn-eins"></div>
+                <div id="mobile-close-btn-zwei"></div>
+            </div>
+        </div>
+    </nav>
+
+</header>
+
+<section id="kontakt" class="weiss">
+    <h1>Kontakt</h1>
+    <form name="kontakt-me">
+        <div class="form-inner-wrapper">
+            <div id="ask-name" class="ask-element ask-element-init on">
+                <span>Wie soll ich dich nennen?</span>
+                <div>
+                    <input type="text" placeholder="Name__">
+                </div>
+                <div class="ask-weiter">Weiter</div>
+            </div>
+            <div id="ask-firma" class="ask-element">
+                <span>Für wen arbeitest du?</span>
+                <div>
+                    <input type="text" placeholder="Firmenname__">
+                </div>
+                <div class="ask-weiter">Weiter</div>
+            </div>
+            <div id="ask-email" class="ask-element">
+                <span>Wie lautet deine E-Mail?</span>
+                <div>
+                    <input type="email" placeholder="E-Mail__">
+                </div>
+                <div class="ask-weiter">Weiter</div>
+            </div>
+            <div id="ask-telefon" class="ask-element">
+                <span>Soll ich dich anrufen?</span>
+                <div>
+                    <input type="tel" placeholder="Deine Telefonnummer__">
+                </div>
+                <div class="ask-weiter">Weiter</div>
+            </div>
+            <div id="ask-nachricht" class="ask-element">
+                <span>Wie kann ich helfen?</span>
+                <div>
+                    <textarea class="ask-text" placeholder="Schreibe deine Nachricht einfach hier in das Textfeld__"></textarea>
+                </div>
+                <button type="submit" class="ask-submit">Absenden</button>
+            </div>
+        </div>
+    </form>
+</section>
+
+<page-transition>
+    <div></div>
+    <div></div>
+    <div></div>
+    <div></div>
+    <div></div>
+    <div></div>
+    <div></div>
+    <div></div>
+    <div></div>
+    <div></div>
+</page-transition>
+<script src="https://unpkg.com/scrollreveal"></script>
+<script src="js/base.js" async></script>
+</body>
+</html>
