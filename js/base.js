@@ -10,7 +10,8 @@ let howMuchScrolled,
     desktopHasFired,
     pageTransitionElement,
     askElement,
-    weiterBtn;
+    weiterBtn,
+    whichLink;
 
 nav = document.querySelector('nav');
 burgerBtn = document.querySelector('.burger-btn');
@@ -20,6 +21,7 @@ desktopHasFired = false;
 pageTransitionElement = document.querySelector('page-transition');
 askElement = document.querySelectorAll('.ask-element');
 weiterBtn = document.querySelectorAll('.ask-weiter');
+whichLink = document.querySelectorAll('.change-page-event');
 
 const Menu = {
     closeMenu: () => {
@@ -257,22 +259,35 @@ const Animations = {
             }
         }
     },
-    link: () => {
-            window.location.href = "kontakt.html?internal=1"; //////// SCRIPT ZUM VERLINKEN SCHREIBEN!!!!
+    link: (finalLinkValue) => {
+        if (finalLinkValue === 'Kontakt') {
+            window.location.href = "kontakt.html?internal=1";
+        }
+        else if (finalLinkValue === 'Case Studies') {
+            window.location.href = "case-studies.html?internal=1";
+        }
+        else if (finalLinkValue === 'Über mich') {
+            window.location.href = "index.html?internal=1#ueber-mich";
+        }
+        else if (finalLinkValue === 'Portfolio') {
+            window.location.href = "index.html?internal=1#portfolio";
+        }
     },
-    changePageStaggerIn: () => {
-        pageTransitionElement.style.display = 'grid';
-
+    changePageStaggerIn: (linkValue) => {
+        pageTransitionElement.classList.add('page-transition-on');
         gsap.to('page-transition div', {
             duration: 0.7,
             width: '100%',
             stagger: 0.07,
-            onComplete: Animations.link
+            onComplete: () => {
+                Animations.link(linkValue);
+            }
             });
     },
     changePageStaggerOut: () => {
         pageTransitionElement.classList.add('page-transition-on');
         gsap.to('page-transition div', {
+            delay: 0.5,
             duration: 0.5,
             width: 0,
             onComplete: () => {
@@ -363,17 +378,24 @@ Checks.isPageTransitionOn();
 
 // Menu Eventlistener
 
-let menuItem = document.querySelectorAll('.menuEvent');
+let menuItem = document.querySelectorAll('.menu-event');
 for (let i = 0; i < menuItem.length; i++) {
     menuItem[i].addEventListener('click', Menu.closeMenu);
 }
 
-document.querySelector('.testIt').addEventListener('click', Animations.changePageStaggerIn);
-
+for (let i = 0; i < whichLink.length; i++) {
+    let value = whichLink[i].innerHTML;
+    whichLink[i].addEventListener('click', (e) => {
+        e.preventDefault();
+        Animations.changePageStaggerIn(value);
+    });
+}
 
 //Kontakt Eventlistener
 
-weiterBtn[0].addEventListener('click', Animations.kontaktNextElement);
+if (window.location.pathname === '/cptPLANK.io/kontakt.html') {
+    weiterBtn[0].addEventListener('click', Animations.kontaktNextElement);
+}
 
 
 
