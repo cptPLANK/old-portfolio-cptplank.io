@@ -397,6 +397,115 @@ page-transition div {
     position: relative;
     max-width: 100%;
   }
+  section#kontakt h1 {
+    text-transform: uppercase;
+    transform: rotate(-90deg);
+    display: inline-block;
+    position: absolute;
+    bottom: 13vw;
+    left: -14.85vw;
+    margin: 0;
+    padding: 0;
+    font-size: 10vw;
+  }
+  section#kontakt form {
+    position: absolute;
+    top: 20vh;
+    right: 12vw;
+    width: 65vw;
+  }
+  section#kontakt form .form-inner-wrapper {
+    position: relative;
+    width: 100%;
+    height: 100%;
+  }
+  section#kontakt form .ask-element {
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: none;
+    opacity: 0;
+    transform: translateY(-20vh);
+  }
+  section#kontakt form .ask-element-init {
+    display: block;
+    opacity: 1;
+    transform: translateY(0);
+  }
+  section#kontakt form span {
+    font-size: 15vw;
+    color: #000000;
+    font-weight: bold;
+  }
+  section#kontakt form span nowrap {
+    white-space: nowrap;
+  }
+  section#kontakt form input, section#kontakt form textarea {
+    background-color: transparent;
+    border: none;
+    font-size: 9vw;
+    border-bottom: 1.5vw solid #000000;
+    padding: 5vw 0;
+    width: 100%;
+    color: #FFFFFF;
+  }
+  section#kontakt form textarea {
+    resize: none;
+    overflow: hidden;
+  }
+  section#kontakt form input:focus, section#kontakt form textarea:focus {
+    outline: none !important;
+    border: none;
+    border-bottom: 1.5vw solid #000000;
+  }
+  section#kontakt form input::placeholder, section#kontakt form textarea::placeholder {
+    color: #FFFFFF;
+  }
+  section#kontakt form .ask-weiter, section#kontakt form .ask-submit {
+    display: inline-block;
+    margin-top: 6vw;
+    text-transform: uppercase;
+    color: #000000;
+    padding: 3vw;
+    font-size: 7vw;
+    border: 1vw solid #000000;
+    background-color: transparent;
+    transition: background-color 500ms ease-in-out;
+  }
+  section#kontakt form .ask-weiter:hover, section#kontakt form .ask-submit:hover {
+    background-color: #FFFFFF;
+  }
+  section#kontakt form .ask-submit {
+    margin-bottom: 5vw;
+  }
+  section#kontakt form .ask-submit:focus {
+    outline: none !important;
+  }
+  section#mail-send {
+    display: none;
+    justify-content: center;
+    align-items: center;
+  }
+  section#mail-send div {
+    font-size: 9vw;
+    text-align: center;
+    font-weight: bolder;
+    opacity: 0;
+  }
+  section#mail-send div .melden {
+    font-size: 3vw;
+    font-weight: normal;
+  }
+  section#mail-send div .back-links {
+    font-size: 1.5vw;
+    font-weight: normal;
+  }
+  section#mail-send div a:link, section#mail-send div a:visited, section#mail-send div a:active {
+    color: #FFFFFF;
+  }
+  section#mail-send div a:hover {
+    color: #000000;
+  }
   section#eingang {
     background-color: #FFD24A;
   }
@@ -1076,9 +1185,46 @@ page-transition div {
     font-size: 1vw;
     border: 0.2vw solid #000000;
     background-color: transparent;
+    transition: background-color 500ms ease-in-out, color 500ms ease-in-out;
+    cursor: pointer;
+  }
+  section#kontakt form .ask-weiter:hover {
+    background-color: #FFFFFF;
+  }
+  section#kontakt form .ask-submit:hover {
+    background-color: #000000;
+    color: #FFFFFF;
+  }
+  section#kontakt form .ask-submit {
+    margin-bottom: 5vw;
   }
   section#kontakt form .ask-submit:focus {
     outline: none !important;
+  }
+  section#mail-send {
+    display: none;
+    justify-content: center;
+    align-items: center;
+  }
+  section#mail-send div {
+    font-size: 9vw;
+    text-align: center;
+    font-weight: bolder;
+    opacity: 0;
+  }
+  section#mail-send div .melden {
+    font-size: 3vw;
+    font-weight: normal;
+  }
+  section#mail-send div .back-links {
+    font-size: 1.5vw;
+    font-weight: normal;
+  }
+  section#mail-send div a:link, section#mail-send div a:visited, section#mail-send div a:active {
+    color: #FFFFFF;
+  }
+  section#mail-send div a:hover {
+    color: #000000;
   }
   section#eingang {
     background-color: #FFD24A;
@@ -1534,6 +1680,11 @@ page-transition div {
 
   .cptplank-typographie-container {
     bottom: -2vh;
+  }
+}
+@media (min-aspect-ratio: 680/947) and (max-aspect-ratio: 1/1) {
+  form {
+    transform: scale(0.8);
   }
 }
 
