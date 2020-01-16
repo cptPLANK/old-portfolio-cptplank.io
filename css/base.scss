@@ -92,6 +92,10 @@ ul {
     opacity: 0;
 }
 
+.display-none {
+  display: none;
+}
+
 page-transition {
   display: none;
   grid-template-columns: repeat(10, auto);
@@ -117,6 +121,11 @@ page-transition {
 }
 
 @media (orientation: portrait) {
+
+  .misc-logo {
+    width: 15vw;
+    height: auto;
+  }
 
   header {
     position: fixed;
@@ -413,6 +422,221 @@ page-transition {
           color: $cSchwarz;
         }
 
+      }
+    }
+
+    &#case-studie-start {
+      background-color: $cGelb;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+
+      .container {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        align-items: center;
+        width: 100%;
+        padding: 0 7.22%;
+
+        h1 {
+          font-size: 20vw;
+          position: relative;
+          margin-top: -10.5vw;
+
+          span {
+            font-size: 13vw;
+            position: absolute;
+            top: 19vw;
+            left: 13vw;
+          }
+        }
+
+        ul {
+          margin-top: 25vw;
+          text-transform: uppercase;
+          text-align: left;
+
+          li {
+            font-size: 5vw;
+            font-weight: 600;
+            line-height: 4vw;
+            margin-bottom: 5vw;
+
+            span {
+              font-size: 3vw;
+              font-weight: 300;
+            }
+          }
+        }
+      }
+
+      h1 {
+        margin: 0;
+        padding: 0;
+      }
+
+      p {
+        position: absolute;
+        bottom: 7.5vw;
+        left: 7.22vw;
+        text-transform: uppercase;
+        font-size: 5vw;
+        line-height: 5.5vw;
+        padding-right: 15%;
+
+        span {
+          font-size: 4vw;
+          line-height: 4vw;
+        }
+
+        strong {
+          font-weight: 600;
+        }
+      }
+
+      .cs-linie {
+        position: absolute;
+        right: 7vw;
+        bottom: -6vw;
+        background-color: $cSchwarz;
+        width: 2px;
+        height: 80vw;
+      }
+    }
+
+    &#case-studie-portfolio {
+      height: auto;
+      margin-bottom: 20vw;
+
+      .container {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: flex-start;
+        width: 100%;
+        padding: 0 7.22%;
+        margin-top: 10vw;
+
+        .cs-bild {
+          width: 80vw;
+          height: 80vw;
+          background-color: $cPink;
+          box-shadow: 3vw 3vw $cGelb;
+          order: 0;
+          margin: 10vw 0;
+        }
+
+        .cs-text {
+          width: 100%;
+          margin: 0 $frame-padding;
+          order: 1;
+
+          h2 {
+            font-size: 20vw;
+            margin-bottom: 3vw;
+          }
+
+          p {
+            font-size: 8vw;
+            width: 75%;
+            margin-bottom: 10vw;
+          }
+
+          a:link {
+            font-size: 7vw;
+            text-transform: uppercase;
+            color: $cSchwarz;
+            text-decoration: underline;
+          }
+
+          a:visited, a:active {
+            color: $cSchwarz;
+          }
+        }
+      }
+      .cs-reverse {
+        .cs-bild {
+          order: 0;
+          background-color: $cGelb;
+          box-shadow: 3vw 3vw $cPink;
+        }
+      }
+    }
+
+    &#behance-banner {
+      height: auto;
+      min-height: auto;
+      padding-bottom: 20vw;
+
+      img {
+        margin-left: 2vw;
+      }
+    }
+
+    &#cs-kontakt {
+      background-color: $cPink;
+      color: $cWeiss;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+
+      .container {
+        padding: 0 $frame-padding;
+
+        p {
+          font-size: 13vw;
+          line-height: 16vw;
+          margin-top: -30vw;
+        }
+
+        .say-hi {
+          font-weight: 100;
+          font-size: 10vw;
+        }
+
+        .animate-wrapper {
+          color: $cWeiss;
+          position: relative;
+        }
+
+        a {
+          transition: color 500ms ease-in-out;
+        }
+
+        a:link {
+          color: $cWeiss;
+          text-decoration: underline;
+
+        }
+
+        a:visited, a:active {
+          color: $cWeiss;
+        }
+
+        .animate-wrapper:hover a{
+          color: $cGelb;
+        }
+
+
+
+        .pfeil {
+          position: absolute;
+          width: 0;
+          height: 0;
+          border-top: 10vw solid transparent;
+          border-bottom: 10vw solid transparent;
+          border-right: 15vw solid $cWeiss;
+          left: 50%;
+          bottom: -30vw;
+          transform: translateX(-50%) rotate(90deg);
+          transition: transform 1000ms ease-in-out, border-right 1000ms ease-in-out;
+        }
+
+        .animate-wrapper:hover .pfeil{
+          transform: rotate(540deg);
+          border-right: 5vw solid $cSchwarz;
+        }
       }
     }
 
@@ -980,6 +1204,10 @@ page-transition {
 
 @media (orientation: landscape) {
 
+  .misc-logo {
+    width: 3vw;
+    height: auto;
+  }
 
   header {
     position: fixed;
@@ -1277,6 +1505,219 @@ page-transition {
           color: $cSchwarz;
         }
 
+      }
+    }
+
+    &#case-studie-start {
+      background-color: $cGelb;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+
+      .container {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        width: 100%;
+        padding: 0 7.22%;
+
+        h1 {
+          font-size: 15vw;
+          position: relative;
+          margin-top: -10.5vw;
+
+          span {
+            font-size: 7.5vw;
+            position: absolute;
+            top: 15vw;
+            left: 9vw;
+          }
+        }
+
+        ul {
+          text-transform: uppercase;
+          text-align: right;
+
+          li {
+            font-size: 1.2vw;
+            font-weight: 600;
+            line-height: .9vw;
+            margin-bottom: 2.5vw;
+
+            span {
+              font-size: .7vw;
+              font-weight: 300;
+            }
+          }
+        }
+      }
+
+      h1 {
+        margin: 0;
+        padding: 0;
+      }
+
+      p {
+        position: absolute;
+        bottom: 3vw;
+        left: 7.22vw;
+        text-transform: uppercase;
+        font-size: 1.2vw;
+        line-height: .9vw;
+
+        span {
+          font-size: .7vw;
+        }
+
+        strong {
+          font-weight: 600;
+        }
+      }
+
+      .cs-linie {
+        position: absolute;
+        right: 7vw;
+        bottom: -6vw;
+        background-color: $cSchwarz;
+        width: 2px;
+        height: 12vw;
+      }
+    }
+
+    &#case-studie-portfolio {
+      height: auto;
+      margin-bottom: 10vw;
+
+      .container {
+        display: flex;
+        justify-content: space-between;
+        align-items: flex-start;
+        width: 100%;
+        padding: 0 7.22%;
+        margin-top: 10vw;
+
+        .cs-bild {
+          width: 35vw;
+          height: 35vw;
+          background-color: $cPink;
+          box-shadow: .5vw .5vw $cGelb;
+        }
+
+        .cs-text {
+          max-width: 50%;
+
+          h2 {
+            font-size: 8vw;
+            margin-bottom: 3vw;
+          }
+
+          p {
+            font-size: 2vw;
+            width: 75%;
+            margin-bottom: 3vw;
+          }
+
+          a:link {
+            font-size: 1.3vw;
+            text-transform: uppercase;
+            color: $cSchwarz;
+            text-decoration: underline;
+          }
+
+          a:visited, a:active {
+            color: $cSchwarz;
+          }
+        }
+      }
+      .cs-reverse {
+        .cs-bild {
+          order: 0;
+          background-color: $cGelb;
+          box-shadow: .5vw .5vw $cPink;
+        }
+        .cs-text {
+          order: 1;
+          text-align: right;
+
+          p {
+            width: 100%;
+            padding-left: 25%;
+          }
+        }
+      }
+    }
+
+    &#behance-banner {
+      height: auto;
+      padding-bottom: 10vw;
+
+      img {
+        margin-left: 2vw;
+      }
+    }
+
+    &#cs-kontakt {
+      background-color: $cPink;
+      color: $cWeiss;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+
+      .container {
+        padding: 0 $frame-padding;
+
+        p {
+          font-size: 9vw;
+          line-height: 9.2vw;
+          margin-top: -9vw;
+        }
+
+        .say-hi {
+          font-weight: 100;
+          font-size: 3vw;
+        }
+
+        .animate-wrapper {
+          color: $cWeiss;
+          position: relative;
+        }
+
+        a {
+          transition: color 500ms ease-in-out;
+        }
+
+        a:link {
+          color: $cWeiss;
+          text-decoration: underline;
+
+        }
+
+        a:visited, a:active {
+          color: $cWeiss;
+        }
+
+        .animate-wrapper:hover a{
+          color: $cGelb;
+        }
+
+
+
+        .pfeil {
+          position: absolute;
+          width: 0;
+          height: 0;
+          border-top: 3vw solid transparent;
+          border-bottom: 3vw solid transparent;
+          border-right: 5vw solid $cWeiss;
+          left: 55vw;
+          bottom: 2.5vw;
+          transition: transform 1000ms ease-in-out, border-right 1000ms ease-in-out;
+        }
+
+        .animate-wrapper:hover .pfeil{
+          transform: rotate(540deg);
+          border-right: 5vw solid $cSchwarz;
+        }
       }
     }
 
@@ -1812,6 +2253,16 @@ page-transition {
 @media (min-aspect-ratio: 1920/947) {
   section {
     min-height: 49.322917vw;
+
+    &#behance-banner {
+      height: auto;
+      min-height: auto;
+      padding-bottom: 10vw;
+
+      img {
+        margin-left: 2vw;
+      }
+    }
   }
 
   .cptplank-typographie-container {

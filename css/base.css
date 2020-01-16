@@ -239,6 +239,10 @@ ul {
   opacity: 0;
 }
 
+.display-none {
+  display: none;
+}
+
 page-transition {
   display: none;
   grid-template-columns: repeat(10, auto);
@@ -262,6 +266,11 @@ page-transition div {
 }
 
 @media (orientation: portrait) {
+  .misc-logo {
+    width: 15vw;
+    height: auto;
+  }
+
   header {
     position: fixed;
     top: 1vw;
@@ -505,6 +514,183 @@ page-transition div {
   }
   section#mail-send div a:hover {
     color: #000000;
+  }
+  section#case-studie-start {
+    background-color: #FFD24A;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  section#case-studie-start .container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    padding: 0 7.22%;
+  }
+  section#case-studie-start .container h1 {
+    font-size: 20vw;
+    position: relative;
+    margin-top: -10.5vw;
+  }
+  section#case-studie-start .container h1 span {
+    font-size: 13vw;
+    position: absolute;
+    top: 19vw;
+    left: 13vw;
+  }
+  section#case-studie-start .container ul {
+    margin-top: 25vw;
+    text-transform: uppercase;
+    text-align: left;
+  }
+  section#case-studie-start .container ul li {
+    font-size: 5vw;
+    font-weight: 600;
+    line-height: 4vw;
+    margin-bottom: 5vw;
+  }
+  section#case-studie-start .container ul li span {
+    font-size: 3vw;
+    font-weight: 300;
+  }
+  section#case-studie-start h1 {
+    margin: 0;
+    padding: 0;
+  }
+  section#case-studie-start p {
+    position: absolute;
+    bottom: 7.5vw;
+    left: 7.22vw;
+    text-transform: uppercase;
+    font-size: 5vw;
+    line-height: 5.5vw;
+    padding-right: 15%;
+  }
+  section#case-studie-start p span {
+    font-size: 4vw;
+    line-height: 4vw;
+  }
+  section#case-studie-start p strong {
+    font-weight: 600;
+  }
+  section#case-studie-start .cs-linie {
+    position: absolute;
+    right: 7vw;
+    bottom: -6vw;
+    background-color: #000000;
+    width: 2px;
+    height: 80vw;
+  }
+  section#case-studie-portfolio {
+    height: auto;
+    margin-bottom: 20vw;
+  }
+  section#case-studie-portfolio .container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: flex-start;
+    width: 100%;
+    padding: 0 7.22%;
+    margin-top: 10vw;
+  }
+  section#case-studie-portfolio .container .cs-bild {
+    width: 80vw;
+    height: 80vw;
+    background-color: #FF9CD4;
+    box-shadow: 3vw 3vw #FFD24A;
+    order: 0;
+    margin: 10vw 0;
+  }
+  section#case-studie-portfolio .container .cs-text {
+    width: 100%;
+    margin: 0 7.22%;
+    order: 1;
+  }
+  section#case-studie-portfolio .container .cs-text h2 {
+    font-size: 20vw;
+    margin-bottom: 3vw;
+  }
+  section#case-studie-portfolio .container .cs-text p {
+    font-size: 8vw;
+    width: 75%;
+    margin-bottom: 10vw;
+  }
+  section#case-studie-portfolio .container .cs-text a:link {
+    font-size: 7vw;
+    text-transform: uppercase;
+    color: #000000;
+    text-decoration: underline;
+  }
+  section#case-studie-portfolio .container .cs-text a:visited, section#case-studie-portfolio .container .cs-text a:active {
+    color: #000000;
+  }
+  section#case-studie-portfolio .cs-reverse .cs-bild {
+    order: 0;
+    background-color: #FFD24A;
+    box-shadow: 3vw 3vw #FF9CD4;
+  }
+  section#behance-banner {
+    height: auto;
+    min-height: auto;
+    padding-bottom: 20vw;
+  }
+  section#behance-banner img {
+    margin-left: 2vw;
+  }
+  section#cs-kontakt {
+    background-color: #FF9CD4;
+    color: #FFFFFF;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  section#cs-kontakt .container {
+    padding: 0 7.22%;
+  }
+  section#cs-kontakt .container p {
+    font-size: 13vw;
+    line-height: 16vw;
+    margin-top: -30vw;
+  }
+  section#cs-kontakt .container .say-hi {
+    font-weight: 100;
+    font-size: 10vw;
+  }
+  section#cs-kontakt .container .animate-wrapper {
+    color: #FFFFFF;
+    position: relative;
+  }
+  section#cs-kontakt .container a {
+    transition: color 500ms ease-in-out;
+  }
+  section#cs-kontakt .container a:link {
+    color: #FFFFFF;
+    text-decoration: underline;
+  }
+  section#cs-kontakt .container a:visited, section#cs-kontakt .container a:active {
+    color: #FFFFFF;
+  }
+  section#cs-kontakt .container .animate-wrapper:hover a {
+    color: #FFD24A;
+  }
+  section#cs-kontakt .container .pfeil {
+    position: absolute;
+    width: 0;
+    height: 0;
+    border-top: 10vw solid transparent;
+    border-bottom: 10vw solid transparent;
+    border-right: 15vw solid #FFFFFF;
+    left: 50%;
+    bottom: -30vw;
+    transform: translateX(-50%) rotate(90deg);
+    transition: transform 1000ms ease-in-out, border-right 1000ms ease-in-out;
+  }
+  section#cs-kontakt .container .animate-wrapper:hover .pfeil {
+    transform: rotate(540deg);
+    border-right: 5vw solid #000000;
   }
   section#eingang {
     background-color: #FFD24A;
@@ -980,6 +1166,11 @@ page-transition div {
   }
 }
 @media (orientation: landscape) {
+  .misc-logo {
+    width: 3vw;
+    height: auto;
+  }
+
   header {
     position: fixed;
     top: 1vw;
@@ -1225,6 +1416,180 @@ page-transition div {
   }
   section#mail-send div a:hover {
     color: #000000;
+  }
+  section#case-studie-start {
+    background-color: #FFD24A;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  section#case-studie-start .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    padding: 0 7.22%;
+  }
+  section#case-studie-start .container h1 {
+    font-size: 15vw;
+    position: relative;
+    margin-top: -10.5vw;
+  }
+  section#case-studie-start .container h1 span {
+    font-size: 7.5vw;
+    position: absolute;
+    top: 15vw;
+    left: 9vw;
+  }
+  section#case-studie-start .container ul {
+    text-transform: uppercase;
+    text-align: right;
+  }
+  section#case-studie-start .container ul li {
+    font-size: 1.2vw;
+    font-weight: 600;
+    line-height: 0.9vw;
+    margin-bottom: 2.5vw;
+  }
+  section#case-studie-start .container ul li span {
+    font-size: 0.7vw;
+    font-weight: 300;
+  }
+  section#case-studie-start h1 {
+    margin: 0;
+    padding: 0;
+  }
+  section#case-studie-start p {
+    position: absolute;
+    bottom: 3vw;
+    left: 7.22vw;
+    text-transform: uppercase;
+    font-size: 1.2vw;
+    line-height: 0.9vw;
+  }
+  section#case-studie-start p span {
+    font-size: 0.7vw;
+  }
+  section#case-studie-start p strong {
+    font-weight: 600;
+  }
+  section#case-studie-start .cs-linie {
+    position: absolute;
+    right: 7vw;
+    bottom: -6vw;
+    background-color: #000000;
+    width: 2px;
+    height: 12vw;
+  }
+  section#case-studie-portfolio {
+    height: auto;
+    margin-bottom: 10vw;
+  }
+  section#case-studie-portfolio .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    width: 100%;
+    padding: 0 7.22%;
+    margin-top: 10vw;
+  }
+  section#case-studie-portfolio .container .cs-bild {
+    width: 35vw;
+    height: 35vw;
+    background-color: #FF9CD4;
+    box-shadow: 0.5vw 0.5vw #FFD24A;
+  }
+  section#case-studie-portfolio .container .cs-text {
+    max-width: 50%;
+  }
+  section#case-studie-portfolio .container .cs-text h2 {
+    font-size: 8vw;
+    margin-bottom: 3vw;
+  }
+  section#case-studie-portfolio .container .cs-text p {
+    font-size: 2vw;
+    width: 75%;
+    margin-bottom: 3vw;
+  }
+  section#case-studie-portfolio .container .cs-text a:link {
+    font-size: 1.3vw;
+    text-transform: uppercase;
+    color: #000000;
+    text-decoration: underline;
+  }
+  section#case-studie-portfolio .container .cs-text a:visited, section#case-studie-portfolio .container .cs-text a:active {
+    color: #000000;
+  }
+  section#case-studie-portfolio .cs-reverse .cs-bild {
+    order: 0;
+    background-color: #FFD24A;
+    box-shadow: 0.5vw 0.5vw #FF9CD4;
+  }
+  section#case-studie-portfolio .cs-reverse .cs-text {
+    order: 1;
+    text-align: right;
+  }
+  section#case-studie-portfolio .cs-reverse .cs-text p {
+    width: 100%;
+    padding-left: 25%;
+  }
+  section#behance-banner {
+    height: auto;
+    padding-bottom: 10vw;
+  }
+  section#behance-banner img {
+    margin-left: 2vw;
+  }
+  section#cs-kontakt {
+    background-color: #FF9CD4;
+    color: #FFFFFF;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  section#cs-kontakt .container {
+    padding: 0 7.22%;
+  }
+  section#cs-kontakt .container p {
+    font-size: 9vw;
+    line-height: 9.2vw;
+    margin-top: -9vw;
+  }
+  section#cs-kontakt .container .say-hi {
+    font-weight: 100;
+    font-size: 3vw;
+  }
+  section#cs-kontakt .container .animate-wrapper {
+    color: #FFFFFF;
+    position: relative;
+  }
+  section#cs-kontakt .container a {
+    transition: color 500ms ease-in-out;
+  }
+  section#cs-kontakt .container a:link {
+    color: #FFFFFF;
+    text-decoration: underline;
+  }
+  section#cs-kontakt .container a:visited, section#cs-kontakt .container a:active {
+    color: #FFFFFF;
+  }
+  section#cs-kontakt .container .animate-wrapper:hover a {
+    color: #FFD24A;
+  }
+  section#cs-kontakt .container .pfeil {
+    position: absolute;
+    width: 0;
+    height: 0;
+    border-top: 3vw solid transparent;
+    border-bottom: 3vw solid transparent;
+    border-right: 5vw solid #FFFFFF;
+    left: 55vw;
+    bottom: 2.5vw;
+    transition: transform 1000ms ease-in-out, border-right 1000ms ease-in-out;
+  }
+  section#cs-kontakt .container .animate-wrapper:hover .pfeil {
+    transform: rotate(540deg);
+    border-right: 5vw solid #000000;
   }
   section#eingang {
     background-color: #FFD24A;
@@ -1676,6 +2041,14 @@ page-transition div {
 @media (min-aspect-ratio: 1920/947) {
   section {
     min-height: 49.322917vw;
+  }
+  section#behance-banner {
+    height: auto;
+    min-height: auto;
+    padding-bottom: 10vw;
+  }
+  section#behance-banner img {
+    margin-left: 2vw;
   }
 
   .cptplank-typographie-container {
