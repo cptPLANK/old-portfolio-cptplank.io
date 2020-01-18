@@ -267,7 +267,7 @@ const Animations = {
         else if (finalLinkValue === 'Portfolio') {
             window.location.href = "index.html?internal=1#portfolio";
         }
-        else if (finalLinkValue === 'PLANK' || finalLinkValue === 'Start') {
+        else if (finalLinkValue === 'PLANK' || finalLinkValue === 'Start' || finalLinkValue === '<img class="misc-logo" src="img/misc-logo.svg" alt="cptPLANK.io">') {
             window.location.href = "index.html?internal=1";
         }
     },
@@ -441,14 +441,14 @@ const Helper = {
 
 // Show and Hide Menu/Header
 let innerHeight = window.innerHeight;
-let hideAt40Perc = (innerHeight / 100) * 40;
+let hideAt10Perc = (innerHeight / 100) * 10;
 let scrollPosition = window.scrollY;
 let logo = document.querySelector('.header-logo');
 let menu = document.querySelector('.burger-btn');
 
 let toggleHeader = () => {
 
-    if (scrollPosition > hideAt40Perc) {
+    if (scrollPosition > hideAt10Perc) {
         logo.classList.add('hidden');
         menu.classList.add('scrolled-menu');
     }

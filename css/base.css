@@ -406,6 +406,148 @@ page-transition div {
     position: relative;
     max-width: 100%;
   }
+  section#single-case-studie-start {
+    background-color: #FFD24A;
+    padding-top: 15vw;
+    z-index: 1;
+    height: 55vw;
+    min-height: auto;
+  }
+  section#single-case-studie-start .container {
+    width: 100%;
+    padding: 0 7.22%;
+  }
+  section#single-case-studie-start .container h1 {
+    font-size: 5vw;
+    text-transform: uppercase;
+    margin-bottom: 2vw;
+  }
+  section#single-case-studie-start .container h1 span {
+    font-size: 2.5vw;
+  }
+  section#single-case-studie-start .container .start-img {
+    width: 100%;
+    height: 40vw;
+    background-color: #FFFFFF;
+    box-shadow: 0.5vw 0.5vw #000000;
+    background-size: contain;
+    background-repeat: no-repeat;
+  }
+  section#case-study-main {
+    background-color: #FFFFFF;
+    padding: 0 7.22%;
+    height: auto;
+    min-height: 100vh;
+    letter-spacing: 0.01vw;
+  }
+  section#case-study-main .container-top {
+    margin-top: 27vw;
+    border-bottom: 0.5vw solid #FF9CD4;
+    padding-bottom: 10vw;
+    display: flex;
+    justify-content: flex-start;
+    flex-wrap: wrap;
+  }
+  section#case-study-main .container-top .cs-desc {
+    width: 100%;
+  }
+  section#case-study-main .container-top .cs-desc h2 {
+    font-size: 5vw;
+    margin-bottom: 5vw;
+    line-height: 6vw;
+  }
+  section#case-study-main .container-top .cs-desc .main-desc {
+    font-size: 3.75vw;
+    margin-bottom: 10vw;
+    line-height: 5.625vw;
+  }
+  section#case-study-main .container-top .cs-schwerpunkte h4 {
+    font-size: 5vw;
+    margin-bottom: 5vw;
+  }
+  section#case-study-main .container-top .cs-schwerpunkte ul {
+    font-size: 2.5vw;
+  }
+  section#case-study-main .container-top .cs-schwerpunkte ul li {
+    padding-bottom: 2vw;
+  }
+  section#case-study-main .container-top .cs-desc-more {
+    display: flex;
+    justify-content: flex-start;
+    flex-wrap: wrap;
+    margin-bottom: 10vw;
+  }
+  section#case-study-main .container-top .cs-desc-more div {
+    width: 100%;
+    margin-bottom: 5vw;
+  }
+  section#case-study-main .container-top .cs-desc-more div h3 {
+    font-size: 3.75vw;
+    text-transform: uppercase;
+    line-height: 5.625vw;
+  }
+  section#case-study-main .container-top .cs-desc-more div p {
+    font-size: 3.75vw;
+  }
+  section#case-study-main .container {
+    margin-top: 10vw;
+    display: flex;
+    justify-content: flex-start;
+    flex-wrap: wrap;
+  }
+  section#case-study-main .container h3 {
+    width: 100%;
+    font-size: 5vw;
+    margin-bottom: 5vw;
+  }
+  section#case-study-main .container p {
+    width: 100%;
+    font-size: 3.75vw;
+    line-height: 5.625vw;
+  }
+  section#case-study-main .container img {
+    width: 100%;
+    margin-top: 10vw;
+  }
+  section#case-study-main .container-bottom {
+    margin-top: 10vw;
+    padding: 10vw 0;
+    border-top: 0.5vw solid #FF9CD4;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+    flex-shrink: 0;
+  }
+  section#case-study-main .container-bottom p {
+    flex-shrink: 0;
+    font-size: 3.409090909vw;
+    margin-bottom: 7vw;
+  }
+  section#case-study-main .container-bottom p span {
+    flex-shrink: 0;
+    font-size: 6.81818182vw;
+    text-transform: uppercase;
+    line-height: 9vw;
+  }
+  section#case-study-main .container-bottom a {
+    flex-shrink: 0;
+    font-size: 3.409090909vw;
+    text-transform: uppercase;
+    color: #000000;
+    background-color: #FFD24A;
+    box-shadow: 0.5vw 0.5vw 0 #FF9CD4;
+    padding: 2vw 2vw;
+    transition: letter-spacing 500ms ease-in-out, transform 100ms ease-in-out, box-shadow 100ms ease-in-out;
+  }
+  section#case-study-main .container-bottom a:hover {
+    letter-spacing: 0.3vw;
+  }
+  section#case-study-main .container-bottom a:hover:active {
+    transform: translate(0.5vw, 0.5vw);
+    box-shadow: none;
+  }
   section#kontakt h1 {
     text-transform: uppercase;
     transform: rotate(-90deg);
@@ -1306,6 +1448,143 @@ page-transition div {
     position: relative;
     max-width: 100%;
   }
+  section#single-case-studie-start {
+    background-color: #FFD24A;
+    padding-top: 7vw;
+    z-index: 1;
+    height: 50vw;
+    max-height: 100vh;
+  }
+  section#single-case-studie-start .container {
+    width: 100%;
+    padding: 0 7.22%;
+  }
+  section#single-case-studie-start .container h1 {
+    font-size: 2vw;
+    text-transform: uppercase;
+    margin-bottom: 2vw;
+  }
+  section#single-case-studie-start .container h1 span {
+    font-size: 1vw;
+  }
+  section#single-case-studie-start .container .start-img {
+    width: 100%;
+    height: 40vw;
+    background-color: #FFFFFF;
+    box-shadow: 0.5vw 0.5vw #000000;
+    background-size: contain;
+    background-repeat: no-repeat;
+  }
+  section#case-study-main {
+    background-color: #FFFFFF;
+    padding: 0 7.22%;
+    height: auto;
+    min-height: 100vh;
+    letter-spacing: 0.01vw;
+  }
+  section#case-study-main .container-top {
+    margin-top: 13vw;
+    border-bottom: 0.1vw solid #FF9CD4;
+    padding-bottom: 7vw;
+    display: flex;
+    justify-content: space-between;
+  }
+  section#case-study-main .container-top .cs-desc {
+    width: 60%;
+  }
+  section#case-study-main .container-top .cs-desc h2 {
+    font-size: 2vw;
+    margin-bottom: 3.5vw;
+    line-height: 2.6vw;
+  }
+  section#case-study-main .container-top .cs-desc .main-desc {
+    font-size: 1.5vw;
+    margin-bottom: 7vw;
+    line-height: 2.25vw;
+  }
+  section#case-study-main .container-top .cs-schwerpunkte h4 {
+    font-size: 2vw;
+    margin-bottom: 1.75vw;
+  }
+  section#case-study-main .container-top .cs-schwerpunkte ul {
+    font-size: 1vw;
+  }
+  section#case-study-main .container-top .cs-schwerpunkte ul li {
+    padding-bottom: 0.5vw;
+  }
+  section#case-study-main .container-top .cs-desc-more {
+    display: flex;
+    justify-content: space-between;
+  }
+  section#case-study-main .container-top .cs-desc-more div {
+    width: 48%;
+  }
+  section#case-study-main .container-top .cs-desc-more div h3 {
+    font-size: 1.5vw;
+    text-transform: uppercase;
+    margin-bottom: 3.5vw;
+  }
+  section#case-study-main .container-top .cs-desc-more div p {
+    font-size: 1.5vw;
+  }
+  section#case-study-main .container {
+    margin-top: 7vw;
+    display: flex;
+    justify-content: flex-start;
+    flex-wrap: wrap;
+  }
+  section#case-study-main .container h3 {
+    width: 31%;
+    font-size: 2vw;
+  }
+  section#case-study-main .container p {
+    width: 69%;
+    font-size: 1.5vw;
+    line-height: 2.25vw;
+  }
+  section#case-study-main .container img {
+    width: 100%;
+    margin-top: 7vw;
+  }
+  section#case-study-main .container-bottom {
+    margin-top: 7vw;
+    padding: 7vw 0;
+    border-top: 0.1vw solid #FF9CD4;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+    flex-shrink: 0;
+  }
+  section#case-study-main .container-bottom p {
+    flex-shrink: 0;
+    font-size: 3.409090909vw;
+    margin-bottom: 7vw;
+  }
+  section#case-study-main .container-bottom p span {
+    flex-shrink: 0;
+    font-size: 6.81818182vw;
+    text-transform: uppercase;
+    line-height: 9vw;
+  }
+  section#case-study-main .container-bottom a {
+    flex-shrink: 0;
+    font-size: 3.409090909vw;
+    text-transform: uppercase;
+    color: #000000;
+    background-color: #FFD24A;
+    box-shadow: 0.25vw 0.25vw 0 #FF9CD4;
+    padding: 2vw 2vw;
+    transition: letter-spacing 500ms ease-in-out, transform 100ms ease-in-out, box-shadow 100ms ease-in-out;
+  }
+  section#case-study-main .container-bottom a:hover {
+    letter-spacing: 0.3vw;
+  }
+  section#case-study-main .container-bottom a:hover:active {
+    transform: translate(0.25vw, 0.25vw);
+    box-shadow: none;
+  }
   section#kontakt h1 {
     text-transform: uppercase;
     transform: rotate(-90deg);
@@ -2058,6 +2337,16 @@ page-transition div {
 @media (min-aspect-ratio: 680/947) and (max-aspect-ratio: 1/1) {
   form {
     transform: scale(0.8);
+  }
+}
+@media (min-aspect-ratio: 650/947) and (max-aspect-ratio: 1/1) {
+  #case-studie-start {
+    min-height: 150vh;
+    height: auto;
+  }
+
+  #cs-kontakt {
+    min-height: 140vh;
   }
 }
 
