@@ -385,6 +385,7 @@ page-transition {
 
             p {
               font-size: 3.75vw;
+              line-height: 5.625vw;
             }
           }
         }
@@ -694,6 +695,8 @@ page-transition {
           box-shadow: 3vw 3vw $cGelb;
           order: 0;
           margin: 10vw 0;
+          background-repeat: no-repeat;
+          background-size: cover;
         }
 
         .cs-text {
@@ -1108,7 +1111,21 @@ page-transition {
           line-height: 8vw;
           letter-spacing: 0.01vw;
           margin-bottom: 25vw;
+
+          span {
+            color: $cPink;
+          }
+
+          a {
+            color: $cGelb;
+            transition: letter-spacing 500ms ease-in-out;
+          }
+
+          a:hover {
+            letter-spacing: 0.05vw;
+          }
         }
+
 
         #vita {
           padding-bottom: 5vw;
@@ -1197,9 +1214,11 @@ page-transition {
           }
 
           .btn-case-study {
+            display: block;
             margin-top: 8vw;
             font-size: 7vw;
             text-decoration: underline;
+            color: $cSchwarz;
           }
         }
       }
@@ -1372,6 +1391,14 @@ page-transition {
 }
 
 @media (orientation: landscape) {
+
+  .hover-letter-spacing {
+    transition: letter-spacing 500ms ease-in-out;
+  }
+
+  .hover-letter-spacing:hover {
+    letter-spacing: 0.03vw;
+  }
 
   .misc-logo {
     width: 3vw;
@@ -1549,6 +1576,10 @@ page-transition {
         width: 100%;
         padding: 0 $frame-padding;
 
+        a {
+          color: $cSchwarz;
+        }
+
         h1 {
           font-size: 2vw;
           text-transform: uppercase;
@@ -1631,6 +1662,7 @@ page-transition {
 
             p {
               font-size: 1.5vw;
+              line-height: 2.25vw;
             }
           }
         }
@@ -1853,6 +1885,15 @@ page-transition {
         width: 100%;
         padding: 0 7.22%;
 
+        a {
+          color: $cSchwarz;
+          transition: letter-spacing 500ms ease-in-out;
+        }
+
+        a:hover {
+          letter-spacing: 0.1vw;
+        }
+
         h1 {
           font-size: 15vw;
           position: relative;
@@ -1933,14 +1974,37 @@ page-transition {
           height: 35vw;
           background-color: $cPink;
           box-shadow: .5vw .5vw $cGelb;
+          background-repeat: no-repeat;
+          background-size: cover;
+          position: relative;
+          transition: transform 500ms ease-in-out, opacity 500ms ease-in-out;
+
+          &>div {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            padding: 2vw;
+            font-size: 2vw;
+            display: flex;
+            justify-content: space-between;
+            letter-spacing: 0.05vw;
+            color: $cWeiss;
+          }
+
+          &:hover {
+            transform: scale(1.05);
+            opacity: .5;
+          }
         }
 
         .cs-text {
           max-width: 50%;
 
           h2 {
-            font-size: 8vw;
+            font-size: 7vw;
             margin-bottom: 3vw;
+            white-space: nowrap;
           }
 
           p {
@@ -1966,6 +2030,10 @@ page-transition {
           order: 0;
           background-color: $cGelb;
           box-shadow: .5vw .5vw $cPink;
+
+          &>div {
+            color: $cSchwarz;
+          }
         }
         .cs-text {
           order: 1;
@@ -1985,6 +2053,11 @@ page-transition {
 
       img {
         margin-left: 2vw;
+        transition: transform 500ms ease-in-out;
+
+        &:hover {
+          transform: scale(1.05);
+        }
       }
     }
 
@@ -2237,6 +2310,12 @@ page-transition {
           font-size: 1.3vw;
           padding: .4vw 2.4vw .4vw .8vw;
           position: relative;
+          letter-spacing: normal;
+          transition: letter-spacing 500ms ease-in-out;
+
+          &:hover {
+            letter-spacing: 0.5vw;
+          }
 
           &:after {
             content: ' ';
@@ -2256,15 +2335,14 @@ page-transition {
           }
 
         }
-
-
-
       }
     }
     &#ueber-mich {
       background-color: $cSchwarz;
       min-height: 100vh;
       height: auto;
+      padding-bottom: 7vw;
+      letter-spacing: 0.01vw;
 
       article {
         max-width: 100%;
@@ -2350,6 +2428,19 @@ page-transition {
           font-size: 1.5vw;
           line-height: 2.4vw;
           letter-spacing: 0.01vw;
+
+          span {
+            color: $cPink;
+          }
+
+          a {
+            color: $cGelb;
+            transition: letter-spacing 500ms ease-in-out;
+          }
+
+          a:hover {
+            letter-spacing: 0.05vw;
+          }
         }
 
         #vita {
@@ -2412,11 +2503,29 @@ page-transition {
           background-color: $cPink;
           box-shadow: .5vw .5vw 0 $cGelb;
           display: inline-block;
+          position: relative;
+          background-position: center;
+          background-repeat: no-repeat;
+          background-size: cover;
+          color: $cWeiss;
+
+          &>div {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            padding: 1vw;
+            font-size: 1vw;
+            display: flex;
+            justify-content: space-between;
+            letter-spacing: 0.05vw;
+          }
         }
 
         & li:nth-of-type(even) .portfolio-bild {
           background-color: $cGelb;
           box-shadow: .5vw .5vw 0 $cPink;
+          color: $cSchwarz;
         }
 
         .portfolio-text-wrapper {
@@ -2440,9 +2549,11 @@ page-transition {
           }
 
           .btn-case-study {
+            display: block;
             margin-top: 1.5vw;
             font-size: 1vw;
             text-decoration: underline;
+            color: $cSchwarz;
           }
         }
       }
@@ -2453,6 +2564,12 @@ page-transition {
         font-size: 1vw;
         position: relative;
         display: inline-block;
+        transition: letter-spacing 500ms ease-in-out;
+        color: $cSchwarz;
+
+        &:hover {
+          letter-spacing: 0.5vw;
+        }
 
         &:before {
           position: absolute;
@@ -2463,6 +2580,11 @@ page-transition {
           left: 7vw;
           top: 50%;
           transform: translateY(-50%);
+          transition: left 500ms ease-in-out;
+        }
+
+        &:hover:before {
+          left: 13.8vw;
         }
 
         &:after {
@@ -2491,6 +2613,15 @@ page-transition {
       padding: 4vw 0 4vw 22.2vw;
       font-size: 0.9vw;
       letter-spacing: .06vw;
+
+      a {
+        color: $cWeiss;
+        transition: color 500ms ease-in-out;
+
+        &:hover {
+          color: $cGelb;
+        }
+      }
 
       & > li {
         display: inline-block;

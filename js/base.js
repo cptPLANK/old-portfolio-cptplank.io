@@ -12,7 +12,8 @@ let howMuchScrolled,
     askElement,
     weiterBtn,
     whichLink,
-    submitBtn;
+    submitBtn,
+    csData;
 
 nav = document.querySelector('nav');
 burgerBtn = document.querySelector('.burger-btn');
@@ -162,7 +163,8 @@ const Animations = {
     },
     basicAnimations: () => {
         ScrollReveal().reveal('.kein-designer-container h1, #untertitel, #was-ich-mache-eins, #was-ich-mache-zwei,' +
-            '#ueber-mich > article > h2, #ueber-mich-text', {
+            '#ueber-mich > article > h2, #ueber-mich-text, #behance-banner a, #cs-kontakt .container, #case-studie-start' +
+            ' .container, #case-studie-start .light', {
             distance: '-10%',
             duration: 1500,
             delay: 250
@@ -222,9 +224,19 @@ const Animations = {
             viewFactor: 0
         });
 
-        ScrollReveal().reveal('#portfolio ul li', {
+        ScrollReveal().reveal('#portfolio ul li, #case-studie-portfolio .cs-left', {
             distance: '30%',
             origin: 'left',
+            duration: 1000,
+            viewFactor: 0,
+            useDelay: 'onload',
+            easing: 'ease-in-out',
+            reset: true
+        });
+
+        ScrollReveal().reveal('#case-studie-portfolio .cs-reverse', {
+            distance: '30%',
+            origin: 'right',
             duration: 1000,
             viewFactor: 0,
             useDelay: 'onload',
@@ -255,20 +267,14 @@ const Animations = {
         });
     },
     link: (finalLinkValue) => {
-        if (finalLinkValue === 'Kontakt') {
-            window.location.href = "kontakt.html?internal=1";
-        }
-        else if (finalLinkValue === 'Case Studies') {
-            window.location.href = "case-studies.html?internal=1";
-        }
-        else if (finalLinkValue === 'Über mich') {
+        if (finalLinkValue === 'index.html#ueber-mich') {
             window.location.href = "index.html?internal=1#ueber-mich";
         }
-        else if (finalLinkValue === 'Portfolio') {
+        else if (finalLinkValue === 'index.html#portfolio') {
             window.location.href = "index.html?internal=1#portfolio";
         }
-        else if (finalLinkValue === 'PLANK' || finalLinkValue === 'Start' || finalLinkValue === '<img class="misc-logo" src="img/misc-logo.svg" alt="cptPLANK.io">') {
-            window.location.href = "index.html?internal=1";
+        else {
+            window.location.href = finalLinkValue + '?internal=1';
         }
     },
     changePageStaggerIn: (linkValue) => {
@@ -304,10 +310,6 @@ const Checks = {
             return 'landscape';
         }
     },
-    isInternetExplorer: function() {
-        let ua = navigator.userAgent;
-        return ua.indexOf("MSIE ") > -1 || ua.indexOf("Trident/") > -1;
-    },
     isMobile: () => {
         let isMobile = false;
         if(/(android|bb\d+|meego).+mobile|avantgo|bada\/|blackberry|blazer|compal|elaine|fennec|hiptop|iemobile|ip(hone|od)|ipad|iris|kindle|Android|Silk|lge |maemo|midp|mmp|netfront|opera m(ob|in)i|palm( os)?|phone|p(ixi|re)\/|plucker|pocket|psp|series(4|6)0|symbian|treo|up\.(browser|link)|vodafone|wap|windows (ce|phone)|xda|xiino/i.test(navigator.userAgent)
@@ -320,8 +322,10 @@ const Checks = {
         let checkUrl = Helper.getUrlVariable('internal');
         if ( checkUrl === '1') {
             Animations.changePageStaggerOut();
-            let pathName = window.location.pathname;
-            window.history.pushState('cptPLANK.io', 'cptPLANK.io', pathName);
+            setTimeout(() => {
+                let pathName = window.location.pathname;
+                window.history.pushState('cptPLANK.io', 'cptPLANK.io', pathName);
+            }, 1);
         }
         else {
             gsap.to('.page-transition-on', {
@@ -483,7 +487,7 @@ for (let i = 0; i < menuItem.length; i++) {
 }
 
 for (let i = 0; i < whichLink.length; i++) {
-    let value = whichLink[i].innerHTML;
+    let value = whichLink[i].getAttribute('href');
     whichLink[i].addEventListener('click', (e) => {
         e.preventDefault();
         Animations.changePageStaggerIn(value);
