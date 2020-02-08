@@ -403,11 +403,14 @@ const Helper = {
             }
         }
     },
-    sendForm: () => {
-        if (Checks.kontaktInput(askElement[4])) {
-            Animations.formError();
-        }
-        else {
+    sendMail: (fromEmail, subject, body) => {
+        Email.send({
+            SecureToken : "14c01157-fd80-4140-b852-1c34a9f86123",
+            To : 'hello@cptplank.io',
+            From : fromEmail,
+            Subject : subject,
+            Body : body
+        }).then(
             gsap.to('header', 0.1, {
                 display: 'none',
                 onComplete: () => {
@@ -427,7 +430,7 @@ const Helper = {
                                                 opacity: 1,
                                                 onComplete: () => {
                                                     gsap.to('#mail-send div', 2.5, {
-                                                       opacity: 1
+                                                        opacity: 1
                                                     });
                                                 }
                                             });
@@ -438,7 +441,23 @@ const Helper = {
                         }
                     });
                 }
-            });
+            })
+        )
+    },
+    sendForm: () => {
+        if (Checks.kontaktInput(askElement[4])) {
+            Animations.formError();
+        }
+        else {
+            let msgName =  document.querySelector('#ask-name-input').value;
+            let msgTel =  document.querySelector('#ask-tel-input').value;
+            let msgCompany =  document.querySelector('#ask-firma-input').value;
+            let msgMail = document.querySelector('#ask-email-input').value;
+            let msgText =  document.querySelector('#ask-text-input').value;
+            let msgsubject = 'cptplank.io: Formularanfrage';
+            let msgBody = msgName + ' schrieb:<br>' + msgText + '<br><br>' + 'Telefon: ' + msgTel + '<br>' + 'Firma: ' + msgCompany + '<br>'
+            +  'E-Mail: ' + msgMail;
+            Helper.sendMail(msgMail, msgsubject, msgBody);
         }
     }
 };
@@ -496,7 +515,7 @@ for (let i = 0; i < whichLink.length; i++) {
 
 //Kontakt Eventlistener
 
-if (window.location.pathname === '/cptPLANK.io/kontakt.html') {
+if (window.location.pathname === '/kontakt.html') {
     weiterBtn[0].addEventListener('click', Helper.kontaktNextElement);
     submitBtn.addEventListener('click', (e) => {
         e.preventDefault();

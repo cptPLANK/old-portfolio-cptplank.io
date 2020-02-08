@@ -98,14 +98,14 @@
             <div id="ask-name" class="ask-element ask-element-init on">
                 <span>Wie soll ich dich nennen?</span>
                 <div>
-                    <input type="text" required placeholder="Name__">
+                    <input id="ask-name-input" type="text" required placeholder="Name__">
                 </div>
                 <div class="ask-weiter">Weiter</div>
             </div>
             <div id="ask-firma" class="ask-element">
                 <span>Für wen arbeitest du?</span>
                 <div>
-                    <input type="text" placeholder="Firmenname__">
+                    <input id="ask-firma-input" type="text" placeholder="Firmenname__">
                 </div>
                 <div class="ask-weiter">Weiter</div>
             </div>
@@ -119,14 +119,14 @@
             <div id="ask-telefon" class="ask-element">
                 <span>Soll ich dich anrufen?</span>
                 <div>
-                    <input type="tel" placeholder="Telefonnummer__">
+                    <input type="tel" id="ask-tel-input" placeholder="Telefonnummer__">
                 </div>
                 <div class="ask-weiter">Weiter</div>
             </div>
             <div id="ask-nachricht" class="ask-element">
                 <span>Wie kann ich helfen?</span>
                 <div>
-                    <textarea class="ask-text" rows="1" required placeholder="Deine Nachricht__"></textarea>
+                    <textarea class="ask-text" id="ask-text-input" rows="1" required placeholder="Deine Nachricht__"></textarea>
                 </div>
                 <button type="submit" class="ask-submit">Absenden</button>
             </div>
@@ -140,6 +140,7 @@
     </div>
 </section>
 
+<script src="https://smtpjs.com/v3/smtp.js"></script>
 <script src="https://unpkg.com/scrollreveal"></script>
 <script src="js/base.js" async></script>
 <script src="js/autosize.js"></script>
