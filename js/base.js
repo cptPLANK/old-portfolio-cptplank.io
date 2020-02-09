@@ -522,7 +522,7 @@ if (window.location.pathname === '/kontakt') {
         Helper.sendForm();
     });
     submitBtn.addEventListener('keydown', (e) => {
-        if(e.key === 'enter')
+        if(e.which === 13 || e.keyCode === 13 || e.key === 13)
             {
                 e.preventDefault();
             }
