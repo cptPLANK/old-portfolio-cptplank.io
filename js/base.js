@@ -515,7 +515,7 @@ for (let i = 0; i < whichLink.length; i++) {
 
 //Kontakt Eventlistener
 
-if (window.location.pathname === '/kontakt.html') {
+if (window.location.pathname === '/kontakt') {
     weiterBtn[0].addEventListener('click', Helper.kontaktNextElement);
     submitBtn.addEventListener('click', (e) => {
         e.preventDefault();
