@@ -267,7 +267,7 @@ page-transition div {
 
 @media (orientation: portrait) {
   .misc-logo {
-    width: 15vw;
+    width: 7vw;
     height: auto;
   }
 
@@ -672,6 +672,10 @@ page-transition div {
     width: 100%;
     padding: 0 7.22%;
   }
+  section#case-studie-start .container a {
+    color: #000000;
+    transition: letter-spacing 500ms ease-in-out;
+  }
   section#case-studie-start .container h1 {
     font-size: 20vw;
     position: relative;
@@ -748,6 +752,19 @@ page-transition div {
     margin: 10vw 0;
     background-repeat: no-repeat;
     background-size: cover;
+    position: relative;
+  }
+  section#case-studie-portfolio .container .cs-bild > div {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 5vw;
+    font-size: 5vw;
+    display: flex;
+    justify-content: space-between;
+    letter-spacing: 0.05vw;
+    color: #FFFFFF;
   }
   section#case-studie-portfolio .container .cs-text {
     width: 100%;
@@ -755,11 +772,12 @@ page-transition div {
     order: 1;
   }
   section#case-studie-portfolio .container .cs-text h2 {
-    font-size: 20vw;
-    margin-bottom: 3vw;
+    font-size: 12vw;
+    margin-bottom: 6vw;
   }
   section#case-studie-portfolio .container .cs-text p {
-    font-size: 8vw;
+    font-size: 6vw;
+    line-height: 7.5vw;
     width: 75%;
     margin-bottom: 10vw;
   }
@@ -1158,7 +1176,23 @@ page-transition div {
     height: 80vw;
     background-color: #FF9CD4;
     box-shadow: 4vw 4vw 0 #FFD24A;
-    display: block;
+    display: inline-block;
+    position: relative;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: #FFFFFF;
+  }
+  section#portfolio ul .portfolio-bild > div {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 5vw;
+    font-size: 5vw;
+    display: flex;
+    justify-content: space-between;
+    letter-spacing: 0.05vw;
   }
   section#portfolio ul li:nth-of-type(even) .portfolio-bild {
     background-color: #FFD24A;
@@ -1167,17 +1201,17 @@ page-transition div {
   section#portfolio ul .portfolio-text-wrapper {
     display: block;
     max-width: 80vw;
-    margin: 15vw 0 30vw 0;
+    margin: 8vw 0 30vw 0;
   }
   section#portfolio ul .portfolio-text-wrapper h3 {
-    font-size: 15vw;
+    font-size: 12vw;
     letter-spacing: 0.5vw;
     line-height: 30vw;
   }
   section#portfolio ul .portfolio-text-wrapper p {
-    font-size: 7vw;
-    letter-spacing: 0.3vw;
-    line-height: 10vw;
+    font-size: 6vw;
+    letter-spacing: 0.1vw;
+    line-height: 9.5vw;
   }
   section#portfolio ul .portfolio-text-wrapper .btn-case-study {
     display: block;
@@ -1228,6 +1262,13 @@ page-transition div {
     padding: 10vw 0 4vw 7.22%;
     font-size: 8vw;
     letter-spacing: 0.06vw;
+  }
+  footer #link-listen a {
+    color: #FFFFFF;
+    transition: color 500ms ease-in-out;
+  }
+  footer #link-listen a:hover {
+    color: #FFD24A;
   }
   footer #link-listen > li {
     display: block;

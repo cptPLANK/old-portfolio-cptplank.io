@@ -123,7 +123,7 @@ page-transition {
 @media (orientation: portrait) {
 
   .misc-logo {
-    width: 15vw;
+    width: 7vw;
     height: auto;
   }
 
@@ -609,6 +609,11 @@ page-transition {
         width: 100%;
         padding: 0 7.22%;
 
+        a {
+          color: $cSchwarz;
+          transition: letter-spacing 500ms ease-in-out;
+        }
+
         h1 {
           font-size: 20vw;
           position: relative;
@@ -697,6 +702,21 @@ page-transition {
           margin: 10vw 0;
           background-repeat: no-repeat;
           background-size: cover;
+          position: relative;
+
+          & > div {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            padding: 5vw;
+            font-size: 5vw;
+            display: flex;
+            justify-content: space-between;
+            letter-spacing: 0.05vw;
+            color: $cWeiss;
+          }
+
         }
 
         .cs-text {
@@ -705,12 +725,13 @@ page-transition {
           order: 1;
 
           h2 {
-            font-size: 20vw;
-            margin-bottom: 3vw;
+            font-size: 12vw;
+            margin-bottom: 6vw;
           }
 
           p {
-            font-size: 8vw;
+            font-size: 6vw;
+            line-height: 7.5vw;
             width: 75%;
             margin-bottom: 10vw;
           }
@@ -1188,7 +1209,24 @@ page-transition {
           height: 80vw;
           background-color: $cPink;
           box-shadow: 4vw 4vw 0 $cGelb;
-          display: block;
+          display: inline-block;
+          position: relative;
+          background-position: center;
+          background-repeat: no-repeat;
+          background-size: cover;
+          color: $cWeiss;
+
+          &>div {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            padding: 5vw;
+            font-size: 5vw;
+            display: flex;
+            justify-content: space-between;
+            letter-spacing: 0.05vw;
+          }
         }
 
         & li:nth-of-type(even) .portfolio-bild {
@@ -1199,18 +1237,18 @@ page-transition {
         .portfolio-text-wrapper {
           display: block;
           max-width: 80vw;
-          margin: 15vw 0 30vw 0;
+          margin: 8vw 0 30vw 0;
 
           h3 {
-            font-size: 15vw;
+            font-size: 12vw;
             letter-spacing: 0.5vw;
             line-height: 30vw;
           }
 
           p {
-            font-size: 7vw;
-            letter-spacing: 0.3vw;
-            line-height: 10vw;
+            font-size: 6vw;
+            letter-spacing: 0.1vw;
+            line-height: 9.5vw;
           }
 
           .btn-case-study {
@@ -1270,6 +1308,15 @@ page-transition {
       padding: 10vw 0 4vw $frame-padding;
       font-size: 8vw;
       letter-spacing: .06vw;
+
+      a {
+        color: $cWeiss;
+        transition: color 500ms ease-in-out;
+
+        &:hover {
+          color: $cGelb;
+        }
+      }
 
       & > li {
         display: block;
