@@ -521,7 +521,7 @@ if (window.location.pathname === '/kontakt') {
         e.preventDefault();
         Helper.sendForm();
     });
-    submitBtn.addEventListener('keydown', (e) => {
+    document.querySelector('form').addEventListener('keydown', (e) => {
         if(e.which === 13 || e.keyCode === 13 || e.key === 13)
             {
                 e.preventDefault();
