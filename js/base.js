@@ -267,11 +267,11 @@ const Animations = {
         });
     },
     link: (finalLinkValue) => {
-        if (finalLinkValue === 'index.html#ueber-mich') {
-            window.location.href = "index.html?internal=1#ueber-mich";
+        if (finalLinkValue === '/#ueber-mich') {
+            window.location.href = "/?internal=1#ueber-mich";
         }
-        else if (finalLinkValue === 'index.html#portfolio') {
-            window.location.href = "index.html?internal=1#portfolio";
+        else if (finalLinkValue === '/#portfolio') {
+            window.location.href = "/?internal=1#portfolio";
         }
         else {
             window.location.href = finalLinkValue + '?internal=1';
