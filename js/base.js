@@ -521,4 +521,10 @@ if (window.location.pathname === '/kontakt') {
         e.preventDefault();
         Helper.sendForm();
     });
+    submitBtn.addEventListener('keydown', (e) => {
+        if(e.key === 'enter')
+            {
+                e.preventDefault();
+            }
+    });
 }
