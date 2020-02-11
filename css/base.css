@@ -2160,7 +2160,7 @@ page-transition div {
     background-color: #000000;
     min-height: 100vh;
     height: auto;
-    padding-bottom: 7vw;
+    padding-bottom: 10vw;
     letter-spacing: 0.01vw;
   }
   section#ueber-mich article {
@@ -2252,8 +2252,11 @@ page-transition div {
   }
   section#ueber-mich article #vita {
     position: absolute;
-    top: 14vw;
+    top: 13.5vw;
     left: 56vw;
+  }
+  section#ueber-mich article #vita > li {
+    margin-bottom: 2vw;
   }
   section#ueber-mich article #vita > li > span {
     font-size: 1vw;

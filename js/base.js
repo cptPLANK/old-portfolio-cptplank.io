@@ -12,8 +12,7 @@ let howMuchScrolled,
     askElement,
     weiterBtn,
     whichLink,
-    submitBtn,
-    csData;
+    submitBtn;
 
 nav = document.querySelector('nav');
 burgerBtn = document.querySelector('.burger-btn');

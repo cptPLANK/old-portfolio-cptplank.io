@@ -2388,7 +2388,7 @@ page-transition {
       background-color: $cSchwarz;
       min-height: 100vh;
       height: auto;
-      padding-bottom: 7vw;
+      padding-bottom: 10vw;
       letter-spacing: 0.01vw;
 
       article {
@@ -2492,8 +2492,12 @@ page-transition {
 
         #vita {
           position: absolute;
-          top: 14vw;
+          top: 13.5vw;
           left: 56vw;
+
+          &>li {
+            margin-bottom: 2vw;
+          }
 
           &>li>span {
             font-size: 1vw;
