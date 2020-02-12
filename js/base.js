@@ -529,13 +529,12 @@ if (window.location.pathname === '/kontakt') {
 }
 
 if (window.location.pathname === '/cptplank-case-study') {
-    let foobar = document.querySelector('.start-img');
-
-    let img = new Image();
-    img.src = './img/cs-cptplank-anim.gif';
+    let startImg = document.querySelector('.start-img');
+    let loadGif = new Image();
+    loadGif.src = './img/cs-cptplank-anim.gif';
 
     img.onload = () => {
-        foobar.setAttribute('style', 'background-image: url(./img/cs-cptplank-anim.gif);\n' +
+        startImg.setAttribute('style', 'background-image: url(./img/cs-cptplank-anim.gif);\n' +
             'background-position: top center; background-size: cover');
     }
 }
