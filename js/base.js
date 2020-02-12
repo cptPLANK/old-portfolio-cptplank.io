@@ -527,3 +527,11 @@ if (window.location.pathname === '/kontakt') {
             }
     });
 }
+
+if (window.location.pathname === '/cptplank-case-study') {
+    let foobar = document.querySelector('.start-img');
+
+    foobar.onload = () => {
+        alert('BAEM!');
+    }
+}
