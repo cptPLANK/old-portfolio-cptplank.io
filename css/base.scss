@@ -1392,6 +1392,10 @@ page-transition {
       font-size: 4vw;
       letter-spacing: 0.05vw;
 
+      a {
+        color: $cWeiss;
+      }
+
       p {
         display: block;
         margin-bottom: 20vw;
@@ -1611,6 +1615,50 @@ page-transition {
     height: 100vh;
     position: relative;
     max-width:100%;
+
+    &#misc-sec {
+      background-color: $cGelb;
+      padding-top: 7vw;
+      z-index: 1;
+      height: auto;
+      min-height: 100vh;
+      padding-bottom: 7vw;
+
+      .container {
+        width: 100%;
+        padding: 0 $frame-padding;
+
+        h2, h3, p {
+          margin-bottom: 1vw;
+          line-height: 1.5rem;
+          letter-spacing: 0.03vw;
+        }
+
+        a {
+          color: $cSchwarz;
+        }
+
+        h1 {
+          font-size: 2vw;
+          text-transform: uppercase;
+          margin-bottom: 2vw;
+
+          span {
+            font-size: 1vw;
+          }
+        }
+
+        .start-img {
+          width: 100%;
+          height: 40vw;
+          background-color: $cWeiss;
+          box-shadow: .5vw .5vw $cSchwarz;
+          background-size: contain;
+          background-repeat: no-repeat;
+        }
+
+      }
+    }
 
     &#single-case-studie-start {
       background-color: $cGelb;
@@ -2746,6 +2794,10 @@ page-transition {
       font-weight: 200;
       font-size: 0.6vw;
       letter-spacing: 0.05vw;
+
+      a {
+        color: $cWeiss;
+      }
 
       p {
         display: inline-block;
