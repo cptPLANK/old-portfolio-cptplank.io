@@ -536,6 +536,6 @@ if (window.location.pathname === '/cptplank-case-study') {
 
     img.onload = () => {
         foobar.setAttribute('style', 'background-image: url(./img/cs-cptplank-anim.gif);\n' +
-            'background-position: top center; background-size: fill')
+            'background-position: top center; background-size: cover');
     }
 }
