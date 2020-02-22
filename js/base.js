@@ -533,7 +533,7 @@ if (window.location.pathname === '/cptplank-case-study') {
     let loadGif = new Image();
     loadGif.src = './img/cs-cptplank-anim.gif';
 
-    img.onload = () => {
+    loadGif.onload = () => {
         startImg.setAttribute('style', 'background-image: url(./img/cs-cptplank-anim.gif);\n' +
             'background-position: top center; background-size: cover');
     }
