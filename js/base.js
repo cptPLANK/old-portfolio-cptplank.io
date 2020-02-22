@@ -363,7 +363,7 @@ const Helper = {
     },
     imgExists: (path) => {
             let http = new XMLHttpRequest();
-            http.open('HEAD', path, false);
+            http.open('HEAD', path, true);
             http.send();
 
             return http.status !== 404;
@@ -557,10 +557,11 @@ if (window.location.pathname === '/cptplank-case-study') {
             let whichSitePath = pathname.slice(0, -11).substring(1);
             let imgPath = './img/cs-' + whichSitePath + '-anim.gif';
             loadGif.src = imgPath;
-            console.log(Helper.imgExists(imgPath));
-            loadGif.onload = () => {
-                startImg.setAttribute('style', 'background-image: url(' + imgPath + ');\n' +
-                    'background-position: top center; background-size: cover');
+            if ( Helper.imgExists(imgPath) ) {
+                loadGif.onload = () => {
+                    startImg.setAttribute('style', 'background-image: url(' + imgPath + ');\n' +
+                        'background-position: top center; background-size: cover');
+                }
             }
         }
     }
