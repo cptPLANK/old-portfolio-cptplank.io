@@ -542,13 +542,14 @@ if (window.location.pathname === '/cptplank-case-study') {
 
  */
 
-(() => {
+( () => {
         let pathname = window.location.pathname;
         let startImg = document.querySelector('.start-img');
         if (pathname.indexOf('-case-study') > -1) {
             let loadGif = new Image();
             let whichSitePath = pathname.slice(0, -11).substring(1);
-            loadGif.src = './img/cs-' + whichSitePath + '-anim.gif';
+            let imgPath = './img/cs-' + whichSitePath + '-anim.gif';
+            loadGif.src = imgPath;
 
             loadGif.onload = () => {
                 startImg.setAttribute('style', 'background-image: url(' + imgPath + ');\n' +
