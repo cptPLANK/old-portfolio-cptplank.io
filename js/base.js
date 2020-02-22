@@ -549,12 +549,14 @@ if (window.location.pathname === '/cptplank-case-study') {
 
  */
 
+// Case Studie große Startbilder laden
 ( () => {
         let pathname = window.location.pathname;
         let whichSitePath = pathname.slice(0, -11).substring(1);
         let imgPath = './img/cs-' + whichSitePath + '-anim.gif';
         let startImg = document.querySelector('.start-img');
         if (pathname.indexOf('-case-study') > -1) {
+            console.log(Helper.imgExists(imgPath));
             if ( Helper.imgExists(imgPath) ) {
                 let loadGif = new Image();
                 loadGif.src = imgPath;
