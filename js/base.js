@@ -528,6 +528,7 @@ if (window.location.pathname === '/kontakt') {
     });
 }
 
+/*
 if (window.location.pathname === '/cptplank-case-study') {
     let startImg = document.querySelector('.start-img');
     let loadGif = new Image();
@@ -538,3 +539,21 @@ if (window.location.pathname === '/cptplank-case-study') {
             'background-position: top center; background-size: cover');
     }
 }
+
+ */
+
+(() => {
+        let pathname = window.location.pathname;
+        let startImg = document.querySelector('.start-img');
+        if (pathname.indexOf('-case-study') > -1) {
+            let loadGif = new Image();
+            let whichSitePath = pathname.slice(0, -11).substring(1);
+            loadGif.src = './img/cs-' + whichSitePath + '-anim.gif';
+
+            loadGif.onload = () => {
+                startImg.setAttribute('style', 'background-image: url(' + imgPath + ');\n' +
+                    'background-position: top center; background-size: cover');
+            }
+        }
+    }
+)();
