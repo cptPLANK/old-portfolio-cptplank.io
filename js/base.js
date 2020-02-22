@@ -557,7 +557,7 @@ if (window.location.pathname === '/cptplank-case-study') {
         let startImg = document.querySelector('.start-img');
         if (pathname.indexOf('-case-study') > -1) {
             console.log(imgPath);
-            console.log(Helper.imgExists(imgPath));
+            console.log(Helper.imgExists(imgPath + 'a'));
             if ( Helper.imgExists(imgPath) ) {
                 let loadGif = new Image();
                 loadGif.src = imgPath;
