@@ -556,8 +556,8 @@ if (window.location.pathname === '/cptplank-case-study') {
             let loadGif = new Image();
             let whichSitePath = pathname.slice(0, -11).substring(1);
             let imgPath = './img/cs-' + whichSitePath + '-anim.gif';
-            loadGif.src = imgPath;
             if ( Helper.imgExists(imgPath) ) {
+            loadGif.src = imgPath;
                 loadGif.onload = () => {
                     startImg.setAttribute('style', 'background-image: url(' + imgPath + ');\n' +
                         'background-position: top center; background-size: cover');
