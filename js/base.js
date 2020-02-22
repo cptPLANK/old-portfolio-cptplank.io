@@ -363,7 +363,7 @@ const Helper = {
     },
     imgExists: (path) => {
             let http = new XMLHttpRequest();
-            http.open('HEAD', path, true);
+            http.open('HEAD', path, false);
             http.send();
 
             return http.status !== 404;
@@ -557,7 +557,7 @@ if (window.location.pathname === '/cptplank-case-study') {
         let startImg = document.querySelector('.start-img');
         if (pathname.indexOf('-case-study') > -1) {
             console.log(imgPath);
-            console.log(Helper.imgExists(imgPath + 'a'));
+            console.log(Helper.imgExists(imgPath));
             if ( Helper.imgExists(imgPath) ) {
                 let loadGif = new Image();
                 loadGif.src = imgPath;
