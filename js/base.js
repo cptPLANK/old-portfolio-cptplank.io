@@ -535,20 +535,6 @@ if (window.location.pathname === '/kontakt') {
     });
 }
 
-/*
-if (window.location.pathname === '/cptplank-case-study') {
-    let startImg = document.querySelector('.start-img');
-    let loadGif = new Image();
-    loadGif.src = './img/cs-cptplank-anim.gif';
-
-    loadGif.onload = () => {
-        startImg.setAttribute('style', 'background-image: url(./img/cs-cptplank-anim.gif);\n' +
-            'background-position: top center; background-size: cover');
-    }
-}
-
- */
-
 // Case Studie große Startbilder laden
 ( () => {
         let pathname = window.location.pathname;

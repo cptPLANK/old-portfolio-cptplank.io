@@ -170,6 +170,20 @@ body {
   font-family: oswald, sans-serif;
 }
 
+#mc_embed_signup {
+  background: #000;
+  width: 100%;
+  color: #fff;
+  box-shadow: 5px 5px 0 #FF9CD4;
+}
+#mc_embed_signup label {
+  margin-bottom: 2vw;
+}
+
+.cv-anfordern:hover, .close-cv:hover {
+  cursor: pointer;
+}
+
 a:link {
   text-decoration: none;
 }
@@ -266,6 +280,68 @@ page-transition div {
 }
 
 @media (orientation: portrait) {
+  cv {
+    position: fixed;
+    z-index: 99;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    display: none;
+    justify-content: center;
+    align-items: center;
+  }
+  cv #mc_embed_signup {
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+  }
+  cv #mc_embed_signup #mc_embed_signup_scroll {
+    width: 90%;
+  }
+  cv #mc_embed_signup label {
+    font-size: 45px;
+    line-height: 70px;
+  }
+  cv #mc_embed_signup .close-cv {
+    position: absolute;
+    top: 3vw;
+    right: 10vw;
+    color: #FFD24A;
+    font-size: 10vw;
+  }
+  cv #mc_embed_signup input[type=email] {
+    display: inline-block;
+    margin-top: 12vw;
+  }
+  cv #mc_embed_signup input[type=email] {
+    width: 50vw;
+    height: 15vw;
+    background-color: #000000;
+    border: none;
+    color: #FFFFFF;
+    font-weight: 300;
+    padding-left: 5vw;
+    font-size: 5vw;
+  }
+  cv #mc_embed_signup input[type=email]::placeholder {
+    color: #FFFFFF;
+    font-weight: 300;
+  }
+  cv #mc_embed_signup input[type=email]:focus {
+    outline: none;
+  }
+  cv #mc_embed_signup input[type=submit] {
+    width: 50vw;
+    height: 10vw;
+    border: none;
+    font-size: 4vw;
+    background-color: #FF9CD4;
+  }
+
   .misc-logo {
     width: 7vw;
     height: auto;
@@ -1404,6 +1480,62 @@ page-transition div {
   }
 }
 @media (orientation: landscape) {
+  cv {
+    position: fixed;
+    z-index: 99;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    display: none;
+    justify-content: center;
+    align-items: center;
+  }
+  cv input[type=email], cv input[type=submit] {
+    display: inline-block;
+  }
+  cv input[type=email] {
+    width: 25vw;
+    height: 3.1vw;
+    background-color: #000000;
+    border: 2px solid #FFFFFF;
+    color: #FFFFFF;
+    font-weight: 300;
+    padding-left: 1vw;
+  }
+  cv input[type=email]::placeholder {
+    color: #FFFFFF;
+    font-weight: 300;
+  }
+  cv input[type=email]:focus {
+    outline: none;
+  }
+  cv input[type=submit] {
+    width: 3.2vw;
+    height: 3.1vw;
+    margin-left: -0.3vw;
+    border: none;
+  }
+  cv #mc_embed_signup {
+    padding: 5vw;
+    width: 50vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+  }
+  cv #mc_embed_signup label {
+    font-size: 2vw;
+    line-height: 3vw;
+  }
+  cv #mc_embed_signup .close-cv {
+    position: absolute;
+    top: 1vw;
+    right: 1.5vw;
+    color: #FFD24A;
+    font-size: 2vw;
+  }
+
   .hover-letter-spacing {
     transition: letter-spacing 500ms ease-in-out;
   }

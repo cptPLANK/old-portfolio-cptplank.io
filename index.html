@@ -12,6 +12,7 @@
     <link rel="icon" type="image/png" sizes="32x32" href="img/fav/favicon-32x32.png">
     <link rel="icon" type="image/png" sizes="192x192" href="img/fav/android-chrome-192x192.png">
     <link rel="icon" type="image/png" sizes="16x16" href="img/fav/favicon-16x16.png">
+    <link href="//cdn-images.mailchimp.com/embedcode/horizontal-slim-10_7.css" rel="stylesheet" type="text/css">
     <link rel="manifest" href="img/fav/site.webmanifest">
     <link rel="mask-icon" href="img/fav/safari-pinned-tab.svg" color="#5bbad5">
     <link rel="shortcut icon" href="img/fav/favicon.ico">
@@ -185,7 +186,7 @@
             Diese Website und mein Portfolio sollen dir zeigen was ich so zu bieten habe, denn du kannst mich anheuern.
                 <a href="/kontakt">Schreib' mir einfach mal</a>!
             <br><br>
-            Mein CV kannst du dir auch gerne anfordern:<br><a href="/kontakt" class="change-page-event">CV anfordern</a>.</p>
+            Mein CV kannst du dir auch gerne anfordern:<br><a class="cv-anfordern">CV anfordern</a>.</p>
         <ul id="vita">
             <li>
                 <h4 class="pink semi-bold">Sprachen:</h4>
@@ -360,8 +361,35 @@
     <a itemprop="email" href="mailto:hello@cptplank.io">hello@cptplank.io</a>
 </div>
 
+<cv>
+    <!-- Begin Mailchimp Signup Form -->
+    <div id="mc_embed_signup">
+        <form action="https://github.us4.list-manage.com/subscribe/post?u=cf047deb1ad25bac4f01c765d&amp;id=15fa9b620d" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank" novalidate>
+            <div id="mc_embed_signup_scroll">
+                <label for="mce-EMAIL">Gib hier deine E-Mail-Adresse ein und mein CV wird dir direkt zugeschickt!</label>
+                <input type="email" value="" name="EMAIL" id="mce-EMAIL" placeholder="Deine E-Mail-Adresse" required>
+                <!-- real people should not fill this in and expect good things - do not remove this or risk form bot signups-->
+                <div style="position: absolute; left: -5000px;" aria-hidden="true"><input type="text" name="b_cf047deb1ad25bac4f01c765d_15fa9b620d" tabindex="-1" value=""></div>
+                <div class="clear"><input type="submit" value="GO!" name="subscribe" id="mc-embedded-subscribe" ></div>
+            </div>
+        </form>
+        <div class="close-cv">X</div>
+    </div>
+    <!--End mc_embed_signup-->
+</cv>
+
 <script src="https://unpkg.com/scrollreveal"></script>
 <script src="js/base.js"></script>
+
+<script>
+    document.querySelector('.close-cv').addEventListener('click', () => {
+        document.querySelector('cv').style.display = 'none';
+    });
+
+    document.querySelector('.cv-anfordern').addEventListener('click', () => {
+        document.querySelector('cv').style.display = 'flex';
+    });
+</script>
 
 </body>
 </html>
