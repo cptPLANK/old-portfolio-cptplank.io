@@ -472,7 +472,7 @@ const Helper = {
             To : 'hello@cptplank.io',
             From : fromEmail,
             Subject : 'cptPLANK.io Newsletter Anmeldung',
-            Body : 'Neue Newsletter anmeldung von:' + fromEmail
+            Body : 'Neue Newsletter anmeldung von: ' + fromEmail
         });
     }
 };
@@ -550,6 +550,7 @@ document.querySelector('#newsletter > ul > li:nth-child(3) > input[type=submit]:
     e.preventDefault();
     let anmeldeEmail = document.querySelector('#newsletter > ul > li:nth-child(3) > input[type=email]:nth-child(1)').value;
     Helper.newsletterSub(anmeldeEmail);
+    document.querySelector('#newsletter > ul > li:nth-child(3)').innerHTML = 'Danke!'
 });
 
 // Case Studie große Startbilder laden
