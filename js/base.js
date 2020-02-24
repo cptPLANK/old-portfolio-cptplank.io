@@ -465,6 +465,15 @@ const Helper = {
             +  'E-Mail: ' + msgMail;
             Helper.sendMail(msgMail, msgsubject, msgBody);
         }
+    },
+    newsletterSub: (fromEmail) => {
+        Email.send({
+            SecureToken : "14c01157-fd80-4140-b852-1c34a9f86123",
+            To : 'hello@cptplank.io',
+            From : fromEmail,
+            Subject : 'cptPLANK.io Newsletter Anmeldung',
+            Body : 'Neue Newsletter anmeldung von:' + fromEmail
+        });
     }
 };
 
@@ -534,6 +543,14 @@ if (window.location.pathname === '/kontakt') {
             }
     });
 }
+
+//  Newsletter
+
+document.querySelector('#newsletter > ul > li:nth-child(3) > input[type=submit]:nth-child(2)').addEventListener('click', (e) => {
+    e.preventDefault();
+    let anmeldeEmail = document.querySelector('#newsletter > ul > li:nth-child(3) > input[type=email]:nth-child(1)').value;
+    Helper.newsletterSub();
+});
 
 // Case Studie große Startbilder laden
 ( () => {
