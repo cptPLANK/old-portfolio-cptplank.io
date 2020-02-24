@@ -549,7 +549,7 @@ if (window.location.pathname === '/kontakt') {
 document.querySelector('#newsletter > ul > li:nth-child(3) > input[type=submit]:nth-child(2)').addEventListener('click', (e) => {
     e.preventDefault();
     let anmeldeEmail = document.querySelector('#newsletter > ul > li:nth-child(3) > input[type=email]:nth-child(1)').value;
-    Helper.newsletterSub();
+    Helper.newsletterSub(anmeldeEmail);
 });
 
 // Case Studie große Startbilder laden
