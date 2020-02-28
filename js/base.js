@@ -553,7 +553,7 @@ document.querySelector('#newsletter > ul > li:nth-child(3) > input[type=submit]:
     document.querySelector('#newsletter > ul > li:nth-child(3)').innerHTML = 'Danke!'
 });
 
-// Case Studie große Startbilder laden
+// Case Studie große Startgifs laden
 ( () => {
         let pathname = window.location.pathname;
         let whichSitePath = pathname.slice(0, -11).substring(1);
