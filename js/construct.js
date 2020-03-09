@@ -16,7 +16,7 @@
     const builtHead = async () => {
         const headTag = document.querySelector('head');
         const addHeadFinal = document.createElement('title');
-        addHeadFinal.innerText = JSONConstructor[location].pageTitle;
+        addHeadFinal.innerText = await JSONConstructor[location].pageTitle;
         headTag.append(addHeadFinal);
 
         keys0.forEach(el0 => {
