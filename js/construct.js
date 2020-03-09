@@ -53,17 +53,34 @@
         document.querySelector('header').innerHTML = await getTemplate('header');
     };
 
+    const replaceTemplate = async (temp, obj) => {
+        let template = temp;
+        template = template.replace('{%NAME_LONG%}', obj.nameLong);
+        template = template.replace('{%TITEL%}', obj.title);
+        template = template.replace('{%INTRO_TEXT%}', obj.introText);
+        template = template.replace('{%CHALLANGE%}', obj.challange);
+        template = template.replace('{%OUTCOME%}', obj.outcome);
+        template = template.replace('{%TITEL_ADV%}', obj.advancedContent.title);
+        template = template.replace('{%TEXT%}', obj.advancedContent.text);
+        template = template.replace('{%IMG%}', obj.advancedContent.imgUrl);
+        template = template.replace('{%IMG_ALT%}', obj.advancedContent.imgAlt);
+        return  template;
+    };
+
     const builtMain = async () => {
         const {location, json} = await loadJasonAndLocation('constructor');
         const templateName = json[location].template;
-        console.log(templateName);
         const main = document.querySelector('main');
-        if (templateName === 'case-study') {
+        if (templateName === 'case-studies') {
+            const caseStudie = location.slice(0, 12);
             const jsonCaseStudies = await getJSON('case-studies');
             const caseStudyTemp = await getTemplate('case-studies');
-            ////////////////
-            // REPLACESCRIPT
-            ////////////////
+            const advancedTemp = await getTemplate('advanced-content-container');
+            const arrAdvanced = json[caseStudie].content.advancedContent;
+
+            const getAdvancedContent = arrAdvanced.map(el => replaceTemplate(advancedTemp, arrAdvanced[el])).join();
+            console.log(getAdvancedContent);
+
         } else {
             main.innerHTML = await getTemplate(templateName);
         }

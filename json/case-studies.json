@@ -1,56 +1,25 @@
-[
-  {
+{
+  "/hussmann": {
     "cryptName": "zero00",
     "nameShort": "dr.hussmann",
     "year": 2019,
-    "thumpImgUrl": "img/",
+    "thumpImgUrl": "/img/cs-hussmann-anim.gif",
     "content": {
       "nameLong": "KINDER- UND JUGENDARZT DR. MED. O. HUSSMANN",
       "bigImgUrl": "img/",
-      "title": "Obsessed fans. Celebrated communities. Deep brand history.",
-      "introText": "Anime Expo is an explosive, four-day event celebrating Japanese entertainment and popculture. AX is attended by hundreds of thousands of fan(atic)s every year, many of which dedicate weeks to preparing and networking. The result? A passionate obsessed community, sharing a singular, incredible experience.\n\nBlind’s mission? Help Anime Expo become the brand it deserves, increase ticket sales and brand recognition, and open new streams of revenue–all without alienating millions of current brand champions.\n\nOur approach needed to be comprehensive and cohesive, impacting customer touchpoints from badge design to online experience and everything in between.",
-      "schwerpunkte": [ "Brand Strategy", "Messaging", "Identity System Design", "Web Design and Development" ],
-      "challange": "Clarify the brand’s positioning and the customers they serve.",
-      "outcome": "Blind helped Anime Expo focus their brand and marketing strategy. This led to growth in ticket and merchandise sales, and brought in a new market of virtual attendees.",
+      "title": "Einfach. Zielgerichtet. Passend.<br>Auch Ärzte haben Konkurrenz.",
+      "introText": "Trotz erfolgreich laufender Praxis, benötigte der sympathische Kinder- & Jugendarzt Dr. med. Hußmann dringend eine zeitgemäße Außendarstellung. Selbst Ärzte stehen durch die digitalisierung immer stärker unter dem Druck auch in der nahen Zukunft von zukünftigen und interessierten Patienten gefunden zu werden.<br><br>Meine Aufgabe war es nun seine in die Jahre gekommene, flashbasierte Homepage zu überarbeiten. Texte wurden von ihm gestellt.<br><br>Nun stellte sich die Frage, wie suchen potentielle Patienten, insbesondere deren Eltern einen passenden Kinderarzt? Wenn nicht über Empfehlungen, dann wird ersteinmal gegoogelt und wer ganz oben steht, bekommt zunächst den Zuschlag.<br>In zweiter Linie ist es, besonders für Kinder- & Jugendärzte, wichtig Vertrauen aufzubauen, so lag es auf der Hand Herrn Dr. Hußmann direkt und prominent mit in die Homepage zu integrieren. Man möchte ja schließlich wissen mit wem man es in Zukunft häufiger zutun haben wird.<br><br>Zusätzlich wurden von mir das Praxislogo, Briefpapier und Visitekarten neu entworfen. Für die Bilder wurde eine lokale Fotografin beauftragt und ein Termin ausgemacht.",
+      "schwerpunkte": [ "Web Design und Entwicklung", "Grundlegende Suchmaschinenoptimierung", "Corporate Design", "Logodesign",  "Printdesign"],
+      "challange": "Einfache modernisierung des Internetauftrittes und der Praxis-Außendarstellung.",
+      "outcome": "Die Homepage wurde neu aufgesetzt, Logo, Briefpapier und Visitenkarten erstellt. Die Praxis wurde von mir in Google Business eingetragen. Dadurch haben wir sichergestellt, daß die Praxis von Herrn Dr. Hußmann auch digital zeitgemäß ist.",
       "advancedContent": [
         {
-          "title": "Developing the Strategy",
-          "text": "Blind’s Chief Strategist, Chris Do, sat down with CEO Mark Manansala and the team at SPJA (The Society for the Promotion of Japanese Animation), to craft the brand’s strategy for the upcoming Anime Expo 2017 event. Over a two-day facilitated session, Chris surfaced the challenges the organization faced. In the process, they prioritized the needs and goals of the business and its customers. This became the foundation for the branding and marketing plans for the 2017 event.",
-          "imgUrl": "img/"
-        },
-        {
-          "title": "Developing the Strategy",
-          "text": "Blind’s Chief Strategist, Chris Do, sat down with CEO Mark Manansala and the team at SPJA (The Society for the Promotion of Japanese Animation), to craft the brand’s strategy for the upcoming Anime Expo 2017 event. Over a two-day facilitated session, Chris surfaced the challenges the organization faced. In the process, they prioritized the needs and goals of the business and its customers. This became the foundation for the branding and marketing plans for the 2017 event.",
-          "imgUrl": "img/"
-        }
-      ]
-    }
-  },
-  {
-    "cryptName": "zero00",
-    "nameShort": "dr.hussmann",
-    "year": 2019,
-    "thumpImgUrl": "img/",
-    "content": {
-      "nameLong": "KINDER- UND JUGENDARZT DR. MED. O. HUSSMANN",
-      "bigImgUrl": "img/",
-      "title": "Obsessed fans. Celebrated communities. Deep brand history.",
-      "introText": "Anime Expo is an explosive, four-day event celebrating Japanese entertainment and popculture. AX is attended by hundreds of thousands of fan(atic)s every year, many of which dedicate weeks to preparing and networking. The result? A passionate obsessed community, sharing a singular, incredible experience.\n\nBlind’s mission? Help Anime Expo become the brand it deserves, increase ticket sales and brand recognition, and open new streams of revenue–all without alienating millions of current brand champions.\n\nOur approach needed to be comprehensive and cohesive, impacting customer touchpoints from badge design to online experience and everything in between.",
-      "schwerpunkte": [ "Brand Strategy", "Messaging", "Identity System Design", "Web Design and Development" ],
-      "challange": "Clarify the brand’s positioning and the customers they serve.",
-      "outcome": "Blind helped Anime Expo focus their brand and marketing strategy. This led to growth in ticket and merchandise sales, and brought in a new market of virtual attendees.",
-      "advancedContent": [
-        {
-          "title": "Developing the Strategy",
-          "text": "Blind’s Chief Strategist, Chris Do, sat down with CEO Mark Manansala and the team at SPJA (The Society for the Promotion of Japanese Animation), to craft the brand’s strategy for the upcoming Anime Expo 2017 event. Over a two-day facilitated session, Chris surfaced the challenges the organization faced. In the process, they prioritized the needs and goals of the business and its customers. This became the foundation for the branding and marketing plans for the 2017 event.",
-          "imgUrl": "img/"
-        },
-        {
-          "title": "Developing the Strategy",
-          "text": "Blind’s Chief Strategist, Chris Do, sat down with CEO Mark Manansala and the team at SPJA (The Society for the Promotion of Japanese Animation), to craft the brand’s strategy for the upcoming Anime Expo 2017 event. Over a two-day facilitated session, Chris surfaced the challenges the organization faced. In the process, they prioritized the needs and goals of the business and its customers. This became the foundation for the branding and marketing plans for the 2017 event.",
-          "imgUrl": "img/"
+          "title": "Detaillierte Infos",
+          "text": "Hier kannst du dir alles noch genauer ansehen.",
+          "imgUrl": "img/hussmann_alles.png",
+          "imgAlt": "Dr. Hussmann Case Studie Homepage und Print"
         }
       ]
     }
   }
-]
+}

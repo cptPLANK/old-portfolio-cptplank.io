@@ -557,10 +557,10 @@ document.querySelector('#newsletter > ul > li:nth-child(3) > input[type=submit]:
 // Case Studie große Startgifs laden
 ( () => {
         let pathname = window.location.pathname;
-        let whichSitePath = pathname.slice(0, -11).substring(1);
+        let whichSitePath = pathname.slice(0, 13);
         let imgPath = './img/cs-' + whichSitePath + '-anim.gif';
         let startImg = document.querySelector('.start-img');
-        if (pathname.indexOf('-case-study') > -1) {
+        if (pathname.indexOf('case-studies/') > -1) {
             if ( Helper.imgExists(imgPath) ) {
                 let loadGif = new Image();
                 loadGif.src = imgPath;
