@@ -17,8 +17,8 @@
 
 
     const builtHead = async () => {
-        const [location, json] = loadJasonAndLocation('constructor');
-        const {json: jsonHead} = loadJasonAndLocation('head');
+        const [location, json] = await loadJasonAndLocation('constructor');
+        const {json: jsonHead} = await loadJasonAndLocation('head');
 
         //const jsonHead = await getJSON('head');
         // const json = await getJSON('constructor');
