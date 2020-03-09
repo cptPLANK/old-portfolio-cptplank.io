@@ -11,7 +11,7 @@
     "template": "kontakt",
     "pageTitle": "fooo",
     "pageDescription": "... zumindest nicht nur. 99% Autodidakt mit Fokus auf JavaScript, CSS & HTML. Besuch' mein Portfolio für Case Studies und Kontaktmöglichkeiten.",
-    "hasFooter": true,
+    "hasFooter": false,
     "customLogo": false,
     "customScript": "js/autosize.js"
   },
