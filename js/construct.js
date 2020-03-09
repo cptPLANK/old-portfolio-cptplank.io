@@ -50,30 +50,30 @@
             addHeadFinal.setAttribute('content', json[template].pageTitle);
             headTag.append(addHeadFinal);
 
-            // addHeadFinal = document.createElement('meta');
-            // addHeadFinal.setAttribute('name', 'description')
-            //     .setAttribute('content', json[template].pageDescription);
-            // headTag.append(addHeadFinal);
-            //
-            // addHeadFinal = document.createElement('meta');
-            // addHeadFinal.setAttribute('property', 'twitter:title')
-            //     .setAttribute('content', json[template].pageTitle);
-            // headTag.append(addHeadFinal);
-            //
-            // addHeadFinal = document.createElement('meta');
-            // addHeadFinal.setAttribute('property', 'twitter:description')
-            //     .setAttribute('content', json[template].pageDescription);
-            // headTag.append(addHeadFinal);
-            //
-            // addHeadFinal = document.createElement('meta');
-            // addHeadFinal.setAttribute('property', 'og:description')
-            //     .setAttribute('content', json[template].pageDescription);
-            // headTag.append(addHeadFinal);
-            //
-            // addHeadFinal = document.createElement('meta');
-            // addHeadFinal.setAttribute('property', 'og:title')
-            //     .setAttribute('content', json[template].pageTitle);
-            // headTag.append(addHeadFinal);
+            addHeadFinal = document.createElement('meta');
+            addHeadFinal.setAttribute('name', 'description');
+            addHeadFinal.setAttribute('content', json[template].pageDescription);
+            headTag.append(addHeadFinal);
+
+            addHeadFinal = document.createElement('meta');
+            addHeadFinal.setAttribute('property', 'twitter:title');
+            addHeadFinal.setAttribute('content', json[template].pageTitle);
+            headTag.append(addHeadFinal);
+
+            addHeadFinal = document.createElement('meta');
+            addHeadFinal.setAttribute('property', 'twitter:description');
+            addHeadFinal.setAttribute('content', json[template].pageDescription);
+            headTag.append(addHeadFinal);
+
+            addHeadFinal = document.createElement('meta');
+            addHeadFinal.setAttribute('property', 'og:description');
+            addHeadFinal.setAttribute('content', json[template].pageDescription);
+            headTag.append(addHeadFinal);
+
+            addHeadFinal = document.createElement('meta');
+            addHeadFinal.setAttribute('property', 'og:title');
+            addHeadFinal.setAttribute('content', json[template].pageTitle);
+            headTag.append(addHeadFinal);
         };
 
         let response;
