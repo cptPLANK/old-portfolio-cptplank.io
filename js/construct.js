@@ -1,6 +1,5 @@
 {
 
-
     const location = window.location.pathname;
 
     const getJSON = async (name) => {
@@ -76,20 +75,21 @@
             headTag.append(addHeadFinal);
         };
 
-        let response;
-        switch (location) {
-            case '/':
-                const template = 'startpage';
-                addFinalHead(template);
-                response = await getTemplate('startpage');
-                document.querySelector('main').innerHTML = response;
-            case '/kontakt':
-                response = await getTemplate('startpage');
-                document.querySelector('main').innerHTML = response;
-            case '/case-study':
-                response = await getTemplate('startpage');
-                document.querySelector('main').innerHTML = response;
-        }
+        document.querySelector('main').innerHTML = json[location];
+
+        // let response;
+        // switch (location) {
+        //     case '/':
+        //         const template = 'startpage';
+        //         addFinalHead(template);
+        //         response = await getTemplate('startpage');
+        //         document.querySelector('main').innerHTML = response;
+        //     case '/kontakt':
+        //         alert('MEW');
+        //     case '/case-study':
+        //         response = await getTemplate('startpage');
+        //         document.querySelector('main').innerHTML = response;
+        // }
 
 
     };
