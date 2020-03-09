@@ -52,21 +52,6 @@
         const tempHTML = await getJSON('constructor');
         document.querySelector('main').innerHTML = await getTemplate(tempHTML[location].template);
 
-        // let response;
-        // switch (location) {
-        //     case '/':
-        //         const template = 'startpage';
-        //         addFinalHead(template);
-        //         response = await getTemplate('startpage');
-        //         document.querySelector('main').innerHTML = response;
-        //     case '/kontakt':
-        //         alert('MEW');
-        //     case '/case-study':
-        //         response = await getTemplate('startpage');
-        //         document.querySelector('main').innerHTML = response;
-        // }
-
-
     };
 
     const builtFooter = async () => {
