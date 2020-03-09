@@ -75,7 +75,8 @@
             headTag.append(addHeadFinal);
         };
 
-        document.querySelector('main').innerHTML = json[location];
+        let response = await getTemplate(json[location]);
+        document.querySelector('main').innerHTML = response;
 
         // let response;
         // switch (location) {
