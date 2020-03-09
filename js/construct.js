@@ -54,9 +54,9 @@
         });
     };
 
-    const builtHeader = () => {
+    const builtHeader = async () => {
         const location = window.location.pathname;
-        document.querySelector('header').innerHTML = getTemplate('header');
+        document.querySelector('header').innerHTML = await getTemplate('header');
     };
 
     const builtMain = async () => {
