@@ -52,6 +52,8 @@
             await innerHTML
                 .replace(/{%HEAD_PAGE_TITLE%}/g, json[template].pageTitle)
                 .replace(/{%HEAD_PAGE_DESCRIPTION%}/g, json[template].pageDescription);
+
+            document.querySelector('head').append(innerHTML);
         };
 
         let response;
