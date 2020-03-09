@@ -4,12 +4,12 @@
     const location = window.location.pathname;
 
     const getJSON = async (name) => {
-        const res = await fetch(`json/${name}.json`);
+        const res = await fetch(`/json/${name}.json`);
         return res.json();
     };
 
     const getTemplate = async (template) => {
-        const res = await fetch(`templates/${template}.tpl`);
+        const res = await fetch(`/templates/${template}.tpl`);
         return res.text();
     };
 
