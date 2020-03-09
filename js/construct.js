@@ -75,7 +75,7 @@
         };
 
         let response = await getTemplate(json[location].template);
-        addFinalHead(json[location]);
+        addFinalHead(location);
         document.querySelector('main').innerHTML = response;
 
         // let response;
