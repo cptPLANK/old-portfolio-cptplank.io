@@ -70,6 +70,30 @@
     {
       "property": "theme-color",
       "content": "#ffffff"
+    },
+    {
+      "name": "title",
+      "content": "{%TITLE%}"
+    },
+    {
+      "name": "description",
+      "content": "{%DESCRIPTION%}"
+    },
+    {
+      "property": "twitter:title",
+      "content": "{%TITLE%}"
+    },
+    {
+      "property": "twitter:description",
+      "content": "{%DESCRIPTION%}"
+    },
+    {
+      "property": "og:description",
+      "content": "{%DESCRIPTION%}"
+    },
+    {
+      "property": "og:title",
+      "content": "{%TITLE%}"
     }
   ],
   "link": [

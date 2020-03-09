@@ -10,18 +10,29 @@
         const res = await fetch(`./templates/${template}.tpl`);
         return res.text();
     };
+    const JSONConstructor = getJSON('constructor');
+    const JSONHead = getJSON('head');
 
     const builtHead = async () => {
-        const json = await getJSON('head');
-        const keys0 = Object.keys(json);
+        const headTag = document.querySelector('head');
+        const addHeadFinal = document.createElement('title');
+        addHeadFinal.innerText = JSONConstructor[location].pageTitle;
+        headTag.append(addHeadFinal);
 
         keys0.forEach(el0 => {
-            json[el0].forEach(el1 => {
+            JSONHead[el0].forEach(el1 => {
                 const newElement = document.createElement(el0);
                 const keys1 = Object.keys(el1);
                 keys1.forEach(el2 => {
-                    newElement.setAttribute(el2, el1[el2]);
-                    document.querySelector('head').append(newElement);
+                    if (el1[el2] === '{%TITLE%}') {
+                        newElement.setAttribute(el2, JSONConstructor[location].pageTitle);
+                    } else if (el1[el2] === '{%DESCRIPTION%}') {
+                        newElement.setAttribute(el2, JSONConstructor[location].pageDescription);
+                    }
+                    else {
+                    newElement.setAttribute(el2, el1[el2])
+                    }
+                    headTag.append(newElement);
                 });
             });
         });
@@ -34,48 +45,46 @@
 
     const builtMain = async () => {
 
-        const json = await getJSON('constructor');
-        console.log(json[location]);
-        const addFinalHead = async template => {
+        // const addFinalHead = async template => {
+        //
+        //     const headTag = document.querySelector('head');
+        //     let addHeadFinal = document.createElement('title');
+        //     addHeadFinal.innerText = json[template].pageTitle;
+        //     headTag.append(addHeadFinal);
+        //
+        //     addHeadFinal = document.createElement('meta');
+        //     addHeadFinal.setAttribute('name', 'title');
+        //     addHeadFinal.setAttribute('content', json[template].pageTitle);
+        //     headTag.append(addHeadFinal);
+        //
+        //     addHeadFinal = document.createElement('meta');
+        //     addHeadFinal.setAttribute('name', 'description');
+        //     addHeadFinal.setAttribute('content', json[template].pageDescription);
+        //     headTag.append(addHeadFinal);
+        //
+        //     addHeadFinal = document.createElement('meta');
+        //     addHeadFinal.setAttribute('property', 'twitter:title');
+        //     addHeadFinal.setAttribute('content', json[template].pageTitle);
+        //     headTag.append(addHeadFinal);
+        //
+        //     addHeadFinal = document.createElement('meta');
+        //     addHeadFinal.setAttribute('property', 'twitter:description');
+        //     addHeadFinal.setAttribute('content', json[template].pageDescription);
+        //     headTag.append(addHeadFinal);
+        //
+        //     addHeadFinal = document.createElement('meta');
+        //     addHeadFinal.setAttribute('property', 'og:description');
+        //     addHeadFinal.setAttribute('content', json[template].pageDescription);
+        //     headTag.append(addHeadFinal);
+        //
+        //     addHeadFinal = document.createElement('meta');
+        //     addHeadFinal.setAttribute('property', 'og:title');
+        //     addHeadFinal.setAttribute('content', json[template].pageTitle);
+        //     headTag.append(addHeadFinal);
+        // };
 
-            const headTag = document.querySelector('head');
-            let addHeadFinal = document.createElement('title');
-            addHeadFinal.innerText = json[template].pageTitle;
-            headTag.append(addHeadFinal);
-
-            addHeadFinal = document.createElement('meta');
-            addHeadFinal.setAttribute('name', 'title');
-            addHeadFinal.setAttribute('content', json[template].pageTitle);
-            headTag.append(addHeadFinal);
-
-            addHeadFinal = document.createElement('meta');
-            addHeadFinal.setAttribute('name', 'description');
-            addHeadFinal.setAttribute('content', json[template].pageDescription);
-            headTag.append(addHeadFinal);
-
-            addHeadFinal = document.createElement('meta');
-            addHeadFinal.setAttribute('property', 'twitter:title');
-            addHeadFinal.setAttribute('content', json[template].pageTitle);
-            headTag.append(addHeadFinal);
-
-            addHeadFinal = document.createElement('meta');
-            addHeadFinal.setAttribute('property', 'twitter:description');
-            addHeadFinal.setAttribute('content', json[template].pageDescription);
-            headTag.append(addHeadFinal);
-
-            addHeadFinal = document.createElement('meta');
-            addHeadFinal.setAttribute('property', 'og:description');
-            addHeadFinal.setAttribute('content', json[template].pageDescription);
-            headTag.append(addHeadFinal);
-
-            addHeadFinal = document.createElement('meta');
-            addHeadFinal.setAttribute('property', 'og:title');
-            addHeadFinal.setAttribute('content', json[template].pageTitle);
-            headTag.append(addHeadFinal);
-        };
-
-        let response = await getTemplate(json[location].template);
-        addFinalHead(location);
+        let response = await getTemplate(JSONConstructor[location].template);
+        // addFinalHead(location);
         document.querySelector('main').innerHTML = response;
 
         // let response;
