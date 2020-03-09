@@ -19,6 +19,7 @@
         ];
         const headTag = document.querySelector('head');
         const addHead = document.createElement('title');
+        headTag.innerHTML = '';
         addHead.innerText = pageTitle;
         headTag.append(addHead);
 
