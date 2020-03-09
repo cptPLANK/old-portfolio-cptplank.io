@@ -253,13 +253,13 @@ const Animations = {
             yoyo: true,
             ease: Quad.easeInOut
         });
-        gsap.fromTo('body', 0.2, {
+        gsap.fromTo('#kontakt', 0.2, {
             backgroundColor: '#FFD24A'
         },{
             backgroundColor: 'red',
             ease: Quad.easeInOut
         });
-        gsap.fromTo('body', 0.2, {
+        gsap.fromTo('#kontakt', 0.2, {
             backgroundColor: 'red'
         },{
             backgroundColor: '#FFD24A',

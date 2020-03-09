@@ -1,4 +1,4 @@
-<section id="kontakt">
+<section id="kontakt" class="bg-gelb">
     <h1 class="weiss">Kontakt</h1>
     <form name="kontakt-me" autocomplete="off">
         <noscript>
