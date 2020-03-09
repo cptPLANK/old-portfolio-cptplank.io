@@ -39,21 +39,41 @@
         const json = await getJSON('constructor');
 
         const addFinalHead = async template => {
-            const innerHTML = `
-                <title>{%HEAD_PAGE_TITLE%}</title>
-                <meta name="title" content="{%HEAD_PAGE_TITLE%}">
-                <meta name="description" content="{%HEAD_PAGE_DESCRIPTION%}">
-                <meta property="twitter:title" content="{%HEAD_PAGE_TITLE%}">
-                <meta property="twitter:description" content="{%HEAD_PAGE_DESCRIPTION%}">
-                <meta property="og:description" content="{%HEAD_PAGE_DESCRIPTION%}">
-                <meta property="og:title" content="{%HEAD_PAGE_TITLE%}">
-            `;
 
-            await innerHTML
-                .replace(/{%HEAD_PAGE_TITLE%}/g, json[template].pageTitle)
-                .replace(/{%HEAD_PAGE_DESCRIPTION%}/g, json[template].pageDescription);
+            const headTag = document.querySelector('head');
+            let addHeadFinal = document.createElement('title')
+                .innerText = json[template].pageTitle;
+            headTag.append(addHeadFinal);
 
-            document.querySelector('head').append(innerHTML);
+            addHeadFinal = document.createElement('meta')
+                .setAttribute('name', 'title')
+                .setAttribute('content', json[template].pageTitle);
+            headTag.append(addHeadFinal);
+
+            addHeadFinal = document.createElement('meta')
+                .setAttribute('name', 'description')
+                .setAttribute('content', json[template].pageDescription);
+            headTag.append(addHeadFinal);
+
+            addHeadFinal = document.createElement('meta')
+                .setAttribute('property', 'twitter:title')
+                .setAttribute('content', json[template].pageTitle);
+            headTag.append(addHeadFinal);
+
+            addHeadFinal = document.createElement('meta')
+                .setAttribute('property', 'twitter:description')
+                .setAttribute('content', json[template].pageDescription);
+            headTag.append(addHeadFinal);
+
+            addHeadFinal = document.createElement('meta')
+                .setAttribute('property', 'og:description')
+                .setAttribute('content', json[template].pageDescription);
+            headTag.append(addHeadFinal);
+
+            addHeadFinal = document.createElement('meta')
+                .setAttribute('property', 'og:title')
+                .setAttribute('content', json[template].pageTitle);
+            headTag.append(addHeadFinal);
         };
 
         let response;
