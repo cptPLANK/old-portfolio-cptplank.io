@@ -1,5 +1,4 @@
 {
-
     const location = window.location.pathname;
 
     const getJSON = async (name) => {
@@ -36,7 +35,7 @@
     const builtMain = async () => {
 
         const json = await getJSON('constructor');
-
+        console.log(json);
         const addFinalHead = async template => {
 
             const headTag = document.querySelector('head');
@@ -75,8 +74,8 @@
             headTag.append(addHeadFinal);
         };
 
-        let response = await getTemplate(json[location]);
-        addFinalHead(json[location]);
+        let response = await getTemplate('startpage');
+        addFinalHead('/');
         document.querySelector('main').innerHTML = response;
 
         // let response;
