@@ -1,6 +1,4 @@
 {
-    const location = window.location.pathname;
-    console.log(location);
     const getJSON = async (name) => {
         const res = await fetch(`./json/${name}.json`);
         return res.json();
@@ -12,6 +10,7 @@
     };
 
     const builtHead = async () => {
+        const location = window.location.pathname;
         const jsonHead = await getJSON('head');
         const jsonConstructor = await getJSON('constructor');
         const [pageTitle, pageDescription] = [
@@ -35,7 +34,7 @@
                         newElement.setAttribute(el2, pageDescription);
                     }
                     else {
-                    newElement.setAttribute(el2, el1[el2])
+                    newElement.setAttribute(el2, el1[el2]);
                     }
                     headTag.append(newElement);
                 });
@@ -44,19 +43,35 @@
     };
 
     const builtHeader = async () => {
+        const location = window.location.pathname;
         document.querySelector('header').innerHTML = await getTemplate('header');
     };
 
     const builtMain = async () => {
-
+        const location = window.location.pathname;
         const tempHTML = await getJSON('constructor');
-        document.querySelector('main').innerHTML = await getTemplate(tempHTML[location].template);
+        const mainEl = document.querySelector('main');
+        if (tempHTML[location].template === 'case-study') {
+            const jsonCaseStudies = await getJSON('case-studies');
+            const caseStudyTemp = await getTemplate('case-studies');
+            ////////////////
+            // REPLACESCRIPT
+            ////////////////
+        } else {
+            mainEl.innerHTML = await getTemplate(tempHTML[location].template);
+        }
 
     };
 
     const builtFooter = async () => {
-        const response = await getTemplate('footer');
-        document.querySelector('footer').innerHTML = response;
+        const location = window.location.pathname;
+        const json = await getJSON('constructor');
+        const footer = document.querySelector('footer');
+        if (json[location].hasFooter) {
+            footer.innerHTML = await getTemplate('footer');
+        } else {
+            footer.remove();
+        }
     };
 
     const addJSFiles = () => {

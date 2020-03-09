@@ -2,11 +2,22 @@
   "/":  {
     "template": "startpage",
     "pageTitle": "cptPLANK ist kein Designer...",
-    "pageDescription": "... zumindest nicht nur. 99% Autodidakt mit Fokus auf JavaScript, CSS & HTML. Besuch' mein Portfolio für Case Studies und Kontaktmöglichkeiten."
+    "pageDescription": "... zumindest nicht nur. 99% Autodidakt mit Fokus auf JavaScript, CSS & HTML. Besuch' mein Portfolio für Case Studies und Kontaktmöglichkeiten.",
+    "hasFooter": true,
+    "customLogo": false
   },
   "/kontakt":  {
     "template": "kontakt",
     "pageTitle": "fooo",
-    "pageDescription": "... zumindest nicht nur. 99% Autodidakt mit Fokus auf JavaScript, CSS & HTML. Besuch' mein Portfolio für Case Studies und Kontaktmöglichkeiten."
+    "pageDescription": "... zumindest nicht nur. 99% Autodidakt mit Fokus auf JavaScript, CSS & HTML. Besuch' mein Portfolio für Case Studies und Kontaktmöglichkeiten.",
+    "hasFooter": false,
+    "customLogo": false
+  },
+  "/portfolio":  {
+    "template": "case-study-overview",
+    "pageTitle": "fooo",
+    "pageDescription": "... zumindest nicht nur. 99% Autodidakt mit Fokus auf JavaScript, CSS & HTML. Besuch' mein Portfolio für Case Studies und Kontaktmöglichkeiten.",
+    "hasFooter": false,
+    "customLogo": "<img class='misc-logo' src='img/misc-logo.svg' alt='cptPLANK.io'>"
   }
 }
