@@ -35,7 +35,7 @@
     const builtMain = async () => {
 
         const json = await getJSON('constructor');
-        console.log(json);
+        console.log(json[location]);
         const addFinalHead = async template => {
 
             const headTag = document.querySelector('head');
