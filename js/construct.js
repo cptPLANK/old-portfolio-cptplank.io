@@ -1,23 +1,31 @@
 {
     console.log(window.location.pathname);
 
-    const getJSON = async (name) => {
+    const getJSON = async name => {
         const res = await fetch(`./json/${name}.json`);
         return res.json();
     };
 
-    const getTemplate = async (template) => {
+    const getTemplate = async template => {
         const res = await fetch(`./templates/${template}.tpl`);
         return res.text();
     };
 
+    const loadJasonAndLocation = async jsonFile => {
+        return {location: window.location.pathname, json: await getJSON(jsonFile)}
+    };
+
+
     const builtHead = async () => {
-        const location = window.location.pathname;
-        const jsonHead = await getJSON('head');
-        const jsonConstructor = await getJSON('constructor');
+        const [location, json] = loadJasonAndLocation('constructor');
+        const {json: jsonHead} = loadJasonAndLocation('constructor');
+
+        //const jsonHead = await getJSON('head');
+        // const json = await getJSON('constructor');
+
         const [pageTitle, pageDescription] = [
-            jsonConstructor[location].pageTitle,
-            jsonConstructor[location].pageDescription
+            json[location].pageTitle,
+            json[location].pageDescription
         ];
         const headTag = document.querySelector('head');
         const addHead = document.createElement('title');
@@ -68,8 +76,10 @@
     };
 
     const builtFooter = async () => {
+
         const location = window.location.pathname;
         const json = await getJSON('constructor');
+
         const footer = document.querySelector('footer');
         if (json[location].hasFooter) {
             footer.innerHTML = await getTemplate('footer');
