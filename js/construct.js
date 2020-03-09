@@ -7,7 +7,7 @@
     };
 
     const getTemplate = async (template) => {
-        const res = await fetch(`./templates/${template}.tpl`);
+        const res = await fetch(`/templates/${template}.tpl`);
         return res.text();
     };
 
