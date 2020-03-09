@@ -49,7 +49,7 @@
                 <meta property="og:title" content="{%HEAD_PAGE_TITLE%}">
             `;
 
-            innerHTML
+            await innerHTML
                 .replace(/{%HEAD_PAGE_TITLE%}/g, json[template].pageTitle)
                 .replace(/{%HEAD_PAGE_DESCRIPTION%}/g, json[template].pageDescription);
         };
