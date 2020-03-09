@@ -1,6 +1,4 @@
 {
-    console.log(window.location.pathname);
-
     const getJSON = async name => {
         const res = await fetch(`./json/${name}.json`);
         return res.json();
@@ -19,10 +17,6 @@
     const builtHead = async () => {
         const {location, json} = await loadJasonAndLocation('constructor');
         const {json: jsonHead} = await loadJasonAndLocation('head');
-        console.log(json);
-
-        //const jsonHead = await getJSON('head');
-        // const json = await getJSON('constructor');
 
         const [pageTitle, pageDescription] = [
             json[location].pageTitle,
@@ -60,9 +54,8 @@
     };
 
     const builtMain = async () => {
-        const location = window.location.pathname;
-        const tempHTML = await getJSON('constructor');
-        const templateName = tempHTML[location].template;
+        const {location, json} = await loadJasonAndLocation('constructor');
+        const templateName = json[location].template;
         console.log(templateName);
         const main = document.querySelector('main');
         if (templateName === 'case-study') {
@@ -78,8 +71,7 @@
 
     const builtFooter = async () => {
 
-        const location = window.location.pathname;
-        const json = await getJSON('constructor');
+        const {location, json} = await loadJasonAndLocation('constructor');
 
         const footer = document.querySelector('footer');
         if (json[location].hasFooter) {
@@ -91,8 +83,7 @@
 
     const addJSFiles = async () => {
 
-        const location = window.location.pathname;
-        const json = await getJSON('constructor');
+        const {location, json} = await loadJasonAndLocation('constructor');
 
         const one =  document.createElement('script');
         one.setAttribute('src', 'https://smtpjs.com/v3/smtp.js');
