@@ -10,24 +10,28 @@
         const res = await fetch(`./templates/${template}.tpl`);
         return res.text();
     };
-    const JSONConstructor = getJSON('constructor');
-    const JSONHead = getJSON('head');
 
     const builtHead = async () => {
+        const jsonHead = await getJSON('head');
+        const [pageTitle, pageDescription] = [
+            await getJSON('constructor')[location].pageTitle,
+            await getJSON('constructor')[location].pageDescription
+        ];
         const headTag = document.querySelector('head');
-        const addHeadFinal = document.createElement('title');
-        addHeadFinal.innerText = await JSONConstructor[location].pageTitle;
-        headTag.append(addHeadFinal);
+        const addHead = document.createElement('title');
+        addHead.innerText = pageTitle;
+        headTag.append(addHead);
 
+        const keys0 = Object.keys(jsonHead);
         keys0.forEach(el0 => {
-            JSONHead[el0].forEach(el1 => {
+            jsonHead[el0].forEach(el1 => {
                 const newElement = document.createElement(el0);
                 const keys1 = Object.keys(el1);
                 keys1.forEach(el2 => {
                     if (el1[el2] === '{%TITLE%}') {
-                        newElement.setAttribute(el2, JSONConstructor[location].pageTitle);
+                        newElement.setAttribute(el2, pageTitle);
                     } else if (el1[el2] === '{%DESCRIPTION%}') {
-                        newElement.setAttribute(el2, JSONConstructor[location].pageDescription);
+                        newElement.setAttribute(el2, pageDescription);
                     }
                     else {
                     newElement.setAttribute(el2, el1[el2])
