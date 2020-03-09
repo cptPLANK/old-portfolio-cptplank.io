@@ -78,7 +78,11 @@
         }
     };
 
-    const addJSFiles = () => {
+    const addJSFiles = async () => {
+
+        const location = window.location.pathname;
+        const json = await getJSON('constructor');
+
         const one =  document.createElement('script');
         one.setAttribute('src', 'https://smtpjs.com/v3/smtp.js');
         document.querySelector('body').append(one);
@@ -86,6 +90,14 @@
         const two = document.createElement('script');
         two.setAttribute('src', 'js/base.js');
         document.querySelector('body').append(two);
+
+        if (json[location].customScript) {
+
+            const foo =  document.createElement('script');
+            foo.setAttribute('src', json[location].customScript);
+            document.querySelector('body').append(foo);
+
+        }
     };
 
     (async () => {

@@ -432,7 +432,7 @@ const Helper = {
                                     gsap.to('#mail-send', 0.1, {
                                         display: 'flex',
                                         onComplete: () => {
-                                            gsap.to('body', 0.1, {
+                                            gsap.to('#kontakt', 0.1, {
                                                 scale: 1,
                                                 opacity: 1,
                                                 onComplete: () => {
