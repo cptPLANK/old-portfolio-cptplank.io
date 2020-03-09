@@ -63,7 +63,7 @@
             // REPLACESCRIPT
             ////////////////
         } else {
-            main.innerHTML = 'WATTN KACK!!!' // await getTemplate(templateName);
+            main.innerHTML = await getTemplate('kontakt');
         }
     };
 
