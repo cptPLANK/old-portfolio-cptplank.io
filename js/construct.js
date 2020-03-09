@@ -63,10 +63,8 @@
             // REPLACESCRIPT
             ////////////////
         } else {
-            console.log(await getTemplate(templateName) + 'moin');
-            main.innerHTML = await getTemplate(templateName);
+            main.innerHTML = 'WATTN KACK!!!' // await getTemplate(templateName);
         }
-
     };
 
     const builtFooter = async () => {
