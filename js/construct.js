@@ -38,7 +38,7 @@
 
         const json = await getJSON('head');
 
-        const addFinalHead = template => {
+        const addFinalHead = async template => {
             const innerHTML = `
                 <title>{%HEAD_PAGE_TITLE%}</title>
                 <meta name="title" content="{%HEAD_PAGE_TITLE%}">
