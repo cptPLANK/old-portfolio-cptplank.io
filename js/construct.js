@@ -1,6 +1,6 @@
 {
     console.log(window.location.pathname);
-    
+
     const getJSON = async (name) => {
         const res = await fetch(`./json/${name}.json`);
         return res.json();
@@ -53,15 +53,17 @@
     const builtMain = async () => {
         const location = window.location.pathname;
         const tempHTML = await getJSON('constructor');
-        const mainEl = document.querySelector('main');
-        if (tempHTML[location].template === 'case-study') {
+        const templateName = tempHTML[location].template;
+        console.log(templateName);
+        const main = document.querySelector('main');
+        if (templateName === 'case-study') {
             const jsonCaseStudies = await getJSON('case-studies');
             const caseStudyTemp = await getTemplate('case-studies');
             ////////////////
             // REPLACESCRIPT
             ////////////////
         } else {
-            mainEl.innerHTML = await getTemplate(tempHTML[location].template);
+            main.innerHTML = await getTemplate(templateName);
         }
 
     };
