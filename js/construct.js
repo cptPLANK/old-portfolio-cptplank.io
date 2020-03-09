@@ -44,53 +44,13 @@
     };
 
     const builtHeader = async () => {
-        const response = await getTemplate('header');
-        document.querySelector('header').innerHTML = response;
+        document.querySelector('header').innerHTML = await getTemplate('header');
     };
 
     const builtMain = async () => {
 
-        // const addFinalHead = async template => {
-        //
-        //     const headTag = document.querySelector('head');
-        //     let addHeadFinal = document.createElement('title');
-        //     addHeadFinal.innerText = json[template].pageTitle;
-        //     headTag.append(addHeadFinal);
-        //
-        //     addHeadFinal = document.createElement('meta');
-        //     addHeadFinal.setAttribute('name', 'title');
-        //     addHeadFinal.setAttribute('content', json[template].pageTitle);
-        //     headTag.append(addHeadFinal);
-        //
-        //     addHeadFinal = document.createElement('meta');
-        //     addHeadFinal.setAttribute('name', 'description');
-        //     addHeadFinal.setAttribute('content', json[template].pageDescription);
-        //     headTag.append(addHeadFinal);
-        //
-        //     addHeadFinal = document.createElement('meta');
-        //     addHeadFinal.setAttribute('property', 'twitter:title');
-        //     addHeadFinal.setAttribute('content', json[template].pageTitle);
-        //     headTag.append(addHeadFinal);
-        //
-        //     addHeadFinal = document.createElement('meta');
-        //     addHeadFinal.setAttribute('property', 'twitter:description');
-        //     addHeadFinal.setAttribute('content', json[template].pageDescription);
-        //     headTag.append(addHeadFinal);
-        //
-        //     addHeadFinal = document.createElement('meta');
-        //     addHeadFinal.setAttribute('property', 'og:description');
-        //     addHeadFinal.setAttribute('content', json[template].pageDescription);
-        //     headTag.append(addHeadFinal);
-        //
-        //     addHeadFinal = document.createElement('meta');
-        //     addHeadFinal.setAttribute('property', 'og:title');
-        //     addHeadFinal.setAttribute('content', json[template].pageTitle);
-        //     headTag.append(addHeadFinal);
-        // };
-
-        let response = await getTemplate(JSONConstructor[location].template);
-        // addFinalHead(location);
-        document.querySelector('main').innerHTML = response;
+        const tempHTML = await getJSON('constructor');
+        document.querySelector('main').innerHTML = await getTemplate(tempHTML[location].template);
 
         // let response;
         // switch (location) {
