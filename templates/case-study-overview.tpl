@@ -1,249 +1,93 @@
-<!doctype html>
-<html lang="de">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport"
-          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <link rel="stylesheet" href="../css/base.css">
-    <link rel="stylesheet" href="https://use.typekit.net/qml8muo.css">
-    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
-    <link rel="apple-touch-icon" sizes="180x180" href="../img/fav/apple-touch-icon.png">
-    <link rel="icon" type="image/png" sizes="32x32" href="../img/fav/favicon-32x32.png">
-    <link rel="icon" type="image/png" sizes="192x192" href="../img/fav/android-chrome-192x192.png">
-    <link rel="icon" type="image/png" sizes="16x16" href="../img/fav/favicon-16x16.png">
-    <link rel="manifest" href="../img/fav/site.webmanifest">
-    <link rel="mask-icon" href="../img/fav/safari-pinned-tab.svg" color="#5bbad5">
-    <link rel="shortcut icon" href="../img/fav/favicon.ico">
-    <meta name="msapplication-TileColor" content="#ffd24c">
-    <meta name="msapplication-config" content="img/fav/browserconfig.xml">
-    <meta name="theme-color" content="#ffffff">
-    <title>cptPLANK ist kein Designer...</title>
-    <meta name="title" content="cptPLANK ist kein Designer...">
-    <meta name="description" content="... zumindest nicht nur. 99% Autodidakt mit Fokus auf JavaScript, CSS & HTML. Besuch' mein Portfolio für Case Studies und Kontaktmöglichkeiten.">
-    <meta name="og:email" content="hello@cptplank.io">
-    <meta name="og:country-name" content="Germany">
-    <meta name="geo.region" content="DE-NW">
-    <meta property="og:type" content="website">
-    <meta property="og:url" content="https://cptplank.io/">
-    <meta property="og:title" content="cptPLANK ist kein Designer...">
-    <meta property="og:description" content="... zumindest nicht nur. 99% Autodidakt mit Fokus auf JavaScript, CSS & HTML. Besuch' mein Portfolio für Case Studies und Kontaktmöglichkeiten.">
-    <meta property="og:image" content="https://cptplank.io/img/social_banner.jpg">
-    <meta property="og:image:secure_url" content="https://cptplank.io/img/social_banner.jpg">
-    <meta property="og:image:alt" content="... MAGIC BÄM!.. aww">
-    <meta property="twitter:card" content="summary_large_image">
-    <meta property="twitter:url" content="https://cptplank.io/">
-    <meta property="twitter:title" content="cptPLANK ist kein Designer...">
-    <meta property="twitter:description" content="... zumindest nicht nur. 99% Autodidakt mit Fokus auf JavaScript, CSS & HTML. Besuch' mein Portfolio für Case Studies und Kontaktmöglichkeiten.">
-    <meta property="twitter:image" content="https://cptplank.io/img/social_banner.jpg">
-    <script src="https://cdn.jsdelivr.net/npm/gsap@3.0.4/dist/gsap.min.js"></script>
-    <script>
-        function isIE() {
-            var ua = navigator.userAgent;
-            return ua.indexOf("MSIE ") > -1 || ua.indexOf("Trident/") > -1;
-        }
-
-        if (isIE()) {
-            alert('mew');
-        }
-    </script>
-</head>
-<body>
-<script src="../js/no-java-fallback.js"></script>
-<header>
-    <ul>
-        <li class="regular">
-            <noscript>
-                <a href="/" class="header-logo">cpt<span class="semi-bold uppercase">PLANK</span></a>
-            </noscript>
-            <a href="/" class="header-logo hidden change-page-event">cpt<span class="semi-bold uppercase">PLANK</span></a>
-        </li>
-        <li>
-            <div class="burger-btn">
-                <div class="bar-oben"></div>
-                <div class="bar-mitte"></div>
-                <div class="bar-unten"></div>
-            </div>
-        </li>
-    </ul>
-
-    <nav class="no-select">
-        <ul>
-            <li>Hallöchen!</li>
-            <li class="bold"><a href="/#ueber-mich" class="change-page-event">Über mich</a></li>
-            <li class="bold"><a href="/#portfolio" class="change-page-event">Portfolio</a></li>
-            <li class="bold"><a href="/case-studies" class="change-page-event">Case Studies</a></li>
-            <li class="bold" style="color:#262626">Shop</li>
-            <li class="bold"><a href="/kontakt" class="change-page-event">Kontakt</a></li>
-            <li class="bold">
-                <div class="menu-socials">
-                    <a href="#" target="_blank">
-                        <img src="../img/social-icons/youtube.svg" alt="" class="social-icon">
-                    </a>
-                    <a href="#" target="_blank">
-                        <img src="../img/social-icons/instagram.svg" alt="" class="social-icon">
-                    </a>
-                    <a href="#" target="_blank">
-                        <img src="../img/social-icons/twitter.svg" alt="" class="social-icon">
-                    </a>
-                    <a href="#" target="_blank">
-                        <img src="../img/social-icons/medium.svg" alt="" class="social-icon">
-                    </a>
-                    <a href="#" target="_blank">
-                        <img src="../img/social-icons/dribbble.svg" alt="" class="social-icon">
-                    </a>
-                    <a href="#" target="_blank">
-                        <img src="../img/social-icons/facebook.svg" alt="" class="social-icon">
-                    </a>
-                    <a href="#" target="_blank">
-                        <img src="../img/social-icons/behance.svg" alt="" class="social-icon">
-                    </a>
-                </div>
-            </li>
-        </ul>
-        <div id="swipe-to-close">Ziehen zum<br>Schließen</div>
-        <div id="mobile-close-btn">
-            <div>
-                <div id="mobile-close-btn-eins"></div>
-                <div id="mobile-close-btn-zwei"></div>
-            </div>
-        </div>
-    </nav>
-
-</header>
-<main>
-
-<section id="single-case-studie-start">
+<section id="case-studie-start">
     <div class="container">
-        <h1 class="bold"><span class="regular">Case Study</span><br>Nominees / Lacelier from France</h1>
-        <div class="start-img" style="background-image: url(../img/SAMPLE_d927b9df39d56a188b69873db0e8d0e5.jpg);
-          background-position: top center;"></div>
+        <h1 class="regular">cpt<strong class="semi-bold">PLANK</strong>s<br><span>getane Arbeit</span></h1>
+        <ul>
+            <li><a href="https://www.instagram.com/cptplank/" target="_blank">Instagram<br><span>Design in Schnipseln</span></a></li>
+            <li><a href="https://dev.to/cptplank" target="_blank">DEV.TO<br><span>Gedanken</span></a></li>
+            <li><a href="https://www.behance.net/cptplank" target="_blank">Behance<br><span>Komplettes Portfolio</span></a></li>
+            <li><a href="https://dribbble.com/cptplank" target="_blank">Dribble<br><span>Spielereien</span></a></li>
+        </ul>
+    </div>
+    <p class="light">
+        <strong>Javascript</strong> ( + node.js + react ) <strong>Entwickler, Web</strong> ( + UX ) <strong>Designer</strong><br>
+        <span>Du kannst dir (beinahe) den ganzen Code der Webseite auf GitHub angucken und forken.</span>
+    </p>
+    <div class="cs-linie">
+
     </div>
 </section>
 
-
-    <section id="case-study-main">
-        <div class="container-top">
-            <div class="cs-desc">
-                <h2 class="semi-bold">
-                    Obsessed fans. Celebrated communities.<br>
-                    Deep brand history.
-                </h2>
-                <p class="main-desc light">
-                    Anime Expo is an explosive, four-day event celebrating Japanese entertainment and pop culture. AX is attended by hundreds of thousands of fan(atic)s every year, many of which dedicate weeks to preparing and networking. The result? A passionate obsessed community, sharing a singular, incredible experience.
-                    <br><br>
-                    Blind’s mission? Help Anime Expo become the brand it deserves, increase ticket sales and brand recognition, and open new streams of revenue–all without alienating millions of current brand champions.
-                    <br><br>
-                    Our approach needed to be comprehensive and cohesive, impacting customer touchpoints from badge design to online experience and everything in between.
-                </p>
-                <div class="cs-desc-more">
-                    <div class="challange">
-                        <h3 class="semi-bold">Challange</h3>
-                        <p class="light">Clarify the brand’s positioning and the customers they serve.</p>
-                    </div>
-                    <div class="outcome">
-                        <h3 class="semi-bold">Outcome</h3>
-                        <p class="light">Blind helped Anime Expo focus their brand and marketing strategy. This led to growth in ticket and merchandise sales, and brought in a new market of virtual attendees.
-                        </p>
-                    </div>
-                </div>
-            </div>
-            <div class="cs-schwerpunkte">
-                <h4 class="light">Schwerpunkte</h4>
-                <ul class="regular">
-                    <li>Brand Strategy</li>
-                    <li>Messaging</li>
-                    <li>Identity System Design</li>
-                    <li>Web Design and Development</li>
-                    <li>Merchandise and Packaging Design</li>
-                    <li>Social Media and Email Campaign</li>
-                    <li>Digital and Printed Marketing Assets</li>
-                </ul>
-            </div>
-        </div>
-        <div class="container">
-            <h3 class="semi-bold">Developing the Strategy</h3>
-            <p class="light">Blind’s Chief Strategist, Chris Do, sat down with CEO Mark Manansala and the team at SPJA (The Society for the Promotion of Japanese Animation), to craft the brand’s strategy for the upcoming Anime Expo 2017 event. Over a two-day facilitated session, Chris surfaced the challenges the organization faced. In the process, they prioritized the needs and goals of the business and its customers. This became the foundation for the branding and marketing plans for the 2017 event.
+<section id="case-studie-portfolio">
+    <div class="container cs-left">
+        <div class="cs-text">
+            <h2 class="bold">cptPLANK</h2>
+            <p class="regular">
+                Du kannst meinen Website-Code auf Github betrachten oder lies dir meine Gedanken hierzu in
+                der Case-Studie durch.
             </p>
-            <img src="../img/SAMPLE_d927b9df39d56a188b69873db0e8d0e5.jpg" alt="">
+            <a href="/cptplank-case-study" class="semi-bold hover-letter-spacing change-page-event">Projekt anzeigen</a>
         </div>
-        <div class="container">
-            <h3 class="semi-bold">Developing the Strategy</h3>
-            <p class="light">Blind’s Chief Strategist, Chris Do, sat down with CEO Mark Manansala and the team at SPJA (The Society for the Promotion of Japanese Animation), to craft the brand’s strategy for the upcoming Anime Expo 2017 event. Over a two-day facilitated session, Chris surfaced the challenges the organization faced. In the process, they prioritized the needs and goals of the business and its customers. This became the foundation for the branding and marketing plans for the 2017 event.
-            </p>
-            <img src="../img/SAMPLE_d927b9df39d56a188b69873db0e8d0e5.jpg" alt="">
-        </div>
-
-        <div class="container-bottom">
-            <p class="semi-bold"><span class="bold">Überzeugt?</span><br>Dann lass uns doch zusammen arbeiten!</p>
-            <a href="#" class="semi-bold">Projekt starten</a>
-        </div>
-    </section>
-
-</main>
-
-<footer>
-    <ul id="link-listen">
-        <li>
-            <ul>
-                <li class="uppercase bold">Sonst so?</li>
-                <li class="light"><a href="/" class="change-page-event">Start</a></li>
-                <li class="light"><a href="/case-studies" class="change-page-event">Case Studies</a></li>
-                <li class="light"><a href="#" class="change-page-event">Blog</a></li>
-                <li class="light"><a href="#" class="change-page-event">Shop</a></li>
-                <li class="light"><a href="https://aeosys.de" target="_blank">Aeosys</a></li>
-            </ul>
-        </li>
-        <li>
-            <ul>
-                <li class="uppercase bold">Kontakt</li>
-                <li class="light"><a href="https://www.instagram.com/cptplank/" target="_blank">Instagram</a></li>
-                <li class="light"><a href="https://twitter.com/cptPLANK" target="_blank">Twitter</a></li>
-                <li class="light"><a href="https://www.behance.net/cptplank/" target="_blank">Behance</a></li>
-                <li class="light"><a href="/kontakt" class="change-page-event">Email</a></li>
-                <li class="light"><a href="https://dribbble.com/cptplank" target="_blank">Dribble</a></li>
-            </ul>
-        </li>
-        <li id="newsletter">
-            <ul>
-                <li class="uppercase bold">Newsletter</li>
-                <li>
-                    <p class="light">
-                        Möchtest du mehr über meine
-                        Arbeit erfahren, sobald es etwas
-                        neues gibt? Hier anmelden:
-                    </p>
-                </li>
-                <li>
-                    <input type="email" placeholder="Email-Adresse">
-                    <input type="submit" value="GO!">
-                </li>
-            </ul>
-        </li>
-    </ul>
-
-    <div class="copyright">
-        <p>Copyright © 1986—2019 Julien Lieske. All rights reserved.</p>
-        <ul>
-            <li>Impressum</li>
-            <li>Datenschutz</li>
-            <li>Cookie-Erklärung</li>
-        </ul>
+        <a href="/cptplank-case-study" class="cs-bild change-page-event" style="background-image: url(../img/cptplank-thump-big.jpg)">
+            <div><span>zero04</span><span>2019</span></div>
+        </a>
     </div>
-</footer>
-<div style="display: none;" itemscope="" itemtype="http://schema.org/Organization">
-    <h1 itemprop="name">cptPLANK.io</h1>
-    <p itemprop="description">
-        100% autodidaktischer Web-Entwickler und Designer mit Fokus auf JavaScript, Node.js und React. Ich empfand
-        coding schon immer als intuitiv und habe mich selbst dazu gebracht mein Wissen und Können so effectiv wie
-        möglich zu verbessern.
-    </p>
-    <address itemprop="address" itemscope="" itemtype="http://schema.org/PostalAddress">
-        <span itemprop="addressRegion">NRW</span> - <span itemprop="addressCountry">GER</span>
-    </address>
-    <a itemprop="email" href="mailto:hello@cptplank.io">hello@cptplank.io</a>
-</div>
-<script src="https://unpkg.com/scrollreveal"></script>
-<script src="../js/base.js" async></script>
-</body>
-</html>
+
+    <div class="container cs-reverse">
+        <div class="cs-text">
+            <h2 class="bold">soestlinge</h2>
+            <p class="regular">
+                Eine selbstentworfene Plattform, die mal von freiwilligen Bloggern und Fotografen gestützt werden soll,
+                um Neues und Schönes aus meiner Heimatstadt in die Welt zu posaunen.
+            </p>
+            <a href="/soestlinge-case-study" class="semi-bold hover-letter-spacing change-page-event">Projekt anzeigen</a>
+        </div>
+        <a href="/cptplank-case-study" class="cs-bild" style="background-image: url(../img/soest-thump-big.jpg)">
+            <div><span>zero03</span><span>2019</span></div>
+        </a>
+    </div>
+
+    <div class="container cs-left">
+        <div class="cs-text">
+            <h2 class="bold">naturherz</h2>
+            <p class="regular">
+                Überarbeitung und Modernisierung einer Praxishomepage. Grundlegende Suchmaschinenoptimierung,
+                Briefpapier- & Visitenkartendesign.
+            </p>
+            <a href="/naturherz-case-study" class="semi-bold hover-letter-spacing change-page-event">Projekt anzeigen</a>
+        </div>
+        <a href="/cptplank-case-study" class="cs-bild" style="background-image: url(../img/naturherz-thump-big.jpg)">
+            <div><span>zero02</span><span>2019</span></div>
+        </a>
+    </div>
+
+    <div class="container cs-reverse">
+        <div class="cs-text">
+            <h2 class="bold">dr. hussmann</h2>
+            <p class="regular">
+                Überarbeitung und Modernisierung einer Praxishomepage. Grundlegende Suchmaschinenoptimierung,
+                Briefpapier- & Visitenkartendesign.
+            </p>
+            <a href="/hussmann-case-study" class="semi-bold hover-letter-spacing change-page-event">Projekt anzeigen</a>
+        </div>
+        <a href="/cptplank-case-study" class="cs-bild" style="background-image: url(../img/hussmann-thump-big.jpg)">
+            <div><span>zero01</span><span>2019</span></div>
+        </a>
+    </div>
+
+</section>
+
+<section id="behance-banner">
+    <a href="https://www.behance.net/cptplank" target="_blank"><img src="../img/behance-banner.svg"></a>
+</section>
+
+<section id="cs-kontakt">
+    <div class="container">
+        <p class="regular"><span class="say-hi">Hi sagen</span><br>Lass' uns mal über etwas
+            interessantes reden.<br>
+            <span class="animate-wrapper">
+            <a href="/kontakt" class="change-page-event">Kontaktier' mich</a>
+           <i class="pfeil"></i>
+            </span>
+        </p>
+    </div>
+</section>
