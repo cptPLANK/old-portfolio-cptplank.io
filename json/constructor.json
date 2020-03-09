@@ -13,7 +13,7 @@
     "pageDescription": "... zumindest nicht nur. 99% Autodidakt mit Fokus auf JavaScript, CSS & HTML. Besuch' mein Portfolio für Case Studies und Kontaktmöglichkeiten.",
     "hasFooter": true,
     "customLogo": false,
-    "customScript": "/js/autosize.js"
+    "customScript": "js/autosize.js"
   },
   "/portfolio":  {
     "template": "case-study-overview",
