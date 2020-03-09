@@ -74,8 +74,8 @@
             headTag.append(addHeadFinal);
         };
 
-        let response = await getTemplate('startpage');
-        addFinalHead('/');
+        let response = await getTemplate(json[location].template);
+        addFinalHead(json[location]);
         document.querySelector('main').innerHTML = response;
 
         // let response;
