@@ -106,6 +106,7 @@ const Menu = {
     }
 };
 
+ScrollReveal({ reset: true });
 const Animations = {
     animatePlank: () => {
         ScrollReveal().reveal('.typo-cpt', {
@@ -571,3 +572,14 @@ document.querySelector('#newsletter > ul > li:nth-child(3) > input[type=submit]:
         }
     }
 )();
+
+if (window.location.pathname === '/') {
+//DIRTY
+    document.querySelector('.close-cv').addEventListener('click', () => {
+        document.querySelector('cv').style.display = 'none';
+    });
+
+    document.querySelector('.cv-anfordern').addEventListener('click', () => {
+        document.querySelector('cv').style.display = 'flex';
+    });
+}

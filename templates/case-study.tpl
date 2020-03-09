@@ -5,16 +5,16 @@
     <meta name="viewport"
           content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <link rel="stylesheet" href="css/base.css">
+    <link rel="stylesheet" href="../css/base.css">
     <link rel="stylesheet" href="https://use.typekit.net/qml8muo.css">
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
-    <link rel="apple-touch-icon" sizes="180x180" href="img/fav/apple-touch-icon.png">
-    <link rel="icon" type="image/png" sizes="32x32" href="img/fav/favicon-32x32.png">
-    <link rel="icon" type="image/png" sizes="192x192" href="img/fav/android-chrome-192x192.png">
-    <link rel="icon" type="image/png" sizes="16x16" href="img/fav/favicon-16x16.png">
-    <link rel="manifest" href="img/fav/site.webmanifest">
-    <link rel="mask-icon" href="img/fav/safari-pinned-tab.svg" color="#5bbad5">
-    <link rel="shortcut icon" href="img/fav/favicon.ico">
+    <link rel="apple-touch-icon" sizes="180x180" href="../img/fav/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="../img/fav/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="192x192" href="../img/fav/android-chrome-192x192.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="../img/fav/favicon-16x16.png">
+    <link rel="manifest" href="../img/fav/site.webmanifest">
+    <link rel="mask-icon" href="../img/fav/safari-pinned-tab.svg" color="#5bbad5">
+    <link rel="shortcut icon" href="../img/fav/favicon.ico">
     <meta name="msapplication-TileColor" content="#ffd24c">
     <meta name="msapplication-config" content="img/fav/browserconfig.xml">
     <meta name="theme-color" content="#ffffff">
@@ -49,7 +49,7 @@
     </script>
 </head>
 <body>
-<script src="js/no-java-fallback.js"></script>
+<script src="../js/no-java-fallback.js"></script>
 <header>
     <ul>
         <li class="regular">
@@ -78,25 +78,25 @@
             <li class="bold">
                 <div class="menu-socials">
                     <a href="#" target="_blank">
-                        <img src="img/social-icons/youtube.svg" alt="" class="social-icon">
+                        <img src="../img/social-icons/youtube.svg" alt="" class="social-icon">
                     </a>
                     <a href="#" target="_blank">
-                        <img src="img/social-icons/instagram.svg" alt="" class="social-icon">
+                        <img src="../img/social-icons/instagram.svg" alt="" class="social-icon">
                     </a>
                     <a href="#" target="_blank">
-                        <img src="img/social-icons/twitter.svg" alt="" class="social-icon">
+                        <img src="../img/social-icons/twitter.svg" alt="" class="social-icon">
                     </a>
                     <a href="#" target="_blank">
-                        <img src="img/social-icons/medium.svg" alt="" class="social-icon">
+                        <img src="../img/social-icons/medium.svg" alt="" class="social-icon">
                     </a>
                     <a href="#" target="_blank">
-                        <img src="img/social-icons/dribbble.svg" alt="" class="social-icon">
+                        <img src="../img/social-icons/dribbble.svg" alt="" class="social-icon">
                     </a>
                     <a href="#" target="_blank">
-                        <img src="img/social-icons/facebook.svg" alt="" class="social-icon">
+                        <img src="../img/social-icons/facebook.svg" alt="" class="social-icon">
                     </a>
                     <a href="#" target="_blank">
-                        <img src="img/social-icons/behance.svg" alt="" class="social-icon">
+                        <img src="../img/social-icons/behance.svg" alt="" class="social-icon">
                     </a>
                 </div>
             </li>
@@ -116,7 +116,7 @@
 <section id="single-case-studie-start">
     <div class="container">
         <h1 class="bold"><span class="regular">Case Study</span><br>Nominees / Lacelier from France</h1>
-        <div class="start-img" style="background-image: url(img/SAMPLE_d927b9df39d56a188b69873db0e8d0e5.jpg);
+        <div class="start-img" style="background-image: url(../img/SAMPLE_d927b9df39d56a188b69873db0e8d0e5.jpg);
           background-position: top center;"></div>
     </div>
 </section>
@@ -165,13 +165,13 @@
             <h3 class="semi-bold">Developing the Strategy</h3>
             <p class="light">Blind’s Chief Strategist, Chris Do, sat down with CEO Mark Manansala and the team at SPJA (The Society for the Promotion of Japanese Animation), to craft the brand’s strategy for the upcoming Anime Expo 2017 event. Over a two-day facilitated session, Chris surfaced the challenges the organization faced. In the process, they prioritized the needs and goals of the business and its customers. This became the foundation for the branding and marketing plans for the 2017 event.
             </p>
-            <img src="img/SAMPLE_d927b9df39d56a188b69873db0e8d0e5.jpg" alt="">
+            <img src="../img/SAMPLE_d927b9df39d56a188b69873db0e8d0e5.jpg" alt="">
         </div>
         <div class="container">
             <h3 class="semi-bold">Developing the Strategy</h3>
             <p class="light">Blind’s Chief Strategist, Chris Do, sat down with CEO Mark Manansala and the team at SPJA (The Society for the Promotion of Japanese Animation), to craft the brand’s strategy for the upcoming Anime Expo 2017 event. Over a two-day facilitated session, Chris surfaced the challenges the organization faced. In the process, they prioritized the needs and goals of the business and its customers. This became the foundation for the branding and marketing plans for the 2017 event.
             </p>
-            <img src="img/SAMPLE_d927b9df39d56a188b69873db0e8d0e5.jpg" alt="">
+            <img src="../img/SAMPLE_d927b9df39d56a188b69873db0e8d0e5.jpg" alt="">
         </div>
 
         <div class="container-bottom">
@@ -244,6 +244,6 @@
     <a itemprop="email" href="mailto:hello@cptplank.io">hello@cptplank.io</a>
 </div>
 <script src="https://unpkg.com/scrollreveal"></script>
-<script src="js/base.js" async></script>
+<script src="../js/base.js" async></script>
 </body>
 </html>
