@@ -41,8 +41,8 @@
         const addFinalHead = async template => {
 
             const headTag = document.querySelector('head');
-            let addHeadFinal = document.createElement('title')
-                .innerText = json[template].pageTitle;
+            let addHeadFinal = document.createElement('title');
+            addHeadFinal.innerText = json[template].pageTitle;
             headTag.append(addHeadFinal);
 
             // addHeadFinal = document.createElement('meta')
