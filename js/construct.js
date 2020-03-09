@@ -11,8 +11,8 @@
         return res.text();
     };
 
-    const loadJasonAndLocation = jsonFile => {
-        return {location: window.location.pathname, json: getJSON(jsonFile)};
+    const loadJasonAndLocation = async jsonFile => {
+        return {location: window.location.pathname, json: await getJSON(jsonFile)};
     };
 
 
