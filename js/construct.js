@@ -11,14 +11,14 @@
         return res.text();
     };
 
-    const loadJasonAndLocation = async jsonFile => {
-        return {location: window.location.pathname, json: await getJSON(jsonFile)};
+    const loadJasonAndLocation = jsonFile => {
+        return {location: window.location.pathname, json: getJSON(jsonFile)};
     };
 
 
-    const builtHead = async () => {
-        const [location, json] = await loadJasonAndLocation('constructor');
-        const {json: jsonHead} = await loadJasonAndLocation('head');
+    const builtHead = () => {
+        const {location, json} = loadJasonAndLocation('constructor');
+        const {json: jsonHead} = loadJasonAndLocation('head');
 
         //const jsonHead = await getJSON('head');
         // const json = await getJSON('constructor');
@@ -53,9 +53,9 @@
         });
     };
 
-    const builtHeader = async () => {
+    const builtHeader = () => {
         const location = window.location.pathname;
-        document.querySelector('header').innerHTML = await getTemplate('header');
+        document.querySelector('header').innerHTML = getTemplate('header');
     };
 
     const builtMain = async () => {
