@@ -13,9 +13,10 @@
 
     const builtHead = async () => {
         const jsonHead = await getJSON('head');
+        const jsonConstructor = await getJSON('constructor');
         const [pageTitle, pageDescription] = [
-            await getJSON('constructor')[location].pageTitle,
-            await getJSON('constructor')[location].pageDescription
+            jsonConstructor[location].pageTitle,
+            jsonConstructor[location].pageDescription
         ];
         const headTag = document.querySelector('head');
         const addHead = document.createElement('title');
