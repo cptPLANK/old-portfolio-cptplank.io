@@ -662,6 +662,10 @@ page-transition div {
     transform: translate(0.5vw, 0.5vw);
     box-shadow: none;
   }
+  section#kontakt {
+    min-height: 100vh;
+    height: auto;
+  }
   section#kontakt h1 {
     text-transform: uppercase;
     transform: rotate(-90deg);
@@ -1860,6 +1864,10 @@ page-transition div {
   section#case-study-main .container-bottom a:hover:active {
     transform: translate(0.25vw, 0.25vw);
     box-shadow: none;
+  }
+  section#kontakt {
+    min-height: 100vh;
+    height: auto;
   }
   section#kontakt h1 {
     text-transform: uppercase;
