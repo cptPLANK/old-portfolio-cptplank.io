@@ -36,7 +36,7 @@
 
     const builtMain = async () => {
 
-        const json = await getJSON('header');
+        const json = await getJSON('head');
 
         const addFinalHead = template => {
             const innerHTML = `
