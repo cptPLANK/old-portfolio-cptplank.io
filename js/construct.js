@@ -1,6 +1,6 @@
 {
     const location = window.location.pathname;
-
+    console.log(location);
     const getJSON = async (name) => {
         const res = await fetch(`./json/${name}.json`);
         return res.json();
