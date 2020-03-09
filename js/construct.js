@@ -12,13 +12,13 @@
     };
 
     const loadJasonAndLocation = async jsonFile => {
-        return {location: window.location.pathname, json: await getJSON(jsonFile)}
+        return {location: window.location.pathname, json: await getJSON(jsonFile)};
     };
 
 
     const builtHead = async () => {
-        const [location, json] = await loadJasonAndLocation('constructor');
-        const {json: jsonHead} = loadJasonAndLocation('constructor');
+        const [location, json] = loadJasonAndLocation('constructor');
+        const {json: jsonHead} = loadJasonAndLocation('head');
 
         //const jsonHead = await getJSON('head');
         // const json = await getJSON('constructor');
