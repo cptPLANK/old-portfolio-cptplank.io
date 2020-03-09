@@ -63,6 +63,7 @@
             // REPLACESCRIPT
             ////////////////
         } else {
+            console.log(await getTemplate(templateName) + 'moin');
             main.innerHTML = await getTemplate(templateName);
         }
 
