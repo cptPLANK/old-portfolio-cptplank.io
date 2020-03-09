@@ -2030,7 +2030,9 @@ page-transition {
       //display: flex;
       //justify-content: center;
       //align-items: center;
-
+      min-height: 100vh;
+      height: auto;
+      
       h1 {
         text-transform: uppercase;
         transform: rotate(-90deg);
