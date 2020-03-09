@@ -46,8 +46,8 @@
             headTag.append(addHeadFinal);
 
             let addHeadFinal2 = document.createElement('meta');
-            addHeadFinal2.setAttribute('name', 'title')
-                .setAttribute('content', json[template].pageTitle);
+            addHeadFinal2.setAttribute('name', 'title');
+            addHeadFinal2.setAttribute('content', json[template].pageTitle);
             headTag.append(addHeadFinal2);
 
             // addHeadFinal = document.createElement('meta');
