@@ -55,7 +55,7 @@
         document.querySelector('header').innerHTML = await getTemplate('header');
     };
 
-    const replaceTemplate = async (html, obj) => {
+    const replaceTemplate = (html, obj) => {
         let template = html;
         if (obj.nameLong !== undefined) {
             template = template.replace('{%NAME_LONG%}', obj.nameLong);
