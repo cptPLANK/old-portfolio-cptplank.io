@@ -75,7 +75,7 @@
         const main = document.querySelector('main');
 
         if (templateName === 'case-studies') {
-            const caseStudie = location.slice(0, 12);
+            const caseStudie = location.slice(13);
             const jsonCaseStudies = await getJSON('case-studies');
             const caseStudyTemp = await getTemplate('case-studies');
             const advancedTemp = await getTemplate('advanced-content-container');
