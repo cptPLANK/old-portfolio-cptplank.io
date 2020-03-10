@@ -18,7 +18,7 @@
     <ul>
         <li>Hallöchen!</li>
         <li class="bold"><a href="/#ueber-mich" class="change-page-event">Über mich</a></li>
-        <li class="bold"><a href="/case-studies" >Portfolio</a></li>
+        <li class="bold"><a href="/portfolio" class="change-page-event">Portfolio</a></li>
         <li class="bold" style="color:#262626">Blog</li>
         <li class="bold" style="color:#262626">Shop</li>
         <li class="bold"><a href="/kontakt" class="change-page-event">Kontakt</a></li>
