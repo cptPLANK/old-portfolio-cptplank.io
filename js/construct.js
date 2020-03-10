@@ -98,7 +98,7 @@
             const getAdvancedContent = arrAdvanced.map(el => replaceTemplate(advancedTemp, el)).join('\n');
             const getContent = arrMain.map(el => replaceTemplate(templateName, el));
 
-            console.log(arrMain);
+            console.log(getContent);
 
         } else {
             main.innerHTML = await getTemplate(templateName);
