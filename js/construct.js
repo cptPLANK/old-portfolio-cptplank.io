@@ -57,7 +57,7 @@
 
     const replaceTemplate = async (html, obj) => {
         let template = html;
-        console.log(obj.title !== undefined);
+        console.log(obj.nameLong !== undefined);
         if (obj.nameLong !== undefined) {
             template = template.replace('{%NAME_LONG%}', obj.nameLong);
         }
