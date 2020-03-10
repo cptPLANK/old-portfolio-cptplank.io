@@ -93,10 +93,10 @@
         if (templateName === 'case-studies') {
             const advancedTemp = await getTemplate('advanced-content-container');
             const arrAdvanced = json[location].content.advancedContent;
-            const arrMain = json[location].content;
+            const objMain = json[location].content;
 
             const getAdvancedContent = arrAdvanced.map(el => replaceTemplate(advancedTemp, el)).join('\n');
-            const getContent = arrMain.map(el => replaceTemplate(templateName, el));
+            const getContent = objMain.forEach(el => replaceTemplate(templateName, el));
 
             console.log(getContent);
 
