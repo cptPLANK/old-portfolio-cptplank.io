@@ -57,34 +57,35 @@
 
     const replaceTemplate = async (temp, obj) => {
         let template = temp;
-        let changeObj = {
-        '{%NAME_LONG%}': obj.nameLong,
-        '{%TITEL%}': obj.title,
-        '{%INTRO_TEXT%}': obj.introText,
-        '{%CHALLANGE%}': obj.challange,
-        '{%OUTCOME%}': obj.outcome,
-        '{%TITEL_ADV%}': obj.title,
-        '{%TEXT%}': obj.text,
-        '{%IMG%}': obj.imgUrl,
-        '{%IMG_ALT%}': obj.imgAlt
-        };
 
-        template = changeObj.map(el => {
-            if (el.hasOwnProperty(el)) {
-                console.log(el);
-            }
-        });
-
-        // template = template.replace('{%NAME_LONG%}', obj.nameLong);
-        // template = template.replace('{%TITEL%}', obj.title);
-        // template = template.replace('{%INTRO_TEXT%}', obj.introText);
-        // template = template.replace('{%CHALLANGE%}', obj.challange);
-        // template = template.replace('{%OUTCOME%}', obj.outcome);
-        // template = template.replace('{%TITEL_ADV%}', obj.title);
-        // template = template.replace('{%TEXT%}', obj.text);
-        // template = template.replace('{%IMG%}', obj.imgUrl);
-        // template = template.replace('{%IMG_ALT%}', obj.imgAlt);
-        // return  template;
+        if (obj.hasOwnProperty(obj.nameLong)) {
+            template = template.replace('{%NAME_LONG%}', obj.nameLong);
+        }
+        if (obj.hasOwnProperty(obj.title)) {
+            template = template.replace('{%TITEL%}', obj.title);
+        }
+        if (obj.hasOwnProperty(obj.introText)) {
+            template = template.replace('{%INTRO_TEXT%}', obj.introText);
+        }
+        if (obj.hasOwnProperty(obj.challange)) {
+            template = template.replace('{%CHALLANGE%}', obj.challange);
+        }
+        if (obj.hasOwnProperty(obj.outcome)) {
+            template = template.replace('{%OUTCOME%}', obj.outcome);
+        }
+        if (obj.hasOwnProperty(obj.title)) {
+            template = template.replace('{%TITEL_ADV%}', obj.title);
+        }
+        if (obj.hasOwnProperty(obj.text)) {
+            template = template.replace('{%TEXT%}', obj.text);
+        }
+        if (obj.hasOwnProperty(obj.imgUrl)) {
+            template = template.replace('{%IMG%}', obj.imgUrl);
+        }
+        if (obj.hasOwnProperty(obj.imgAlt)) {
+            template = template.replace('{%IMG_ALT%}', obj.imgAlt);
+        }
+        return  template;
     };
 
     const builtMain = async () => {
