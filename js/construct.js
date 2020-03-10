@@ -17,7 +17,9 @@
     const builtHead = async () => {
         const {location, json} = await loadJasonAndLocation('constructor');
         const {json: jsonHead} = await loadJasonAndLocation('head');
-
+        if (location === json[location]) {
+            console.log('404');
+        }
         const [pageTitle, pageDescription] = [
             json[location].pageTitle,
             json[location].pageDescription
