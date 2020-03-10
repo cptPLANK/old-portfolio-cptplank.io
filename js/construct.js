@@ -98,8 +98,10 @@
 
             const getAdvancedContent = arrAdvanced.map(el => replaceTemplate(advancedTemp, el)).join('\n');
             const getContent = replaceTemplate(mainTemp, objMain);
+            const getSchwerpunkte = objMain.schwerpunkte.forEach(el => `<li>${el}</li>`).join();
+            // getContent.replace
 
-            console.log(getContent);
+            console.log(getSchwerpunkte);
 
         } else {
             main.innerHTML = await getTemplate(templateName);
