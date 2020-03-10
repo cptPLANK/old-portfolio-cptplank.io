@@ -267,7 +267,7 @@ const Animations = {
         });
     },
     link: async (finalLinkValue) => {
-
+        alert(finalLinkValue);
         window.location.pathname = await finalLinkValue;
 
         Animations.changePageStaggerOut();
