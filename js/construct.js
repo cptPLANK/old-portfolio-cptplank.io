@@ -52,8 +52,19 @@
 
     const builtHeader = async () => {
         const location = window.location.pathname;
-        
+
         document.querySelector('header').innerHTML = await getTemplate('header');
+    };
+
+    const builtHeader = async () => {
+        const {location, json} = await loadJasonAndLocation('constructor');
+        let template = await getTemplate('header');
+        if (json[location].customLogo !== false) {
+            template = template.replace(/{%LOGO%}/g, json[location].customLogo);
+        } else {
+            template = template.replace(/{%LOGO%}/g, `cpt<span class="semi-bold uppercase">PLANK</span>`);
+        }
+        document.querySelector('header').innerHTML = template;
     };
 
     const replaceTemplate = (html, obj) => {
