@@ -165,7 +165,7 @@
             await builtMain();
             await builtFooter();
             await addJSFiles();
-            if (helper === '/#ueber-mich') {
+            if (helper === '/ueber-mich') {
                 let anker = document.querySelector('#ueber-mich').offsetTop;
                 await window.scrollTo(0, anker);
             }
