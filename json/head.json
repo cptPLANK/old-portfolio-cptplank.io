@@ -152,6 +152,9 @@
   ],
   "script": [
     {
+      "src": "js/matomo.js"
+    },
+    {
       "src": "https://cdn.jsdelivr.net/npm/gsap@3.0.4/dist/gsap.min.js"
     },
     {
