@@ -55,8 +55,8 @@
         document.querySelector('header').innerHTML = await getTemplate('header');
     };
 
-    const replaceTemplate = async (temp, obj) => {
-        let template = temp;
+    const replaceTemplate = async (html, obj) => {
+        let template = html;
 
         if (obj.nameLong !== undefined) {
             template = template.replace('{%NAME_LONG%}', obj.nameLong);
@@ -99,7 +99,7 @@
 
             const getAdvancedContent = arrAdvanced.map(el => {
                 replaceTemplate(advancedTemp, el);
-                console.log(el.title);
+                console.log(el.moep);
             }).join();
 
             console.log(advancedTemp + ' asdf');
