@@ -131,7 +131,7 @@
             await builtFooter();
             await addJSFiles();
         } else {
-            alert('404!');
+            alert('Die Page existiert nicht!');
         }
 
     })();
