@@ -1495,10 +1495,14 @@ page-transition div {
     right: 0;
     width: 7vw;
     height: 7vw;
+    transition: transform 250ms ease-in-out;
   }
   #github img {
     width: 100%;
     height: 100%;
+  }
+  #github:hover {
+    transform: translate(-1vw, -1vw);
   }
 
   cv {
