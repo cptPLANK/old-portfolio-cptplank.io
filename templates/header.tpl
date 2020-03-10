@@ -51,6 +51,7 @@
             <div id="mobile-close-btn-eins"></div>
             <div id="mobile-close-btn-zwei"></div>
         </div>
-        <a href="#" id="github"><img src="img/github_cptplank.io.svg"</a>
     </div>
 </nav>
+
+<a href="#" id="github"><img src="img/github_cptplank.io.svg"</a>
