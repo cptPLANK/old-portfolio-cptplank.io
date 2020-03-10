@@ -15,6 +15,9 @@
 
     const check404 = (location, json) => json.hasOwnProperty(location);
 
+    const module__templateBuilder = async (template, obj) => {
+        //
+    };
 
     const builtHead = async () => {
         const {location, json} = await loadJasonAndLocation('constructor');
