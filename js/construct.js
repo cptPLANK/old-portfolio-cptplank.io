@@ -13,6 +13,8 @@
         return {location: window.location.pathname, json: await getJSON(jsonFile)};
     };
 
+    const check404 = (location, json) => json.hasOwnProperty(location);
+
 
     const builtHead = async () => {
         const {location, json} = await loadJasonAndLocation('constructor');
@@ -82,8 +84,6 @@
             const getAdvancedContent = arrAdvanced.map(el => replaceTemplate(advancedTemp, arrAdvanced[el])).join();
             console.log(getAdvancedContent);
 
-        } else if (!json.hasOwnProperty(location)) {
-            console.log('404');
         } else {
             main.innerHTML = await getTemplate(templateName);
         }
@@ -123,11 +123,17 @@
     };
 
     (async () => {
+        const {location, json} = await loadJasonAndLocation('constructor');
+        if (check404(location, json)) {
             await builtHead();
             await builtHeader();
             await builtMain();
             await builtFooter();
             await addJSFiles();
+        } else {
+            alert('404!');
+        }
+
     })();
 
 }
