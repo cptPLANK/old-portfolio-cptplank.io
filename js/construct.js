@@ -96,7 +96,7 @@
             const arrMain = json[location].content;
 
             const getAdvancedContent = arrAdvanced.map(el => replaceTemplate(advancedTemp, el)).join('\n');
-            // const getContent = arrMain.map(el => replaceTemplate(templateName, el));
+            const getContent = arrMain.map(el => replaceTemplate(templateName, el));
 
             console.log(arrMain);
 
