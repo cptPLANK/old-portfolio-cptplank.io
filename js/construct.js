@@ -54,7 +54,7 @@
         const {location, json} = await loadJasonAndLocation('constructor');
         let template = await getTemplate('header');
         console.log(json[location].customLogo);
-        if (json[location].customLogo !== false) {
+        if (json[location].customLogo) {
             template = template.replace(/{%LOGO%}/g, json[location].customLogo);
         } else {
             template = template.replace(/{%LOGO%}/g, `cpt<span class="semi-bold uppercase">PLANK</span>`);
