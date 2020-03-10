@@ -268,7 +268,14 @@ const Animations = {
     },
     link: async (finalLinkValue) => {
 
-        window.location.pathname = await finalLinkValue;
+        if (finalLinkValue === '/#ueber-mich') {
+            window.location.pathname = '/';
+            let anker = document.querySelector('#ueber-mich').offsetTop;
+            await window.scrollTo(0, anker);
+        } else {
+            window.location.pathname = finalLinkValue;
+        }
+
         Animations.changePageStaggerOut();
         // if (finalLinkValue === '/#ueber-mich') {
         //     window.location.href = "/?internal=1#ueber-mich";
