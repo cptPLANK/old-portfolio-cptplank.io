@@ -82,7 +82,6 @@
         if (obj.imgAlt !== undefined) {
             template = template.replace('{%IMG_ALT%}', obj.imgAlt);
         }
-        console.log(template);
         return template;
     };
 
@@ -93,11 +92,12 @@
 
         if (templateName === 'case-studies') {
             const advancedTemp = await getTemplate('advanced-content-container');
+            const mainTemp = await getTemplate('case-studies');
             const arrAdvanced = json[location].content.advancedContent;
             const objMain = json[location].content;
 
             const getAdvancedContent = arrAdvanced.map(el => replaceTemplate(advancedTemp, el)).join('\n');
-            const getContent = replaceTemplate(templateName, objMain);
+            const getContent = replaceTemplate(mainTemp, objMain);
 
             console.log(getContent);
 
