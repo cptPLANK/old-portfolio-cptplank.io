@@ -58,31 +58,31 @@
     const replaceTemplate = async (temp, obj) => {
         let template = temp;
 
-        if (obj.nameLong) {
+        if (obj.nameLong !== undefined) {
             template = template.replace('{%NAME_LONG%}', obj.nameLong);
         }
-        if (obj.title) {
+        if (obj.title !== undefined) {
             template = template.replace('{%TITEL%}', obj.title);
         }
-        if (obj.introText) {
+        if (obj.introText !== undefined) {
             template = template.replace('{%INTRO_TEXT%}', obj.introText);
         }
-        if (obj.challange) {
+        if (obj.challange !== undefined) {
             template = template.replace('{%CHALLANGE%}', obj.challange);
         }
-        if (obj.outcome) {
+        if (obj.outcome !== undefined) {
             template = template.replace('{%OUTCOME%}', obj.outcome);
         }
-        if (obj.title) {
+        if (obj.title !== undefined) {
             template = template.replace('{%TITEL_ADV%}', obj.title);
         }
-        if (obj.text) {
+        if (obj.text !== undefined) {
             template = template.replace('{%TEXT%}', obj.text);
         }
-        if (obj.imgUrl) {
+        if (obj.imgUrl !== undefined) {
             template = template.replace('{%IMG%}', obj.imgUrl);
         }
-        if (obj.imgAlt) {
+        if (obj.imgAlt !== undefined) {
             template = template.replace('{%IMG_ALT%}', obj.imgAlt);
         }
         return  template;
