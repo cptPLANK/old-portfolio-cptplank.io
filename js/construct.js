@@ -58,31 +58,31 @@
     const replaceTemplate = async (temp, obj) => {
         let template = temp;
 
-        if (obj.hasOwnProperty(obj.nameLong)) {
+        if (obj.nameLong) {
             template = template.replace('{%NAME_LONG%}', obj.nameLong);
         }
-        if (obj.hasOwnProperty(obj.title)) {
+        if (obj.title) {
             template = template.replace('{%TITEL%}', obj.title);
         }
-        if (obj.hasOwnProperty(obj.introText)) {
+        if (obj.introText) {
             template = template.replace('{%INTRO_TEXT%}', obj.introText);
         }
-        if (obj.hasOwnProperty(obj.challange)) {
+        if (obj.challange) {
             template = template.replace('{%CHALLANGE%}', obj.challange);
         }
-        if (obj.hasOwnProperty(obj.outcome)) {
+        if (obj.outcome) {
             template = template.replace('{%OUTCOME%}', obj.outcome);
         }
-        if (obj.hasOwnProperty(obj.title)) {
+        if (obj.title) {
             template = template.replace('{%TITEL_ADV%}', obj.title);
         }
-        if (obj.hasOwnProperty(obj.text)) {
+        if (obj.text) {
             template = template.replace('{%TEXT%}', obj.text);
         }
-        if (obj.hasOwnProperty(obj.imgUrl)) {
+        if (obj.imgUrl) {
             template = template.replace('{%IMG%}', obj.imgUrl);
         }
-        if (obj.hasOwnProperty(obj.imgAlt)) {
+        if (obj.imgAlt) {
             template = template.replace('{%IMG_ALT%}', obj.imgAlt);
         }
         return  template;
