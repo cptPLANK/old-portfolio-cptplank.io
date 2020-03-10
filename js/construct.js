@@ -99,7 +99,7 @@
 
             const getAdvancedContent = arrAdvanced.map(el => replaceTemplate(advancedTemp, el)).join('\n');
             const getContent = replaceTemplate(mainTemp, objMain);
-            const getSchwerpunkte = objSchwerpunkte.forEach(el => `<li>${el}</li>`).join('\n');
+            const getSchwerpunkte = objSchwerpunkte.forEach(el => `<li>${el}</li>`);
             // getContent.replace
 
             console.log(getSchwerpunkte);
