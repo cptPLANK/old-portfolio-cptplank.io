@@ -57,7 +57,6 @@
 
     const replaceTemplate = async (html, obj) => {
         let template = html;
-        console.log(obj.nameLong !== undefined);
         if (obj.nameLong !== undefined) {
             template = template.replace('{%NAME_LONG%}', obj.nameLong);
         }
@@ -97,7 +96,6 @@
 
             const getAdvancedContent = arrAdvanced.map(el => {
                 replaceTemplate(advancedTemp, el);
-                console.log(el);
             }).join();
 
             console.log(getAdvancedContent);
