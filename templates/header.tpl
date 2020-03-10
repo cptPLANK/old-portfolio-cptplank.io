@@ -3,7 +3,7 @@
         <noscript>
             <a href="/" class="header-logo">cpt<span class="semi-bold uppercase">PLANK</span></a>
         </noscript>
-        <a href="/" class="header-logo hidden change-page-event">cpt<span class="semi-bold uppercase">PLANK</span></a>
+        <a href="/" class="header-logo hidden change-page-event">{%LOGO%}</a>
     </li>
     <li>
         <div class="burger-btn">
