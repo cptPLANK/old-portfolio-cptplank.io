@@ -24,25 +24,22 @@
         <li class="bold"><a href="/kontakt" class="change-page-event">Kontakt</a></li>
         <li class="bold">
             <div class="menu-socials">
-                <a href="#" target="_blank">
-                    <img src="img/social-icons/youtube.svg" alt="" class="social-icon">
-                </a>
-                <a href="#" target="_blank">
+{*                <a href="https://www.youtube.com/channel/UCIwAw8BYcsfccvEzUgbiv0g" target="_blank">*}
+{*                    <img src="img/social-icons/youtube.svg" alt="" class="social-icon">*}
+{*                </a>*}
+                <a href="https://www.instagram.com/cptplank/" target="_blank">
                     <img src="img/social-icons/instagram.svg" alt="" class="social-icon">
                 </a>
-                <a href="#" target="_blank">
+                <a href="https://twitter.com/cptPLANK" target="_blank">
                     <img src="img/social-icons/twitter.svg" alt="" class="social-icon">
-                </a>
-                <a href="#" target="_blank">
-                    <img src="img/social-icons/medium.svg" alt="" class="social-icon">
                 </a>
                 <a href="#" target="_blank">
                     <img src="img/social-icons/dribbble.svg" alt="" class="social-icon">
                 </a>
-                <a href="#" target="_blank">
+                <a href="https://dribbble.com/cptplank" target="_blank">
                     <img src="img/social-icons/facebook.svg" alt="" class="social-icon">
                 </a>
-                <a href="#" target="_blank">
+                <a href="https://www.behance.net/cptplank" target="_blank">
                     <img src="img/social-icons/behance.svg" alt="" class="social-icon">
                 </a>
             </div>

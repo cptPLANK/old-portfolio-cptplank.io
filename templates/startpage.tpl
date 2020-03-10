@@ -35,7 +35,7 @@
         </p>
         <p id="was-ich-mache-zwei" class="regular">Ich stehe für Freelance- und Vertragsprojekte zur Verfügung. Wenn du glaubst,
             ich würde gut zu deinem nächsten Projekt passen, schick mir eine E-Mail für etwaige Anfragen, oder sag mir einfach nur hallo.</p>
-        <a id="btn-portfolio" href="/case-studies" class="semi-bold uppercase change-page-event">Portfolio</a>
+        <a id="btn-portfolio" href="/portfolio" class="semi-bold uppercase change-page-event">Portfolio</a>
     </article>
 </section>
 
@@ -109,7 +109,7 @@
                     Du kannst meinen Website-Code auf Github betrachten oder lies dir meine Gedanken hierzu in
                     der Case-Studie durch.
                 </p>
-                <a href="/cptplank-case-study" class="btn-case-study uppercase semi-bold hover-letter-spacing change-page-event">
+                <a href="/cs-cptplank" class="btn-case-study uppercase semi-bold hover-letter-spacing change-page-event">
                     Case Study anzeigen
                 </a>
             </div>
@@ -124,7 +124,7 @@
                     Eine selbstentworfene Plattform, die mal von freiwilligen Bloggern und Fotografen gestützt werden soll,
                     um Neues und Schönes aus meiner Heimatstadt in die Welt zu posaunen.
                 </p>
-                <a href="/soestlinge-case-study" class="btn-case-study uppercase semi-bold hover-letter-spacing change-page-event">
+                <a href="/cs-soestling" class="btn-case-study uppercase semi-bold hover-letter-spacing change-page-event">
                     Case Study anzeigen
                 </a>
             </div>
@@ -139,7 +139,7 @@
                     Der sympathische Onlinehändler hat mich beauftragt eine Landing Page für eine  neue Kosmetikreihe
                     zu erstellen, daraufhin wurde der gesamte Online-Shop überarbeitet.
                 </p>
-                <a href="/naturherz-case-study" class="btn-case-study uppercase semi-bold hover-letter-spacing change-page-event">
+                <a href="/cs-naturherz" class="btn-case-study uppercase semi-bold hover-letter-spacing change-page-event">
                     Case Study anzeigen
                 </a>
             </div>
@@ -154,13 +154,13 @@
                     Überarbeitung und Modernisierung einer Praxishomepage. Grundlegende Suchmaschinenoptimierung,
                     Briefpapier- & Visitenkartendesign.
                 </p>
-                <a href="/hussmann-case-study" class="btn-case-study uppercase semi-bold hover-letter-spacing change-page-event">
+                <a href="/cs-hussmann" class="btn-case-study uppercase semi-bold hover-letter-spacing change-page-event">
                     Case Study anzeigen
                 </a>
             </div>
         </li>
     </ul>
-    <a id="btn-alle-projekte" href="/case-studies" class="uppercase semi-bold change-page-event">Alle Projekte</a>
+    <a id="btn-alle-projekte" href="/portfolio" class="uppercase semi-bold change-page-event">Alle Projekte</a>
 </section>
 
 <cv>

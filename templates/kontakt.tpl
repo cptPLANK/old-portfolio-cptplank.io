@@ -49,6 +49,6 @@
 
 <section id='mail-send'>
     <div>
-        <p>Danke!<br><span class="melden">Ich melde mich.</span><br><span class="back-links"><a href="/" class="change-page-event">Start</a> | <a href="/case-studies" class="change-page-event">Case Studies</a></span></p>
+        <p>Danke!<br><span class="melden">Ich melde mich.</span><br><span class="back-links"><a href="/" class="change-page-event">Start</a> | <a href="/portfolio" class="change-page-event">Case Studies</a></span></p>
     </div>
 </section>
