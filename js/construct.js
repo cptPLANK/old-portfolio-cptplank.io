@@ -81,8 +81,8 @@
             const advancedTemp = await getTemplate('advanced-content-container');
             const arrAdvanced = jsonCaseStudies[caseStudie].content.advancedContent;
 
-            const getAdvancedContent = arrAdvanced.map(el => replaceTemplate(advancedTemp, arrAdvanced[el])).join();
-            console.log(getAdvancedContent);
+            // const getAdvancedContent = arrAdvanced.map(el => replaceTemplate(advancedTemp, arrAdvanced[el])).join();
+            console.log(caseStudyTemp);
 
         } else {
             main.innerHTML = await getTemplate(templateName);
