@@ -99,10 +99,10 @@
 
             const getAdvancedContent = arrAdvanced.map(el => {
                 replaceTemplate(advancedTemp, el);
-                console.log(el.moep);
+                console.log(el);
             }).join();
 
-            console.log(advancedTemp + ' asdf');
+            console.log(getAdvancedContent);
 
         } else {
             main.innerHTML = await getTemplate(templateName);
