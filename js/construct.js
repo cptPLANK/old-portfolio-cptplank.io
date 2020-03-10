@@ -102,7 +102,7 @@
                 // console.log(el);
             }).join();
 
-            console.log(getAdvancedContent);
+            console.log(getAdvancedContent + ' asdf');
 
         } else {
             main.innerHTML = await getTemplate(templateName);
