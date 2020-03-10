@@ -12,14 +12,14 @@
       "schwerpunkte": [ "Web Design und Entwicklung", "Grundlegende Suchmaschinenoptimierung", "Corporate Design", "Logodesign",  "Printdesign"],
       "challange": "Einfache modernisierung des Internetauftrittes und der Praxis-Außendarstellung.",
       "outcome": "Die Homepage wurde neu aufgesetzt, Logo, Briefpapier und Visitenkarten erstellt. Die Praxis wurde von mir in Google Business eingetragen. Dadurch haben wir sichergestellt, daß die Praxis von Herrn Dr. Hußmann auch digital zeitgemäß ist."
-    },
-    "advancedContent": [
-      {
-        "title": "Detaillierte Infos",
-        "text": "Hier kannst du dir alles noch genauer ansehen.",
-        "imgUrl": "img/hussmann_alles.png",
-        "imgAlt": "Dr. Hussmann Case Studie Homepage und Print"
-      }
-    ]
+      "advancedContent": [
+        {
+          "title": "Detaillierte Infos",
+          "text": "Hier kannst du dir alles noch genauer ansehen.",
+          "imgUrl": "img/hussmann_alles.png",
+          "imgAlt": "Dr. Hussmann Case Studie Homepage und Print"
+        }
+      ]
+    }
   }
 }
