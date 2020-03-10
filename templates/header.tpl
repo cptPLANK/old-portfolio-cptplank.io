@@ -24,9 +24,9 @@
         <li class="bold"><a href="/kontakt" class="change-page-event">Kontakt</a></li>
         <li class="bold">
             <div class="menu-socials">
-{*                <a href="https://www.youtube.com/channel/UCIwAw8BYcsfccvEzUgbiv0g" target="_blank">*}
-{*                    <img src="img/social-icons/youtube.svg" alt="" class="social-icon">*}
-{*                </a>*}
+                <!-- <a href="https://www.youtube.com/channel/UCIwAw8BYcsfccvEzUgbiv0g" target="_blank">
+                    <img src="img/social-icons/youtube.svg" alt="" class="social-icon">
+                </a> -->
                 <a href="https://www.instagram.com/cptplank/" target="_blank">
                     <img src="img/social-icons/instagram.svg" alt="" class="social-icon">
                 </a>
