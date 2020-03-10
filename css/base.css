@@ -1502,7 +1502,7 @@ page-transition div {
     height: 100%;
   }
   #github:hover {
-    transform: translate(-1vw, -1vw);
+    transform: translate(0.7vw, 0.7vw);
   }
 
   cv {
