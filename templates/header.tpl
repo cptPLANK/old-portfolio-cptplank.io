@@ -33,10 +33,10 @@
                 <a href="https://twitter.com/cptPLANK" target="_blank">
                     <img src="img/social-icons/twitter.svg" alt="" class="social-icon">
                 </a>
-                <a href="#" target="_blank">
+                <a href="https://dribbble.com/cptplank" target="_blank">
                     <img src="img/social-icons/dribbble.svg" alt="" class="social-icon">
                 </a>
-                <a href="https://dribbble.com/cptplank" target="_blank">
+                <a href="http://fb.me/cptplank.io" target="_blank">
                     <img src="img/social-icons/facebook.svg" alt="" class="social-icon">
                 </a>
                 <a href="https://www.behance.net/cptplank" target="_blank">
