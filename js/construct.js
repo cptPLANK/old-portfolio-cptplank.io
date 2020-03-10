@@ -154,13 +154,21 @@
     };
 
     const cpt__INIT = async () => {
-        const {location, json} = await loadJasonAndLocation('constructor');
+        let {location, json} = await loadJasonAndLocation('constructor');
+        const helper = location;
+        if (location === '/#ueber-mich') {
+            location = '/';
+        }
         if (check404(location, json)) {
             await builtHead();
             await builtHeader();
             await builtMain();
             await builtFooter();
             await addJSFiles();
+            if (helper === '/#ueber-mich') {
+                let anker = document.querySelector('#ueber-mich').offsetTop;
+                await window.scrollTo(0, anker);
+            }
         } else {
             alert('Die Page existiert nicht!');
         }

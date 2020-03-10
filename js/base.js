@@ -268,13 +268,7 @@ const Animations = {
     },
     link: async (finalLinkValue) => {
 
-        if (finalLinkValue === '/#ueber-mich') {
-            window.location.pathname = '/';
-            let anker = document.querySelector('#ueber-mich').offsetTop;
-            await window.scrollTo(0, anker);
-        } else {
-            window.location.pathname = finalLinkValue;
-        }
+        window.location.pathname = await finalLinkValue;
 
         Animations.changePageStaggerOut();
         // if (finalLinkValue === '/#ueber-mich') {
