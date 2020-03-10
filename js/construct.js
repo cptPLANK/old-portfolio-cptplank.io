@@ -81,7 +81,7 @@
             const arrAdvanced = jsonCaseStudies[templateName].advancedContent;
 
             //const getAdvancedContent = arrAdvanced.map(el => replaceTemplate(advancedTemp, arrAdvanced[el])).join();
-            console.log(arrAdvanced);
+            console.log(templateName);
 
         } else {
             main.innerHTML = await getTemplate(templateName);
