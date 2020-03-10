@@ -268,7 +268,7 @@ const Animations = {
     },
     link: async (finalLinkValue) => {
 
-        await window.location.pathname = finalLinkValue;
+        window.location.pathname = await finalLinkValue;
         Animations.changePageStaggerOut();
         // if (finalLinkValue === '/#ueber-mich') {
         //     window.location.href = "/?internal=1#ueber-mich";
