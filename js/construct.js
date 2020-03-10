@@ -57,16 +57,34 @@
 
     const replaceTemplate = async (temp, obj) => {
         let template = temp;
-        template = template.replace('{%NAME_LONG%}', obj.nameLong);
-        template = template.replace('{%TITEL%}', obj.title);
-        template = template.replace('{%INTRO_TEXT%}', obj.introText);
-        template = template.replace('{%CHALLANGE%}', obj.challange);
-        template = template.replace('{%OUTCOME%}', obj.outcome);
-        template = template.replace('{%TITEL_ADV%}', obj.title);
-        template = template.replace('{%TEXT%}', obj.text);
-        template = template.replace('{%IMG%}', obj.imgUrl);
-        template = template.replace('{%IMG_ALT%}', obj.imgAlt);
-        return  template;
+        let changeObj = {
+        '{%NAME_LONG%}': obj.nameLong,
+        '{%TITEL%}': obj.title,
+        '{%INTRO_TEXT%}': obj.introText,
+        '{%CHALLANGE%}': obj.challange,
+        '{%OUTCOME%}': obj.outcome,
+        '{%TITEL_ADV%}': obj.title,
+        '{%TEXT%}': obj.text,
+        '{%IMG%}': obj.imgUrl,
+        '{%IMG_ALT%}': obj.imgAlt
+        };
+
+        template = changeObj.map(el => {
+            if (el.hasOwnProperty(el)) {
+                console.log(el);
+            }
+        });
+
+        // template = template.replace('{%NAME_LONG%}', obj.nameLong);
+        // template = template.replace('{%TITEL%}', obj.title);
+        // template = template.replace('{%INTRO_TEXT%}', obj.introText);
+        // template = template.replace('{%CHALLANGE%}', obj.challange);
+        // template = template.replace('{%OUTCOME%}', obj.outcome);
+        // template = template.replace('{%TITEL_ADV%}', obj.title);
+        // template = template.replace('{%TEXT%}', obj.text);
+        // template = template.replace('{%IMG%}', obj.imgUrl);
+        // template = template.replace('{%IMG_ALT%}', obj.imgAlt);
+        // return  template;
     };
 
     const builtMain = async () => {
@@ -75,7 +93,6 @@
         const main = document.querySelector('main');
 
         if (templateName === 'case-studies') {
-            const caseStudyTemp = await getTemplate('case-studies');
             const advancedTemp = await getTemplate('advanced-content-container');
             const arrAdvanced = json[location].content.advancedContent;
 
