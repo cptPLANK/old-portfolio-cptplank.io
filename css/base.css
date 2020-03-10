@@ -174,8 +174,8 @@ body {
   position: fixed;
   bottom: 0;
   right: 0;
-  width: 5vw;
-  height: 5vw;
+  width: 10vw;
+  height: 10vw;
 }
 #github img {
   width: 100%;
