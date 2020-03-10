@@ -156,7 +156,7 @@
     const cpt__INIT = async () => {
         let {location, json} = await loadJasonAndLocation('constructor');
         const helper = location;
-        if (location === '/#ueber-mich') {
+        if (location === '/ueber-mich') {
             location = '/';
         }
         if (check404(location, json)) {
