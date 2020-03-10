@@ -48,6 +48,12 @@
           "text": "Hier kannst du dir alles noch genauer ansehen.",
           "imgUrl": "img/hussmann_alles.png",
           "imgAlt": "Dr. Hussmann Case Studie Homepage und Print"
+        },
+        {
+          "title": "Detaillierte Infos",
+          "text": "Hier kannst du dir alles noch genauer ansehen.",
+          "imgUrl": "img/hussmann_alles.png",
+          "imgAlt": "Dr. Hussmann Case Studie Homepage und Print"
         }
       ]
     }
