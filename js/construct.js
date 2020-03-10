@@ -18,10 +18,6 @@
         const {location, json} = await loadJasonAndLocation('constructor');
         const {json: jsonHead} = await loadJasonAndLocation('head');
 
-        if (!json.hasOwnProperty('location')) {
-            console.log('moep');
-        }
-
         const [pageTitle, pageDescription] = [
             json[location].pageTitle,
             json[location].pageDescription
@@ -86,7 +82,7 @@
             const getAdvancedContent = arrAdvanced.map(el => replaceTemplate(advancedTemp, arrAdvanced[el])).join();
             console.log(getAdvancedContent);
 
-        } else if (!(location === json[location])) {
+        } else if (!json.hasOwnProperty(location)) {
             console.log('404');
         } else {
             main.innerHTML = await getTemplate(templateName);
