@@ -54,4 +54,4 @@
     </div>
 </nav>
 
-<a href="#" id="github"><img src="img/github_cptplank.io.svg"</a>
+<a href="https://github.com/cptPLANK/cptplank.io" target="_blank" id="github"><img src="img/github_cptplank.io.svg"</a>
