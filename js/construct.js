@@ -97,7 +97,10 @@
             const advancedTemp = await getTemplate('advanced-content-container');
             const arrAdvanced = json[location].content.advancedContent;
 
-            const getAdvancedContent = arrAdvanced.map(el => replaceTemplate(advancedTemp, arrAdvanced[el])).join();
+            const getAdvancedContent = arrAdvanced.map(el => {
+                // replaceTemplate(advancedTemp, arrAdvanced[el])).join();
+                console.log(arrAdvanced[el]);
+            };
 
             console.log(getAdvancedContent);
 
