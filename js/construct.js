@@ -98,8 +98,8 @@
             const arrAdvanced = json[location].content.advancedContent;
 
             const getAdvancedContent = arrAdvanced.map(el => {
-                // replaceTemplate(advancedTemp, arrAdvanced[el])).join();
-                console.log(el);
+                replaceTemplate(advancedTemp, el).join();
+                // console.log(el);
             });
 
             console.log(getAdvancedContent);
