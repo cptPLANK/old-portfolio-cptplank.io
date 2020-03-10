@@ -99,7 +99,7 @@
 
             const getAdvancedContent = arrAdvanced.map(el => {
                 replaceTemplate(advancedTemp, el);
-                console.log(el);
+                console.log(el.title);
             }).join();
 
             console.log(advancedTemp + ' asdf');
