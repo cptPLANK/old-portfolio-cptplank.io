@@ -72,8 +72,15 @@
         const templateName = json[location].template;
         const main = document.querySelector('main');
 
-        if (templateName === 'case-studies') {
+        if (templateName === 'case-stuasdfdies') {
+            const caseStudie = location.slice(0, 12);
+            const jsonCaseStudies = await getJSON('case-studies');
+            const caseStudyTemp = await getTemplate('case-studies');
+            const advancedTemp = await getTemplate('advanced-content-container');
+            const arrAdvanced = jsonCaseStudies[caseStudie].content.advancedContent;
 
+            const getAdvancedContent = arrAdvanced.map(el => replaceTemplate(advancedTemp, arrAdvanced[el])).join();
+            console.log(getAdvancedContent);
 
         } else {
             main.innerHTML = await getTemplate(templateName);
