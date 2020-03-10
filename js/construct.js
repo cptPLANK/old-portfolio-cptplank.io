@@ -53,6 +53,7 @@
     const builtHeader = async () => {
         const {location, json} = await loadJasonAndLocation('constructor');
         let template = await getTemplate('header');
+        console.log(json[location].customLogo);
         if (json[location].customLogo !== false) {
             template = template.replace(/{%LOGO%}/g, json[location].customLogo);
         } else {
