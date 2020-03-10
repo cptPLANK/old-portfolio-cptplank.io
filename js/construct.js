@@ -95,10 +95,11 @@
             const mainTemp = await getTemplate('case-studies');
             const arrAdvanced = json[location].content.advancedContent;
             const objMain = json[location].content;
+            const objSchwerpunkte = json[location].content.schwerpunkte;
 
             const getAdvancedContent = arrAdvanced.map(el => replaceTemplate(advancedTemp, el)).join('\n');
             const getContent = replaceTemplate(mainTemp, objMain);
-            const getSchwerpunkte = objMain.schwerpunkte.forEach(el => `<li>${el}</li>`).join();
+            const getSchwerpunkte = objSchwerpunkte.forEach(el => `<li>${el}</li>`).join('\n');
             // getContent.replace
 
             console.log(getSchwerpunkte);
