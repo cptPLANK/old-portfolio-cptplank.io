@@ -22,6 +22,114 @@
     "hasFooter": true,
     "customLogo": "<img class='misc-logo' src='img/misc-logo.svg' alt='cptPLANK.io'>",
     "customScript": false
+  },,
+  "/cs-naturherz":  {
+    "template": "case-studies",
+    "pageTitle": "fooo",
+    "pageDescription": "... zumindest nicht nur. 99% Autodidakt mit Fokus auf JavaScript, CSS & HTML. Besuch' mein Portfolio für Case Studies und Kontaktmöglichkeiten.",
+    "hasFooter": true,
+    "customLogo": false,
+    "customScript": false,
+    "cryptName": "zero00",
+    "nameShort": "dr.hussmann",
+    "year": 2019,
+    "thumpImgUrl": "/img/cs-hussmann-anim.gif",
+    "content": {
+      "nameLong": "KINDER- UND JUGENDARZT DR. MED. O. HUSSMANN",
+      "bigImgUrl": "img/",
+      "websiteURL": "",
+      "title": "Einfach. Zielgerichtet. Passend.<br>Auch Ärzte haben Konkurrenz.",
+      "introText": "Trotz erfolgreich laufender Praxis, benötigte der sympathische Kinder- & Jugendarzt Dr. med. Hußmann dringend eine zeitgemäße Außendarstellung. Selbst Ärzte stehen durch die digitalisierung immer stärker unter dem Druck auch in der nahen Zukunft von zukünftigen und interessierten Patienten gefunden zu werden.<br><br>Meine Aufgabe war es nun seine in die Jahre gekommene, flashbasierte Homepage zu überarbeiten. Texte wurden von ihm gestellt.<br><br>Nun stellte sich die Frage, wie suchen potentielle Patienten, insbesondere deren Eltern einen passenden Kinderarzt? Wenn nicht über Empfehlungen, dann wird ersteinmal gegoogelt und wer ganz oben steht, bekommt zunächst den Zuschlag.<br>In zweiter Linie ist es, besonders für Kinder- & Jugendärzte, wichtig Vertrauen aufzubauen, so lag es auf der Hand Herrn Dr. Hußmann direkt und prominent mit in die Homepage zu integrieren. Man möchte ja schließlich wissen mit wem man es in Zukunft häufiger zutun haben wird.<br><br>Zusätzlich wurden von mir das Praxislogo, Briefpapier und Visitekarten neu entworfen. Für die Bilder wurde eine lokale Fotografin beauftragt und ein Termin ausgemacht.",
+      "schwerpunkte": [ "Web Design und Entwicklung", "Grundlegende Suchmaschinenoptimierung", "Corporate Design", "Logodesign",  "Printdesign"],
+      "challange": "Einfache modernisierung des Internetauftrittes und der Praxis-Außendarstellung.",
+      "outcome": "Die Homepage wurde neu aufgesetzt, Logo, Briefpapier und Visitenkarten erstellt. Die Praxis wurde von mir in Google Business eingetragen. Dadurch haben wir sichergestellt, daß die Praxis von Herrn Dr. Hußmann auch digital zeitgemäß ist.",
+      "advancedContent": [
+        {
+          "title": "Detaillierte Infos",
+          "text": "Hier kannst du dir alles noch genauer ansehen.",
+          "imgUrl": "img/hussmann_alles.png",
+          "imgAlt": "Dr. Hussmann Case Studie Homepage und Print"
+        },
+        {
+          "title": "Detaillierte Infos",
+          "text": "Hier kannst du dir alles noch genauer ansehen.",
+          "imgUrl": "img/hussmann_alles.png",
+          "imgAlt": "Dr. Hussmann Case Studie Homepage und Print"
+        }
+      ]
+    }
+  },
+  "/cs-soestlinge":  {
+    "template": "case-studies",
+    "pageTitle": "fooo",
+    "pageDescription": "... zumindest nicht nur. 99% Autodidakt mit Fokus auf JavaScript, CSS & HTML. Besuch' mein Portfolio für Case Studies und Kontaktmöglichkeiten.",
+    "hasFooter": true,
+    "customLogo": false,
+    "customScript": false,
+    "cryptName": "zero00",
+    "nameShort": "dr.hussmann",
+    "year": 2019,
+    "thumpImgUrl": "/img/cs-hussmann-anim.gif",
+    "content": {
+      "nameLong": "KINDER- UND JUGENDARZT DR. MED. O. HUSSMANN",
+      "bigImgUrl": "img/",
+      "websiteURL": "",
+      "title": "Einfach. Zielgerichtet. Passend.<br>Auch Ärzte haben Konkurrenz.",
+      "introText": "Trotz erfolgreich laufender Praxis, benötigte der sympathische Kinder- & Jugendarzt Dr. med. Hußmann dringend eine zeitgemäße Außendarstellung. Selbst Ärzte stehen durch die digitalisierung immer stärker unter dem Druck auch in der nahen Zukunft von zukünftigen und interessierten Patienten gefunden zu werden.<br><br>Meine Aufgabe war es nun seine in die Jahre gekommene, flashbasierte Homepage zu überarbeiten. Texte wurden von ihm gestellt.<br><br>Nun stellte sich die Frage, wie suchen potentielle Patienten, insbesondere deren Eltern einen passenden Kinderarzt? Wenn nicht über Empfehlungen, dann wird ersteinmal gegoogelt und wer ganz oben steht, bekommt zunächst den Zuschlag.<br>In zweiter Linie ist es, besonders für Kinder- & Jugendärzte, wichtig Vertrauen aufzubauen, so lag es auf der Hand Herrn Dr. Hußmann direkt und prominent mit in die Homepage zu integrieren. Man möchte ja schließlich wissen mit wem man es in Zukunft häufiger zutun haben wird.<br><br>Zusätzlich wurden von mir das Praxislogo, Briefpapier und Visitekarten neu entworfen. Für die Bilder wurde eine lokale Fotografin beauftragt und ein Termin ausgemacht.",
+      "schwerpunkte": [ "Web Design und Entwicklung", "Grundlegende Suchmaschinenoptimierung", "Corporate Design", "Logodesign",  "Printdesign"],
+      "challange": "Einfache modernisierung des Internetauftrittes und der Praxis-Außendarstellung.",
+      "outcome": "Die Homepage wurde neu aufgesetzt, Logo, Briefpapier und Visitenkarten erstellt. Die Praxis wurde von mir in Google Business eingetragen. Dadurch haben wir sichergestellt, daß die Praxis von Herrn Dr. Hußmann auch digital zeitgemäß ist.",
+      "advancedContent": [
+        {
+          "title": "Detaillierte Infos",
+          "text": "Hier kannst du dir alles noch genauer ansehen.",
+          "imgUrl": "img/hussmann_alles.png",
+          "imgAlt": "Dr. Hussmann Case Studie Homepage und Print"
+        },
+        {
+          "title": "Detaillierte Infos",
+          "text": "Hier kannst du dir alles noch genauer ansehen.",
+          "imgUrl": "img/hussmann_alles.png",
+          "imgAlt": "Dr. Hussmann Case Studie Homepage und Print"
+        }
+      ]
+    }
+  },
+  "/cs-cptplank":  {
+    "template": "case-studies",
+    "pageTitle": "fooo",
+    "pageDescription": "... zumindest nicht nur. 99% Autodidakt mit Fokus auf JavaScript, CSS & HTML. Besuch' mein Portfolio für Case Studies und Kontaktmöglichkeiten.",
+    "hasFooter": true,
+    "customLogo": false,
+    "customScript": false,
+    "cryptName": "zero00",
+    "nameShort": "dr.hussmann",
+    "year": 2019,
+    "thumpImgUrl": "/img/cs-hussmann-anim.gif",
+    "content": {
+      "nameLong": "KINDER- UND JUGENDARZT DR. MED. O. HUSSMANN",
+      "bigImgUrl": "img/",
+      "websiteURL": "",
+      "title": "Einfach. Zielgerichtet. Passend.<br>Auch Ärzte haben Konkurrenz.",
+      "introText": "Trotz erfolgreich laufender Praxis, benötigte der sympathische Kinder- & Jugendarzt Dr. med. Hußmann dringend eine zeitgemäße Außendarstellung. Selbst Ärzte stehen durch die digitalisierung immer stärker unter dem Druck auch in der nahen Zukunft von zukünftigen und interessierten Patienten gefunden zu werden.<br><br>Meine Aufgabe war es nun seine in die Jahre gekommene, flashbasierte Homepage zu überarbeiten. Texte wurden von ihm gestellt.<br><br>Nun stellte sich die Frage, wie suchen potentielle Patienten, insbesondere deren Eltern einen passenden Kinderarzt? Wenn nicht über Empfehlungen, dann wird ersteinmal gegoogelt und wer ganz oben steht, bekommt zunächst den Zuschlag.<br>In zweiter Linie ist es, besonders für Kinder- & Jugendärzte, wichtig Vertrauen aufzubauen, so lag es auf der Hand Herrn Dr. Hußmann direkt und prominent mit in die Homepage zu integrieren. Man möchte ja schließlich wissen mit wem man es in Zukunft häufiger zutun haben wird.<br><br>Zusätzlich wurden von mir das Praxislogo, Briefpapier und Visitekarten neu entworfen. Für die Bilder wurde eine lokale Fotografin beauftragt und ein Termin ausgemacht.",
+      "schwerpunkte": [ "Web Design und Entwicklung", "Grundlegende Suchmaschinenoptimierung", "Corporate Design", "Logodesign",  "Printdesign"],
+      "challange": "Einfache modernisierung des Internetauftrittes und der Praxis-Außendarstellung.",
+      "outcome": "Die Homepage wurde neu aufgesetzt, Logo, Briefpapier und Visitenkarten erstellt. Die Praxis wurde von mir in Google Business eingetragen. Dadurch haben wir sichergestellt, daß die Praxis von Herrn Dr. Hußmann auch digital zeitgemäß ist.",
+      "advancedContent": [
+        {
+          "title": "Detaillierte Infos",
+          "text": "Hier kannst du dir alles noch genauer ansehen.",
+          "imgUrl": "img/hussmann_alles.png",
+          "imgAlt": "Dr. Hussmann Case Studie Homepage und Print"
+        },
+        {
+          "title": "Detaillierte Infos",
+          "text": "Hier kannst du dir alles noch genauer ansehen.",
+          "imgUrl": "img/hussmann_alles.png",
+          "imgAlt": "Dr. Hussmann Case Studie Homepage und Print"
+        }
+      ]
+    }
   },
   "/cs-hussmann":  {
     "template": "case-studies",
