@@ -57,14 +57,12 @@
 
     const replaceTemplate = async (html, obj) => {
         let template = html;
-        console.log(template);
         if (obj.nameLong !== undefined) {
             template = template.replace('{%NAME_LONG%}', obj.nameLong);
         }
         if (obj.title !== undefined) {
             template = template.replace('{%TITEL%}', obj.title);
             template = template.replace('{%TITEL_ADV%}', obj.title);
-            console.log(template);
         }
         if (obj.introText !== undefined) {
             template = template.replace('{%INTRO_TEXT%}', obj.introText);
@@ -84,8 +82,7 @@
         if (obj.imgAlt !== undefined) {
             template = template.replace('{%IMG_ALT%}', obj.imgAlt);
         }
-        console.log(template);
-        return  template;
+        return template;
     };
 
     const builtMain = async () => {
@@ -99,6 +96,7 @@
 
             const getAdvancedContent = arrAdvanced.map(el => {
                 replaceTemplate(advancedTemp, el);
+                console.log(replaceTemplate(advancedTemp, el));
             }).join();
 
             console.log(getAdvancedContent);
