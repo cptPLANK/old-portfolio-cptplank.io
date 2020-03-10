@@ -100,9 +100,10 @@
             const getAdvancedContent = arrAdvanced.map(el => replaceTemplate(advancedTemp, el)).join('\n');
             const getContent = replaceTemplate(mainTemp, objMain);
             const getSchwerpunkte = objSchwerpunkte.map(el => `<li>${el}</li>`).join('\n');
-            // getContent.replace
+            getContent.replace('{%SCHWERPUNKTE%}', getSchwerpunkte);
+            getContent.replace('{%ADVANCED_CONTENT%}', getAdvancedContent);
 
-            console.log(getSchwerpunkte);
+            main.innerHTML = getContent;
 
         } else {
             main.innerHTML = await getTemplate(templateName);
