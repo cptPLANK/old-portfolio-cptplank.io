@@ -51,12 +51,6 @@
     };
 
     const builtHeader = async () => {
-        const location = window.location.pathname;
-
-        document.querySelector('header').innerHTML = await getTemplate('header');
-    };
-
-    const builtHeader = async () => {
         const {location, json} = await loadJasonAndLocation('constructor');
         let template = await getTemplate('header');
         if (json[location].customLogo !== false) {
