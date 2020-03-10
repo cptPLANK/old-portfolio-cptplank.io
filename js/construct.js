@@ -113,7 +113,7 @@
         if (json[location].hasFooter) {
             footer.innerHTML = await getTemplate('footer');
         } else {
-            footer.remove();
+            footer.remove()
         }
     };
 
