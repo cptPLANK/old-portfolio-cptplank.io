@@ -82,6 +82,7 @@
         if (obj.imgAlt !== undefined) {
             template = template.replace('{%IMG_ALT%}', obj.imgAlt);
         }
+        console.log(template);
         return template;
     };
 
