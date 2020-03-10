@@ -25,9 +25,9 @@
                 Du kannst meinen Website-Code auf Github betrachten oder lies dir meine Gedanken hierzu in
                 der Case-Studie durch.
             </p>
-            <a href="/cptplank-case-study" class="semi-bold hover-letter-spacing change-page-event">Projekt anzeigen</a>
+            <a href="/cs-cptplank" class="semi-bold hover-letter-spacing change-page-event">Projekt anzeigen</a>
         </div>
-        <a href="/cptplank-case-study" class="cs-bild change-page-event" style="background-image: url(../img/cptplank-thump-big.jpg)">
+        <a href="/cs-cptplank" class="cs-bild change-page-event" style="background-image: url(../img/cptplank-thump-big.jpg)">
             <div><span>zero04</span><span>2019</span></div>
         </a>
     </div>
@@ -39,9 +39,9 @@
                 Eine selbstentworfene Plattform, die mal von freiwilligen Bloggern und Fotografen gestützt werden soll,
                 um Neues und Schönes aus meiner Heimatstadt in die Welt zu posaunen.
             </p>
-            <a href="/soestlinge-case-study" class="semi-bold hover-letter-spacing change-page-event">Projekt anzeigen</a>
+            <a href="/cs-soestling" class="semi-bold hover-letter-spacing change-page-event">Projekt anzeigen</a>
         </div>
-        <a href="/cptplank-case-study" class="cs-bild" style="background-image: url(../img/soest-thump-big.jpg)">
+        <a href="/cs-soestling" class="cs-bild" style="background-image: url(../img/soest-thump-big.jpg)">
             <div><span>zero03</span><span>2019</span></div>
         </a>
     </div>
@@ -53,9 +53,9 @@
                 Überarbeitung und Modernisierung einer Praxishomepage. Grundlegende Suchmaschinenoptimierung,
                 Briefpapier- & Visitenkartendesign.
             </p>
-            <a href="/naturherz-case-study" class="semi-bold hover-letter-spacing change-page-event">Projekt anzeigen</a>
+            <a href="/cs-naturherz" class="semi-bold hover-letter-spacing change-page-event">Projekt anzeigen</a>
         </div>
-        <a href="/cptplank-case-study" class="cs-bild" style="background-image: url(../img/naturherz-thump-big.jpg)">
+        <a href="/cs-naturherz" class="cs-bild" style="background-image: url(../img/naturherz-thump-big.jpg)">
             <div><span>zero02</span><span>2019</span></div>
         </a>
     </div>
@@ -67,9 +67,9 @@
                 Überarbeitung und Modernisierung einer Praxishomepage. Grundlegende Suchmaschinenoptimierung,
                 Briefpapier- & Visitenkartendesign.
             </p>
-            <a href="/hussmann-case-study" class="semi-bold hover-letter-spacing change-page-event">Projekt anzeigen</a>
+            <a href="/cs-hussmann" class="semi-bold hover-letter-spacing change-page-event">Projekt anzeigen</a>
         </div>
-        <a href="/cptplank-case-study" class="cs-bild" style="background-image: url(../img/hussmann-thump-big.jpg)">
+        <a href="/cs-hussmann" class="cs-bild" style="background-image: url(../img/hussmann-thump-big.jpg)">
             <div><span>zero01</span><span>2019</span></div>
         </a>
     </div>

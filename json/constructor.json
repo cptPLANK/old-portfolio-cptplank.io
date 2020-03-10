@@ -23,6 +23,30 @@
     "customLogo": "<img class='misc-logo' src='img/misc-logo.svg' alt='cptPLANK.io'>",
     "customScript": false
   },
+  "/datenschutz":  {
+    "template": "datenschutz",
+    "pageTitle": "cptPLANKs Datenschutzerklärung",
+    "pageDescription": "Weil du als Nutzer sonst nicht weißt was ich mit deinen Daten anstelle!",
+    "hasFooter": true,
+    "customLogo": false,
+    "customScript": false
+  },
+  "/impressum":  {
+    "template": "impressum",
+    "pageTitle": "cptPLANKs Impressum",
+    "pageDescription": "Sowas braucht man!",
+    "hasFooter": true,
+    "customLogo": false,
+    "customScript": false
+  },
+  "/cookie-erklaerung":  {
+    "template": "cookie-erklaerung",
+    "pageTitle": "cptPLANKs Cookie-Erkl#rung",
+    "pageDescription": "Wichtig wichtig!",
+    "hasFooter": true,
+    "customLogo": false,
+    "customScript": false
+  },
   "/cs-naturherz":  {
     "template": "case-studies",
     "pageTitle": "cptPlank hat für Naturherz gearbeitet!",

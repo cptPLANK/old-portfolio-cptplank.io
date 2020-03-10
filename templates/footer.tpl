@@ -3,7 +3,7 @@
         <ul>
             <li class="uppercase bold">Sonst so?</li>
             <li class="light"><a href="/" class="change-page-event">Start</a></li>
-            <li class="light"><a href="/case-studies" class="change-page-event">Case Studies</a></li>
+            <li class="light"><a href="/portfolio" class="change-page-event">Portfolio</a></li>
             <li class="light"><a href="#" class="change-page-event">Blog</a></li>
             <li class="light"><a href="#" class="change-page-event">Shop</a></li>
             <li class="light"><a href="https://aeosys.de" target="_blank">Aeosys</a></li>
