@@ -91,6 +91,7 @@
         const main = document.querySelector('main');
 
         if (templateName === 'case-studies') {
+            let output;
             const advancedTemp = await getTemplate('advanced-content-container');
             const mainTemp = await getTemplate('case-studies');
             const arrAdvanced = json[location].content.advancedContent;
@@ -100,10 +101,10 @@
             const getAdvancedContent = arrAdvanced.map(el => replaceTemplate(advancedTemp, el)).join('\n');
             const getContent = replaceTemplate(mainTemp, objMain);
             const getSchwerpunkte = objSchwerpunkte.map(el => `<li>${el}</li>`).join('\n');
-            getContent.replace('{%SCHWERPUNKTE%}', getSchwerpunkte);
-            getContent.replace('{%ADVANCED_CONTENT%}', getAdvancedContent);
+            output = getContent.replace('{%SCHWERPUNKTE%}', getSchwerpunkte);
+            output = output.replace('{%ADVANCED_CONTENT%}', getAdvancedContent);
 
-            main.innerHTML = getContent;
+            main.innerHTML = output;
 
         } else {
             main.innerHTML = await getTemplate(templateName);
