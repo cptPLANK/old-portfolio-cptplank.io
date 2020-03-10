@@ -56,10 +56,11 @@
         console.log(json[location].customLogo);
         if (json[location].customLogo === false) {
             template = template.replace(/{%LOGO%}/g, `cpt<span class="semi-bold uppercase">PLANK</span>`);
+            document.querySelector('header').innerHTML = template;
         } else {
             template = template.replace(/{%LOGO%}/g, json[location].customLogo);
+            document.querySelector('header').innerHTML = template;
         }
-        document.querySelector('header').innerHTML = template;
     };
 
     const replaceTemplate = (html, obj) => {
