@@ -51,14 +51,9 @@
     };
 
     const builtHeader = async () => {
-        const {location, json} = await loadJasonAndLocation('constructor');
-        let template = await getTemplate('header');
-        if (json[location].customLogo) {
-            template = template.replace('{%LOGO%}', json[location].customLogo);
-        } else {
-            template = template.replace('{%LOGO%}', `cpt<span class="semi-bold uppercase">PLANK</span>`);
-        }
-        document.querySelector('header').innerHTML = template;
+        const location = window.location.pathname;
+        
+        document.querySelector('header').innerHTML = await getTemplate('header');
     };
 
     const replaceTemplate = (html, obj) => {
