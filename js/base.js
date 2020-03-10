@@ -549,7 +549,7 @@ document.querySelector('#newsletter > ul > li:nth-child(3) > input[type=submit]:
 // Case Studie große Startgifs laden
 ( () => {
         let pathname = window.location.pathname;
-        let whichSitePath = pathname.slice(1);
+        let whichSitePath = pathname.slice(4);
         let imgPath = './img/cs-' + whichSitePath + '-anim.gif';
         let startImg = document.querySelector('.start-img');
         if (pathname.indexOf('cs-') > -1) {
