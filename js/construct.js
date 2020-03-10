@@ -150,7 +150,7 @@
         }
     };
 
-    (async () => {
+    const cpt__INIT = async () => {
         const {location, json} = await loadJasonAndLocation('constructor');
         if (check404(location, json)) {
             await builtHead();
@@ -161,7 +161,8 @@
         } else {
             alert('Die Page existiert nicht!');
         }
+    };
 
-    })();
+    cpt__INIT();
 
 }
