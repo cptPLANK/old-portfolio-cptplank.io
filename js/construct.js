@@ -102,7 +102,7 @@
             const getSchwerpunkte = objSchwerpunkte.forEach(el => `<li>${el}</li>`);
             // getContent.replace
 
-            console.log(getSchwerpunkte);
+            console.log(objSchwerpunkte);
 
         } else {
             main.innerHTML = await getTemplate(templateName);
