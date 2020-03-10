@@ -62,10 +62,10 @@
         template = template.replace('{%INTRO_TEXT%}', obj.introText);
         template = template.replace('{%CHALLANGE%}', obj.challange);
         template = template.replace('{%OUTCOME%}', obj.outcome);
-        template = template.replace('{%TITEL_ADV%}', obj.advancedContent.title);
-        template = template.replace('{%TEXT%}', obj.advancedContent.text);
-        template = template.replace('{%IMG%}', obj.advancedContent.imgUrl);
-        template = template.replace('{%IMG_ALT%}', obj.advancedContent.imgAlt);
+        template = template.replace('{%TITEL_ADV%}', obj.title);
+        template = template.replace('{%TEXT%}', obj.text);
+        template = template.replace('{%IMG%}', obj.imgUrl);
+        template = template.replace('{%IMG_ALT%}', obj.imgAlt);
         return  template;
     };
 
@@ -79,9 +79,9 @@
             const advancedTemp = await getTemplate('advanced-content-container');
             const arrAdvanced = json[location].content.advancedContent;
 
-            //const getAdvancedContent = arrAdvanced.map(el => replaceTemplate(advancedTemp, arrAdvanced[el])).join();
+            const getAdvancedContent = arrAdvanced.map(el => replaceTemplate(advancedTemp, arrAdvanced[el])).join();
 
-            console.log(arrAdvanced);
+            console.log(getAdvancedContent);
 
         } else {
             main.innerHTML = await getTemplate(templateName);
