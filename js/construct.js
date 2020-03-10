@@ -100,7 +100,7 @@
             const getAdvancedContent = arrAdvanced.map(el => {
                 // replaceTemplate(advancedTemp, arrAdvanced[el])).join();
                 console.log(arrAdvanced[el]);
-            };
+            });
 
             console.log(getAdvancedContent);
 
