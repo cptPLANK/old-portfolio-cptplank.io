@@ -266,16 +266,20 @@ const Animations = {
             ease: Quad.easeInOut
         });
     },
-    link: (finalLinkValue) => {
-        if (finalLinkValue === '/#ueber-mich') {
-            window.location.href = "/?internal=1#ueber-mich";
-        }
-        else if (finalLinkValue === '/#portfolio') {
-            window.location.href = "/?internal=1#portfolio";
-        }
-        else {
-            window.location.href = finalLinkValue + '?internal=1';
-        }
+    link: async (finalLinkValue) => {
+
+        await window.location.pathname = finalLinkValue;
+        Animations.changePageStaggerOut();
+        // if (finalLinkValue === '/#ueber-mich') {
+        //     window.location.href = "/?internal=1#ueber-mich";
+        // }
+        // else if (finalLinkValue === '/#portfolio') {
+        //     window.location.href = "/?internal=1#portfolio";
+        // }
+        // else {
+        //     window.location.href = finalLinkValue + '?internal=1';
+
+        // }
     },
     changePageStaggerIn: (linkValue) => {
         pageTransitionElement.style.display = 'grid';
