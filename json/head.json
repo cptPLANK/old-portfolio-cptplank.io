@@ -1,0 +1,168 @@
+{
+  "meta": [
+    {
+      "charset": "UTF-8"
+    },
+    {
+      "name": "viewport",
+      "content": "width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0"
+    },
+    {
+      "http-equiv": "X-UA-Compatible",
+      "content": "ie=edge"
+    },
+    {
+      "name": "seobility",
+      "content": "8fb0f33a46f839c911afe2841d7b4ede"
+    },
+    {
+      "name": "msapplication-TileColor",
+      "content": "#ffd24c"
+    },
+    {
+      "name": "msapplication-config",
+      "content": "img/fav/browserconfig.xml"
+    },
+    {
+      "name": "theme-color",
+      "content": "#ffffff"
+    },
+    {
+      "name": "og:email",
+      "content": "hello@cptplank.io"
+    },
+    {
+      "name": "og:country-name",
+      "content": "Germany"
+    },
+    {
+      "name": "geo.region",
+      "content": "DE-NW"
+    },
+    {
+      "property": "og:type",
+      "content": "website"
+    },
+    {
+      "property": "og:url",
+      "content": "https://cptplank.io/"
+    },
+    {
+      "property": "og:image",
+      "content": "#ffffff"
+    },
+    {
+      "property": "og:image:secure_url",
+      "content": "#ffffff"
+    },
+    {
+      "property": "og:image:alt",
+      "content": "#ffffff"
+    },
+    {
+      "property": "twitter:card",
+      "content": "#ffffff"
+    },
+    {
+      "property": "twitter:url",
+      "content": "#ffffff"
+    },
+    {
+      "property": "twitter:image",
+      "content": "#ffffff"
+    },
+    {
+      "property": "theme-color",
+      "content": "#ffffff"
+    },
+    {
+      "name": "title",
+      "content": "{%TITLE%}"
+    },
+    {
+      "name": "description",
+      "content": "{%DESCRIPTION%}"
+    },
+    {
+      "property": "twitter:title",
+      "content": "{%TITLE%}"
+    },
+    {
+      "property": "twitter:description",
+      "content": "{%DESCRIPTION%}"
+    },
+    {
+      "property": "og:description",
+      "content": "{%DESCRIPTION%}"
+    },
+    {
+      "property": "og:title",
+      "content": "{%TITLE%}"
+    }
+  ],
+  "link": [
+    {
+      "rel": "stylesheet",
+      "href": "css/base.css"
+    },
+    {
+      "rel": "stylesheet",
+      "href": "https://use.typekit.net/qml8muo.css"
+    },
+    {
+      "rel": "stylesheet",
+      "href": "https://unpkg.com/aos@2.3.1/dist/aos.css"
+    },
+    {
+      "rel": "stylesheet",
+      "href": "//cdn-images.mailchimp.com/embedcode/horizontal-slim-10_7.css"
+    },
+    {
+      "rel": "apple-touch-icon",
+      "href": "img/fav/apple-touch-icon.png",
+      "sizes": "180x180"
+    },
+    {
+      "rel": "icon",
+      "href": "img/fav/favicon-32x32.png",
+      "sizes": "32x32",
+      "type": "image/png"
+    },
+    {
+      "rel": "icon",
+      "href": "img/fav/android-chrome-192x192.png",
+      "sizes": "192x192",
+      "type": "image/png"
+    },
+    {
+      "rel": "icon",
+      "href": "img/fav/favicon-16x16.png",
+      "sizes": "16x16",
+      "type": "image/png"
+    },
+    {
+      "rel": "manifest",
+      "href": "img/fav/site.webmanifest"
+    },
+    {
+      "rel": "mask-icon",
+      "href": "img/fav/safari-pinned-tab.svg",
+      "color": "#5bbad5"
+    },
+    {
+      "rel": "shortcut icon",
+      "href": "img/fav/favicon.ico"
+    }
+  ],
+  "script": [
+    {
+      "src": "js/matomo.js"
+    },
+    {
+      "src": "https://cdn.jsdelivr.net/npm/gsap@3.0.4/dist/gsap.min.js"
+    },
+    {
+      "src": "js/scrollreveal.min.js"
+    }
+  ]
+}

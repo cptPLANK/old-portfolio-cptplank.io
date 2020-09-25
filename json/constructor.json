@@ -1,0 +1,235 @@
+{
+  "/":  {
+    "template": "startpage",
+    "pageTitle": "cptPLANK ist kein Designer...",
+    "pageDescription": "... zumindest nicht nur. 99% Autodidakt mit Fokus auf JavaScript, CSS & HTML. Besuch' mein Portfolio für Case Studies und Kontaktmöglichkeiten.",
+    "hasFooter": true,
+    "customLogo": false,
+    "customScript": false
+  },
+  "/kontakt":  {
+    "template": "kontakt",
+    "pageTitle": "Kontaktiere cptPLANK, jetzt!",
+    "pageDescription": "Du solltest mich am besten so schnell wie möglich kontaktieren! Bevor es jemand anderes tut!",
+    "hasFooter": true,
+    "customLogo": false,
+    "customScript": "js/autosize.js"
+  },
+  "/portfolio":  {
+    "template": "case-study-overview",
+    "pageTitle": "cptPLANKs Portfolio an einem Ort!",
+    "pageDescription": "Vollständigkeit ist nicht garantiert! Besuch' meine Social Media Kanäle für mehr Infos!",
+    "hasFooter": true,
+    "customLogo": "<img class='misc-logo' src='img/misc-logo.svg' alt='cptPLANK.io'>",
+    "customScript": false
+  },
+  "/blog":  {
+    "template": "blog-overview",
+    "pageTitle": "Blog",
+    "pageDescription": "Blog",
+    "hasFooter": true,
+    "customLogo": false,
+    "customScript": false
+  },
+  "/datenschutz":  {
+    "template": "datenschutz",
+    "pageTitle": "cptPLANKs Datenschutzerklärung",
+    "pageDescription": "Weil du als Nutzer sonst nicht weißt was ich mit deinen Daten anstelle!",
+    "hasFooter": true,
+    "customLogo": false,
+    "customScript": false
+  },
+  "/impressum":  {
+    "template": "impressum",
+    "pageTitle": "cptPLANKs Impressum",
+    "pageDescription": "Sowas braucht man!",
+    "hasFooter": true,
+    "customLogo": false,
+    "customScript": false
+  },
+  "/cookie-erklaerung":  {
+    "template": "cookie-erklaerung",
+    "pageTitle": "cptPLANKs Cookie-Erkl#rung",
+    "pageDescription": "Wichtig wichtig!",
+    "hasFooter": true,
+    "customLogo": false,
+    "customScript": false
+  },
+  "/cs-naturherz":  {
+    "template": "case-studies",
+    "pageTitle": "cptPlank hat für Naturherz gearbeitet!",
+    "pageDescription": "Shop und Landingpage wurden von mir erstellt und bereitgestellt!",
+    "hasFooter": true,
+    "customLogo": false,
+    "customScript": false,
+    "cryptName": "zero02",
+    "nameShort": "naturherz",
+    "descShort": "Der sympathische Onlinehändler hat mich beauftragt eine Landing Page für eine neue Kosmetikreihe zu erstellen, daraufhin wurde der gesamte Online-Shop überarbeitet.",
+    "year": 2019,
+    "thumpImgUrl": "/img/cs-naturherz-anim.gif",
+    "content": {
+      "nameLong": "ONLINE-SHOP: NATURHERZ.DE",
+      "bigImgUrl": "img/",
+      "websiteURL": "https://naturherz.de",
+      "title": "Naturkosmetik<br>Landingpage",
+      "introText": "Die Eigner vom Onlineshop Naturherz haben mich beauftragt eine Landingpage für ihre neue Produktreihe zu entwerfen. Besonderer Schwerpunkt sollte dabei ein ausführliches Glossar darstellen, um zu erklären wie sich die neue Naturkosmetik im Detail, und so transparent wie möglich, zusammensetzt.<br><br>Dabei habe ich die Corporate Identity, also die Farbgebung, von Naturherz als Primärfarben genutzt. Ziel war es die natürliche Zusammensetzung und den Premiumcharakter der Kosmetik bestmöglich zu vermitteln.",
+      "schwerpunkte": [ "Produktvorstellung", "Glossar", "CI berücksichtigen", "Front-End/UX Design",  "Fotografie", "Online Shop Relaunch (JTL)"],
+      "challange": "Naturherz hat mich beauftragt eine Landingpage, im Corporate Design, für ihr neues Sortiment ihrer innovativen Naturkosmetik zu erstellen. Dabei wurde besonderen Wert auf ein ausführliches Glossar gelegt.",
+      "outcome": "Entstanden ist eine doch recht ansehnliche Webseite zur Produktvorstellung. Daraufhin haben wir uns auf den Relaunch des gesamten Online-Shops konzentriert",
+      "advancedContent": [
+        {
+          "title": "Recherche",
+          "text": "Kosmetik ist nicht mein Fachgebiet, daher musste ich zunächst ausführlich recherchieren. Wie vermitteln die großen Player am Markt ein Gefühl der Wohligkeit. Und das auch noch im Premiumsegment. Allerdings konnte ich mich auch nicht gänzlich an bekannten Marken orientieren, da Naturkosmetik und dessen Zielgruppe nochmal andere Werte verfolgen.",
+          "imgUrl": "img/naturherz-cs-1.jpg",
+          "imgAlt": "Recherche steht an erster Stelle!"
+        },
+        {
+          "title": "Personas",
+          "text": "Zusammen mit Naturherz musste ich erstmal verstehen wie die Zielgruppe letztendlich aussieht. Wer kauft Naturkosmetik. Warum? Und was sind deren Triggerpunkte? Das Produkt an sich spricht ja schon für sich, aber ich musste zunächst erstmal verstehen wen genau die Landingpage ansprechen soll.",
+          "imgUrl": "img/naturherz-cs-3.jpg",
+          "imgAlt": "Wenn man nicht weiß wer die Kunden sind, kann's schnell nach hinten losgehen."
+        },
+        {
+          "title": "Prototyping",
+          "text": "Die Protoypen habe ich mit Adobe XD erstellt. Wobei der erste Vorschlag direkt als \"ganz okay\" abgesegnet wurde. Das konnte ich nicht auf mir sitzen lassen. Es ist mir wichtig, das meine Kunden am Ende des Projektes wirklich zufrieden mit ihrem neuen Produkt sind. Also habe ich direkt einen neuen Prototypen entwickelt, der direkt positiv aufgenommen wurde. Das Resultat ist jetzt online.",
+          "imgUrl": "img/naturherz-cs-2.jpg",
+          "imgAlt": "Nur das Beste für meine Kunden! :)"
+        },
+        {
+          "title": "Umsetzung",
+          "text": "Die Landingpage ist komplett \"from scratch\". HTML und CSS sind komplett selbst geschrieben ohne Framework oder Libraries. Überwiegend habe ich Flexbox eingesetzt. Die Produktbilder wurden von einer befreundeten Fotografin geschossen und von mir mit Photoshop nachgearbeitet. Die restlichen Fotos sind Stockfotos. Für die Blätter wurden Assets verwendet. Die Schriftarten sind Imperator, für die Überschriften, und Futura PT, für den Text.",
+          "imgUrl": "img/naturherz-cs-4.jpg",
+          "imgAlt": "Farbgebung, verwendete Schriftarten und Produktfoto"
+        }
+      ]
+    }
+  },
+  "/cs-soestling":  {
+    "template": "case-studies",
+    "pageTitle": "cptPLANK entwirft die Soestlinge in Eigenregie",
+    "pageDescription": "Eine Community von Soestern für alle! Hurray",
+    "hasFooter": true,
+    "customLogo": false,
+    "customScript": false,
+    "cryptName": "zero03",
+    "nameShort": "Soestling",
+    "descShort": "Eine selbstentworfene Plattform, die mal von freiwilligen Bloggern und Fotografen gestützt werden soll, um Neues und Schönes aus meiner Heimatstadt in die Welt zu posaunen.",
+    "year": 2020,
+    "thumpImgUrl": "/img/cs-soestlinge-anim.gif",
+    "content": {
+      "nameLong": "SOESTLING",
+      "bigImgUrl": "cs-soestling-top.jpg",
+      "websiteURL": "",
+      "title": "Die Community für und von Soestern:<br>Soestling",
+      "introText": "Ich möchte noch nicht zuviel verraten.<br><br>Hierbei handelt es sich um ein privates Porjekt von mir. Allerdings steht schon ein Designkonzept, eine erste Version möchte ich hier gerne schon zeigen.",
+      "schwerpunkte": [ "Markenstrategie", "Communityfunktionen", "Corporate Design", "Webdesign und Entwicklung",  "Merch? :)",  "Social Marketingstrategien",  "Werbeprints"],
+      "challange": "Die Community wird von mir \"from Scratch\" mit React.js erstellt. Es gibt einiges zu beachten, aber genauere Infos kommen später.",
+      "outcome": "In Arbeit!",
+      "advancedContent": [
+        {
+          "title": "Erstes Showcase",
+          "text": "Später mehr Infos!",
+          "imgUrl": "./img/soestlinge_erste_version_showcase_v2.png",
+          "imgAlt": "Showcase Soestlinge"
+        }
+      ]
+    }
+  },
+  "/cs-cptplank":  {
+    "template": "case-studies",
+    "pageTitle": "cptPLANK stellt seine eigene Seite vor!",
+    "pageDescription": "Gedanken und so! Lies einfach was so in meinem Kopf herumschwirrt!",
+    "hasFooter": true,
+    "customLogo": false,
+    "customScript": false,
+    "cryptName": "zero04",
+    "nameShort": "cptPLANK",
+    "descShort": "Du kannst meinen Website-Code auf Github betrachten oder lies dir meine Gedanken hierzu in der Case-Studie durch.",
+    "year": 2019,
+    "thumpImgUrl": "/img/cs-hussmann-anim.gif",
+    "content": {
+      "nameLong": "CPTPLANK",
+      "bigImgUrl": "img/",
+      "websiteURL": "",
+      "title": "Was man nicht so alles tut.<br>>Echt mal..",
+      "introText": "Mein kleines Nest. Hier fügt sich nach und nach alles zusammen. Diese Seite representiert im Augenblick meine Arbeit. Wer mag kann sich auch bei Github den Code angucken und gerne Feedback hinterlassen. Ich lerne gerne und immer dazu. :)<br><br>Am Ende geht's doch allerdings nur um's Ergebnis, oder?<br><br>Und da sind wir bei mir, ich mag das Motto \"Done is better than perfect\" und den Ansatz das Quantität Qualität am Ende doch schlägt! Äh, bitte was?<br><br>Also bevor du jetzt die Augen verdrehst, lies bitte erstmal weiter und erlaube mir das zu erklären.<br><br>Jedes Kind weiß das Qualität über Quantität steht, also liefere gefälligst die beste Arbeit ab! Denn auf das I-tüpfelchen kommt es an! Und am Ende bist du nur so gut wie deine letzte Arbeit.<br><br>Letztendlich sind wir an einem Punkt angekommen an dem sich ein Großteil der Krativen selbst massiv so unter Druck setzt, das perfekte Ergebnis abzuliefern, um im Umkehrschluss nur das Gegenteil zu bewirken. Am Ende ist es für einige sogar exakt die Ausrede, um gar nicht mehr kreativ tätig zu sein.<br><br>\"Ich kann das besser\" wird zu \"Das ist noch nicht fertig\". So bleiben wir auf der Stelle stehen, wir haben Angst und fühlen uns unsicher. Was werden die Anderen von meiner Arbeit denken? Bin ich gut genug?<br><br>So bleiben wir lieber in unserer Komfortzone, völlig anonym. Immerhin kann uns jetzt keiner verurteilen. Das ist wahr, niemand kann unsere Arbeit beurteilen, denn keiner kennt sie. Wenn wir immer so denken haben wir unsere Kreativität niemals ausgelebt.<br><br>Das Geheimnis sich diesem Teufelskreis zu entziehen ist letztendlich der Fakt, das Quantität zu Qualität führt. Umso mehr wir tun, umso besser werden wir. Am Ende sind wir mit jedem Projekt ein bisschen besser, mit jeder Aufgabe steigt die Qualität unserer Ergebnisse.<br><br>Also merke: Konsistenz (Quantität) führt zu Qualität.<br><br>Ich bin wohl ein wenig abgeschweift und du liest ja immernoch. Interessant...<br><br>Also diese Seite repräsentiert mich schon recht gut. Wenn ich in meinen Kleiderschrank gucke, sehe ich bloß schwarze Klamotten, aber in meinem Kopf ist es dagegen recht Bunt. Da schwirren jede Menge Ideen herum. Ich liebe es mich und meine Arbeit zu verbessern und neue Dinge zu lernen. Der Witz an der Sache ist doch, als ich wieder in die Webentwicklung eingestiegen bin, war ich mir recht sicher doch einiges zu wissen. Dunning Kruger lässt grüßen. Jetzt bin ich an einem Punkt, umso mehr ich weiß, merke ich das ich keinen Schimmer habe. Noch viel witziger ist, das es nicht nur mir so geht. Und ich denke, das ist gut so. Eine gewisse Akzeptanz zu haben nicht ALLES zu können, was die Webentwicklung so bietet gehört wohl zum gesunden Menschenverstand. So habe ich mich dazu entschlossen, JavaScript sowohl im Front-End, als auch im Back-End bestmöglich zu beherrschen.<br><br>Direkt danach kommt meine Faszination für Design, Foto, Video und digitale Kunst. So arbeite auch, unter Anderem, mit Adobe XD, Photoshop, Illustrator, Premiere und Lightroom.<br><br>Jetzt aber genug geschwafelt.<br><br>Du liest ja immernoch! Dafür danke ich dir sehr und hoffe du wurdest ein wenig unterhalten. Und wenn du jemand bist der Arbeit für mich hat, dann schreibe mich verdammt nochmal an. Jetzt! Sonst lösche ich dein Bios. Wirklich!",
+      "schwerpunkte": [ "Portfolio", "Selbstdarstellung", "Call me! Now!", "Oder eine E-Mail tut es auch.",  "Meine Nummer steht hier nämlich nirgends.",  "Danke. Du bist der Beste!"],
+      "challange": "Das Ziel ist es die bekannteste Seite des Universums zu erstellen!",
+      "outcome": "Damit werde ich wohl nie fertig..",
+      "advancedContent": []
+    }
+  },
+  "/cs-hussmann":  {
+    "template": "case-studies",
+    "pageTitle": "cptPLANK hat auch Websites für Ärzte erstellt!",
+    "pageDescription": "Diese Website ist zwar nur klein und Schnuckelig, aber ich mag sie!",
+    "hasFooter": true,
+    "customLogo": false,
+    "customScript": false,
+    "cryptName": "zero01",
+    "nameShort": "dr.hussmann",
+    "descShort": "Überarbeitung und Modernisierung einer Praxishomepage. Grundlegende Suchmaschinenoptimierung, Briefpapier- & Visitenkartendesign.",
+    "year": 2019,
+    "thumpImgUrl": "/img/cs-hussmann-anim.gif",
+    "content": {
+      "nameLong": "KINDER- UND JUGENDARZT DR. MED. O. HUSSMANN",
+      "bigImgUrl": "img/",
+      "websiteURL": "",
+      "title": "Einfach. Zielgerichtet. Passend.<br>Auch Ärzte haben Konkurrenz.",
+      "introText": "Trotz erfolgreich laufender Praxis, benötigte der sympathische Kinder- & Jugendarzt Dr. med. Hußmann dringend eine zeitgemäße Außendarstellung. Selbst Ärzte stehen durch die digitalisierung immer stärker unter dem Druck auch in der nahen Zukunft von zukünftigen und interessierten Patienten gefunden zu werden.<br><br>Meine Aufgabe war es nun seine in die Jahre gekommene, flashbasierte Homepage zu überarbeiten. Texte wurden von ihm gestellt.<br><br>Nun stellte sich die Frage, wie suchen potentielle Patienten, insbesondere deren Eltern einen passenden Kinderarzt? Wenn nicht über Empfehlungen, dann wird ersteinmal gegoogelt und wer ganz oben steht, bekommt zunächst den Zuschlag.<br>In zweiter Linie ist es, besonders für Kinder- & Jugendärzte, wichtig Vertrauen aufzubauen, so lag es auf der Hand Herrn Dr. Hußmann direkt und prominent mit in die Homepage zu integrieren. Man möchte ja schließlich wissen mit wem man es in Zukunft häufiger zutun haben wird.<br><br>Zusätzlich wurden von mir das Praxislogo, Briefpapier und Visitekarten neu entworfen. Für die Bilder wurde eine lokale Fotografin beauftragt und ein Termin ausgemacht.",
+      "schwerpunkte": [ "Web Design und Entwicklung", "Grundlegende Suchmaschinenoptimierung", "Corporate Design", "Logodesign",  "Printdesign"],
+      "challange": "Einfache modernisierung des Internetauftrittes und der Praxis-Außendarstellung.",
+      "outcome": "Die Homepage wurde neu aufgesetzt, Logo, Briefpapier und Visitenkarten erstellt. Die Praxis wurde von mir in Google Business eingetragen. Dadurch haben wir sichergestellt, daß die Praxis von Herrn Dr. Hußmann auch digital zeitgemäß ist.",
+      "advancedContent": [
+        {
+          "title": "Detaillierte Infos",
+          "text": "Hier kannst du dir alles noch genauer ansehen.",
+          "imgUrl": "img/hussmann_alles.png",
+          "imgAlt": "Dr. Hussmann Case Studie Homepage und Print"
+        }
+      ]
+    }
+  },
+  "/was-ist-gutes-webdesign":  {
+    "template": "blog-artikel",
+    "pageTitle": "Wie erkennt man gutes Webdesign?",
+    "pageDescription": "Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolo",
+    "hasFooter": true,
+    "customLogo": false,
+    "customScript": false,
+    "datum": "31. Mrz",
+    "thumpImgUrl": "/img/cs-soestling-top.jpg",
+    "content": {
+      "mainImg": "/img/blog_banner_so-erkennst-du-gutes-webdesign.jpg",
+      "introText": "Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam.",
+      "author": "cptPLANK",
+      "authorImg": "/img/cs-soestling-top.jpg",
+      "authorTwitter": "#",
+      "authorDesc": "Voll der tolle Dude!",
+      "minutesToRead": "8",
+      "inhaltsverzeichnis": ["a", "b", "c", "d"],
+      "inhalt": "<h3>Angaben gem&auml;&szlig; &sect; 5 TMG</h3><p>Lorem ipsum dolor sit amet, <a href=\"#\">consetetur sadipscing</a> elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.</p><h3>Angaben gem&auml;&szlig; &sect; 5 TMG</h3><img src=\"img/cs-soestling-top.jpg\" /><p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.</p><h3>Angaben gem&auml;&szlig; &sect; 5 TMG</h3><iframe src=\"https://www.youtube.com/embed/njn6krU3tQ8\" frameborder=\"0\" allow=\"accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture\" allowfullscreen></iframe><p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.</p>"
+    }
+  },
+  "/was-ist-gutes-webdesign-123":  {
+    "template": "blog-artikel",
+    "pageTitle": "MOEP?",
+    "pageDescription": "Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolo",
+    "hasFooter": true,
+    "customLogo": false,
+    "customScript": false,
+    "datum": "31. Mrz",
+    "thumpImgUrl": "/img/cs-soestling-top.jpg",
+    "content": {
+      "mainImg": "/img/cs-soestling-top.jpg",
+      "introText": "Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam.",
+      "author": "cptPLANK",
+      "authorImg": "/img/cs-soestling-top.jpg",
+      "authorTwitter": "#",
+      "authorDesc": "Voll der tolle Dude!",
+      "minutesToRead": "8",
+      "inhaltsverzeichnis": ["a", "b", "c", "d"],
+      "inhalt": "<h3>Angaben gem&auml;&szlig; &sect; 5 TMG</h3><p>Lorem ipsum dolor sit amet, <a href=\"#\">consetetur sadipscing</a> elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.</p><h3>Angaben gem&auml;&szlig; &sect; 5 TMG</h3><img src=\"img/cs-soestling-top.jpg\" /><p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.</p><h3>Angaben gem&auml;&szlig; &sect; 5 TMG</h3><iframe src=\"https://www.youtube.com/embed/njn6krU3tQ8\" frameborder=\"0\" allow=\"accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture\" allowfullscreen></iframe><p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.</p>"
+    }
+  }
+}
